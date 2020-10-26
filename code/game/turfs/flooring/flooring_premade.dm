@@ -332,3 +332,13 @@
 	if(ishuman(user))
 		ChangeTurf(/turf/space)
 		to_chat(user, SPAN_NOTICE("You clear away the metal foam."))
+
+/turf/simulated/floor/mars
+	name = "martian soil"
+	icon = 'icons/turf/mars.dmi'
+	icon_state = "mars"
+	desc = "Chilly red dirt, extremely fine and dangerous dust coats its surface. Don't breathe it in."
+	temperature = 85
+	movement_cost = 0
+
+	footstep_sound = "asteroid"

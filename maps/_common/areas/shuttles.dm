@@ -97,3 +97,8 @@
 	base_turf = /turf/space
 	sound_env = LARGE_ENCLOSED
 	flags = RAD_SHIELDED | SPAWN_ROOF | NO_CREW_EXPECTED
+
+/area/shuttle/barge
+	name = "Salvaging Barge"
+	flags = RAD_SHIELDED | NO_CREW_EXPECTED
+	base_turf = /turf/unsimulated/floor/plating

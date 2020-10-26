@@ -397,6 +397,19 @@
 	icon = 'icons/turf/shuttles_unique/distress_shuttle.dmi'
 	icon_state = "6,2"
 
+//Salvaging Barge
+
+/turf/simulated/wall/shuttle/unique/barge
+	icon = 'icons/turf/shuttles_unique/barge.dmi'
+	icon_state = "5,4"
+
+/obj/structure/shuttle_part/barge
+	icon = 'icons/turf/shuttles_unique/barge.dmi'
+	icon_state = "4,1"
+
+/obj/structure/window/shuttle/unique/barge
+	icon = 'icons/turf/shuttles_unique/barge.dmi'
+	icon_state = "6,2"
 
 //--Floors--//
 
