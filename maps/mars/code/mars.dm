@@ -7,10 +7,10 @@
 	lobby_transitions = 10 SECONDS
 
 
-	station_levels = list(2, 3, 4, 5)
-	admin_levels = list(1)
-	contact_levels = list(2, 3, 4, 5)
-	player_levels = list(2, 3, 4, 5)
+	station_levels = list(1, 2, 3, 4, 5)
+	admin_levels = list()
+	contact_levels = list(1, 2, 3, 4, 5)
+	player_levels = list(1, 2, 3, 4, 5)
 	restricted_levels = list()
 	accessible_z_levels = list("8" = 10, "7" = 15, "2" = 60)
 	base_turf_by_z = list(
@@ -18,6 +18,7 @@
 		"2" = /turf/simulated/floor/mars,
 		"3" = /turf/simulated/floor/mars,
 		"4" = /turf/simulated/floor/mars,
+		"5" = /turf/simulated/floor/mars
 	)
 
 	station_name = "ASN Spire"
