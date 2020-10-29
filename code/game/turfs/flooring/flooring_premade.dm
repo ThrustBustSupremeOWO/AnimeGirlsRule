@@ -340,5 +340,38 @@
 	desc = "Chilly red dirt, extremely fine and dangerous dust coats its surface. Don't breathe it in."
 	temperature = 85
 	movement_cost = 0
-
 	footstep_sound = "asteroid"
+
+/turf/simulated/floor/mars/mud
+	name = "martian mud"
+	icon_state = "mars_mud"
+	desc = "Chilly red mud. This looks tough to move through, if not dangerous."
+	movement_cost = 3
+
+/turf/simulated/floor/mars/floor
+	name = "dust-covered flooring"
+	icon_state = "mars_floor"
+	desc = "Plating covered in the dust of Mars. Dangerous to inhale. Don't slip."
+	footstep_sound = /decl/sound_category/plating_footstep
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/mars/floor/dark
+	name = "dust-covered dark flooring"
+	icon_state = "mars_dark"
+	initial_flooring = /decl/flooring/tiling/dark
+
+/turf/simulated/floor/mars/floor/plating
+	name = "dust-covered plating"
+	icon_state = "mars_plating"
+
+/turf/simulated/floor/mars/floor/white
+	name = "dust-covered white plating"
+	icon_state = "mars_light"
+	initial_flooring = /decl/flooring/tiling/white
+
+/turf/simulated/floor/mars/floor/dirty
+	name = "dust-covered excessively dirty plating"
+	icon_state = "mars_light"
+	desc = "Plating covered in the dust of Mars. Dangerous to inhale. Don't slip. It's so dirty."
+	initial_flooring = /decl/flooring/tiling/old
+
