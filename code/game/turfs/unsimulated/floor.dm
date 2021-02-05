@@ -14,6 +14,11 @@
 	icon_state = "snow"
 	footstep_sound = /decl/sound_category/snow_footstep
 
+/turf/unsimulated/floor/xmas/crystal
+	name = "crystalline superstructure"
+	desc = "A smaller part of a larger underground crystalline structure, by the looks of it - it's slightly transparent and lets you see some distance down."
+	icon_state = "crystal0"
+
 /turf/unsimulated/mask
 	name = "mask"
 	icon = 'icons/turf/walls.dmi'

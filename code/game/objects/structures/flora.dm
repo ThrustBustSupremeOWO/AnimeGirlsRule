@@ -67,6 +67,46 @@
 	icon_state = "lavarocks"
 	desc = "A pile of rocks."
 
+//crystal flora
+/obj/structure/flora/crystal
+	name = "Crystalline Spire"
+	desc = "A towering crystalline spire of unknown make. This seems like a natural, if odd creation."
+	icon = 'icons/obj/flora/crystal.dmi'
+	pixel_y = 0
+	pixel_x = -32
+	anchored = 1
+	icon_state = "spire1"
+
+/obj/structure/flora/crystal/alt1
+	icon_state = "spire2"
+
+/obj/structure/flora/crystal/alt2
+	icon_state = "spire3"
+
+/obj/structure/flora/crystal/tree
+	name = "Crystalline Flora"
+	desc = "A mighty stump with crystalline leaves sprouting from it. It looks sturdy."
+	icon_state = "gemsum1"
+
+/obj/structure/flora/crystal/tree/alt1
+	icon_state = "gemsum2"
+
+/obj/structure/flora/crystal/tree/alt2
+	icon_state = "gemsum3"
+
+//crystal grass-esque shit
+/obj/structure/flora/grass/crystal
+	name = "dense crystal formation"
+	desc = "Thick crystal flora erupting from the ground. Don't trip!"
+	icon = 'icons/obj/flora/floor_crystal.dmi'
+	icon_state = "crystal1"
+
+/obj/structure/flora/grass/crystal/alt1
+	icon_state = "crystal2"
+
+/obj/structure/flora/grass/crystal/alt2
+	icon_state = "crystal3"
+
 //grass
 /obj/structure/flora/grass
 	name = "grass"
