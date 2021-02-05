@@ -84,7 +84,8 @@ var/list/slot_equipment_priority = list( \
 		slot_s_store,\
 		slot_tie,\
 		slot_l_store,\
-		slot_r_store\
+		slot_r_store,\
+		slot_wrists\
 	)
 
 //Checks if a given slot can be accessed at this time, either to equip or unequip I
@@ -187,21 +188,17 @@ var/list/slot_equipment_priority = list( \
 
 // Removes an item from inventory and places it in the target atom.
 // If canremove or other conditions need to be checked then use unEquip instead.
-/mob/proc/drop_from_inventory(var/obj/item/W, var/atom/target, var/click_params)
+/mob/proc/drop_from_inventory(var/obj/item/W, var/atom/target)
 	if(W)
 		if(!target)
 			target = loc
 		remove_from_mob(W)
 		if(!(W && W.loc))
-			return 1
-		INVOKE_ASYNC(W, /atom/movable/proc/do_putdown_animation, target, src, click_params)
-		if(istype(target, /obj/structure/table))
-			W.forceMove(target.loc)
-		else
-			W.forceMove(target)
+			return TRUE
+		W.forceMove(target)
 		update_icon()
-		return 1
-	return 0
+		return TRUE
+	return FALSE
 
 //Drops the item in our left hand
 /mob/proc/drop_l_hand(var/atom/target)
@@ -276,17 +273,17 @@ var/list/slot_equipment_priority = list( \
 
 /mob/proc/get_inventory_slot(obj/item/I)
 	var/slot = 0
-	for(var/s in slot_back to slot_tie) //kind of worries me
+	for(var/s in slot_first to slot_last) //kind of worries me
 		if(get_equipped_item(s) == I)
 			slot = s
 			break
 	return slot
 
 //This differs from remove_from_mob() in that it checks if the item can be unequipped first.
-/mob/proc/unEquip(obj/item/I, force = 0, var/atom/target, var/click_params) //Force overrides NODROP for things like wizarditis and admin undress.
+/mob/proc/unEquip(obj/item/I, force = 0, var/atom/target) //Force overrides NODROP for things like wizarditis and admin undress.
 	if(!(force || canUnEquip(I)))
 		return
-	drop_from_inventory(I, target, click_params)
+	drop_from_inventory(I, target)
 	return 1
 
 
@@ -401,11 +398,6 @@ var/list/slot_equipment_priority = list( \
 		if((istype(src.loc, /turf/space)) || (src.lastarea.has_gravity() == 0))
 			src.inertia_dir = get_dir(target, src)
 			step(src, inertia_dir)
-/*
-		if(istype(src.loc, /turf/space) || (src.flags & NOGRAV)) //they're in space, move em one space in the opposite direction
-			src.inertia_dir = get_dir(target, src)
-			step(src, inertia_dir)
-*/
 		if(istype(item,/obj/item))
 			var/obj/item/W = item
 			W.randpixel_xy()

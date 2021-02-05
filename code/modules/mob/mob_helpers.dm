@@ -45,6 +45,13 @@
 		return 1
 	return 0
 
+/proc/isgolem(A)
+	if(ishuman(A))
+		var/mob/living/carbon/human/H = A
+		if(istype(H.species, /datum/species/golem))
+			return TRUE
+	return FALSE
+
 /proc/isunathi(A)
 	if(ishuman(A))
 		var/mob/living/carbon/human/H = A
@@ -138,6 +145,14 @@
 				return TRUE
 	if(iszombie(A))
 		return TRUE
+	return FALSE
+
+/proc/isrevenant(A)
+	if(ishuman(A))
+		var/mob/living/carbon/human/H = A
+		switch(H.get_species())
+			if(SPECIES_REVENANT)
+				return TRUE
 	return FALSE
 
 /proc/islesserform(A)
@@ -746,6 +761,8 @@ proc/is_blind(A)
 		return slot_l_ear
 	else if (H.shoes == src)
 		return slot_shoes
+	else if (H.wrists == src)
+		return slot_wrists
 	else
 		return null//We failed to find the slot
 
@@ -1030,38 +1047,6 @@ proc/is_blind(A)
 	if (is_type_in_typecache(src, SSmob.mtl_humanoid))
 		. |= TYPE_HUMANOID
 
-
-/mob/living/proc/get_vessel(create = FALSE)
-	if (!create)
-		return
-
-	//we make a new vessel for whatever creature we're devouring. this allows blood to come from creatures that can't normally bleed
-	//We create an MD5 hash of the mob's reference to use as its DNA string.
-	//This creates unique DNA for each creature in a consistently repeatable process
-	var/datum/reagents/vessel = new/datum/reagents(600)
-	vessel.add_reagent(/datum/reagent/blood,560)
-	for(var/datum/reagent/blood/B in vessel.reagent_list)
-		if(B.type == /datum/reagent/blood)
-			B.data = list(
-				"donor" = WEAKREF(src),
-				"species" = name,
-				"blood_DNA" = md5("\ref[src]"),
-				"blood_colour" = "#a10808",
-				"blood_type" = null,
-				"resistances" = null,
-				"trace_chem" = null
-			)
-
-			B.color = B.data["blood_colour"]
-
-	return vessel
-
-/mob/living/carbon/human/get_vessel(create = FALSE)
-	. = vessel
-
-/mob/living/carbon/alien/diona/get_vessel(create = FALSE)
-	. = vessel
-
 #undef SAFE_PERP
 
 /mob/proc/get_multitool(var/obj/P)
@@ -1211,3 +1196,5 @@ proc/is_blind(A)
 
 /mob/proc/remove_deaf()
 	sdisabilities &= ~DEAF
+/mob/proc/get_antag_datum(var/antag_role)
+	return
