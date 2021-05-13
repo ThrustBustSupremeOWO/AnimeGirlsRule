@@ -311,3 +311,64 @@
 	dynamic_lighting = 0
 	requires_power = 0
 	no_light_control = 1
+
+//Moons
+
+/area/overwatch
+	name = "Overwatch Post"
+	icon_state = "yellow"
+	requires_power = 0
+
+/area/moon
+	centcomm_area = 1
+
+/area/moon/city
+	name = "City Limits"
+	icon_state = "yellow"
+	dynamic_lighting = 0
+	luminosity = 1
+	requires_power = 0
+
+/area/moon/city/dark
+	name = "City Limits Interior"
+	icon_state = "purple"
+	luminosity = 0
+	requires_power = 0
+
+/area/moon/sea
+	name = "Shallow Seas"
+	icon_state = "yellow"
+	dynamic_lighting = 0
+	luminosity = 1
+	requires_power = 0
+
+/area/moon/sea/dark
+	name = "Shallow Seas Interior"
+	icon_state = "purple"
+	luminosity = 0
+	requires_power = 0
+
+/area/moon/jungle
+	name = "Overgrowth"
+	dynamic_lighting = 0
+	icon_state = "yellow"
+	luminosity = 1
+	requires_power = 0
+
+/area/moon/jungle/dark
+	name = "Overgrowth Interior"
+	icon_state = "purple"
+	luminosity = 0
+	requires_power = 0
+
+/area/moon/ice
+	name = "Tundra"
+	icon_state = "yellow"
+	luminosity = 1
+	requires_power = 0
+
+/area/moon/ice/dark
+	name = "Tundra Interior"
+	icon_state = "purple"
+	luminosity = 0
+	requires_power = 0
