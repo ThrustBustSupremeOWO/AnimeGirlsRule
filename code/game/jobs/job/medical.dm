@@ -77,8 +77,8 @@
 	selection_color = "#15903a"
 	economic_modifier = 7
 
-	spawn_positions = 0
-	total_positions = 2
+	spawn_positions = 2
+	total_positions = 0
 
 	minimum_character_age = 30
 
