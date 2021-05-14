@@ -4,7 +4,7 @@
 	departments = list(DEPARTMENT_SECURITY = JOBROLE_SUPERVISOR, DEPARTMENT_COMMAND)
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	intro_prefix = "the"
 	supervisors = "the captain"
@@ -71,7 +71,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_SECURITY)
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	supervisors = "the head of security"
 	selection_color = "#991818"
@@ -161,14 +161,14 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 
 /datum/job/officer
-	title = "Security Officer"
+	title = "Expedition Ranger"
 	flag = OFFICER
 	departments = SIMPLEDEPT(DEPARTMENT_SECURITY)
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
-	supervisors = "the head of security"
+	total_positions = 6
+	spawn_positions = 6
+	supervisors = "the Coalition research and colonial oversight authority"
 	selection_color = "#991818"
 	economic_modifier = 4
 
@@ -183,14 +183,13 @@
 	name = "Security Officer"
 	jobtype = /datum/job/officer
 
-	uniform = /obj/item/clothing/under/rank/security
+	uniform = /obj/item/clothing/under/syndicate
 	shoes = /obj/item/clothing/shoes/jackboots
-	headset = /obj/item/device/radio/headset/headset_sec
-	bowman = /obj/item/device/radio/headset/headset_sec/alt
 	tab_pda = /obj/item/modular_computer/handheld/pda/security
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/security
 	tablet = /obj/item/modular_computer/handheld/preset/security
 	l_pocket = /obj/item/device/flash
+	l_hand = /obj/item/rig/gunslinger
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel_sec
@@ -216,7 +215,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_SECURITY)
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the Head of Security"
 	selection_color = "#991818"

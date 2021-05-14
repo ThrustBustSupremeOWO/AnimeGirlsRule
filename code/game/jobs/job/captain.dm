@@ -6,7 +6,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	departments = list(DEPARTMENT_COMMAND = JOBROLE_SUPERVISOR)
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	intro_prefix = "the"
 	supervisors = "company officials and Corporate Regulations"
@@ -74,7 +74,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	departments = list(DEPARTMENT_CIVILIAN = JOBROLE_SUPERVISOR, DEPARTMENT_COMMAND)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	intro_prefix = "the"
 	supervisors = "the captain"

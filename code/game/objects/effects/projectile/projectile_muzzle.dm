@@ -87,3 +87,7 @@
 /obj/effect/projectile/muzzle/tesla
 	icon_state = "muzzle_lightning"
 	light_color = LIGHT_COLOR_CYAN
+
+/obj/effect/projectile/muzzle/gammaray
+	icon_state = "muzzle_gammaray"
+	light_color = LIGHT_COLOR_GREEN

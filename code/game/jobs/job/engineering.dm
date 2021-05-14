@@ -4,7 +4,7 @@
 	departments = list(DEPARTMENT_ENGINEERING = JOBROLE_SUPERVISOR, DEPARTMENT_COMMAND)
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	intro_prefix = "the"
 	supervisors = "the captain"
@@ -68,14 +68,14 @@
 		H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 
 /datum/job/engineer
-	title = "Station Engineer"
+	title = "Ship Engineer"
 	flag = ENGINEER
 	departments = SIMPLEDEPT(DEPARTMENT_ENGINEERING)
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the chief engineer"
+	supervisors = "the Coalition research and colonial oversight authority"
 	selection_color = "#c67519"
 	economic_modifier = 5
 

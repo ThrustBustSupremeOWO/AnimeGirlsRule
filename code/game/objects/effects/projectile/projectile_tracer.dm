@@ -100,3 +100,7 @@
 	name = "lightning"
 	icon_state = "lightning"
 	light_color = LIGHT_COLOR_CYAN
+
+/obj/effect/projectile/tracer/gammaray
+	icon_state = "gammaray"
+	light_color = LIGHT_COLOR_GREEN

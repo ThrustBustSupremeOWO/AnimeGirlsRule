@@ -4,7 +4,7 @@
 	departments = list(DEPARTMENT_MEDICAL = JOBROLE_SUPERVISOR, DEPARTMENT_COMMAND)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	intro_prefix = "the"
 	supervisors = "the captain"
@@ -50,14 +50,14 @@
 	messengerbag = /obj/item/storage/backpack/messenger/med
 
 /datum/job/doctor
-	title = "Physician"
+	title = "Expedition Physician"
 	flag = DOCTOR
 	departments = SIMPLEDEPT(DEPARTMENT_MEDICAL)
 	department_flag = MEDSCI
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the chief medical officer"
+	supervisors = "the Coalition research and colonial oversight authority"
 	selection_color = "#15903a"
 	economic_modifier = 7
 
@@ -77,7 +77,7 @@
 	selection_color = "#15903a"
 	economic_modifier = 7
 
-	spawn_positions = 2
+	spawn_positions = 0
 	total_positions = 2
 
 	minimum_character_age = 30
@@ -94,8 +94,6 @@
 	uniform = /obj/item/clothing/under/rank/medical
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/medical
 	shoes = /obj/item/clothing/shoes/medical
-	headset = /obj/item/device/radio/headset/headset_med
-	bowman = /obj/item/device/radio/headset/headset_med/alt
 	tab_pda = /obj/item/modular_computer/handheld/pda/medical
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/medical
 	tablet = /obj/item/modular_computer/handheld/preset/medical
@@ -135,7 +133,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_MEDICAL)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the chief medical officer"
 	selection_color = "#15903a"
@@ -172,7 +170,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_MEDICAL)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	economic_modifier = 5
 
@@ -211,7 +209,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_MEDICAL)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the chief medical officer"
 	selection_color = "#15903a"
@@ -254,7 +252,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_MEDICAL)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 3
+	total_positions = 0
 	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
 	selection_color = "#15903a"

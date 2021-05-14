@@ -5,7 +5,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
@@ -36,7 +36,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
@@ -72,7 +72,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 1
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
@@ -119,7 +119,7 @@
 	departments = list(DEPARTMENT_CARGO = JOBROLE_SUPERVISOR)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
@@ -155,7 +155,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CARGO)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 4
+	total_positions = 0
 	spawn_positions = 4
 	supervisors = "the quartermaster and the head of personnel"
 	selection_color = "#90524b"
@@ -181,14 +181,14 @@
 
 
 /datum/job/mining
-	title = "Shaft Miner"
+	title = "Expedition Prospector"
 	flag = MINER
 	departments = SIMPLEDEPT(DEPARTMENT_CARGO)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 4
+	total_positions = 6
 	spawn_positions = 4
-	supervisors = "the quartermaster and the head of personnel"
+	supervisors = "the Coalition research and colonial oversight authority"
 	selection_color = "#90524b"
 	economic_modifier = 5
 
@@ -210,8 +210,7 @@
 	tablet = /obj/item/modular_computer/handheld/preset/civilian
 	id = /obj/item/card/id/silver
 	shoes = /obj/item/clothing/shoes/black
-	headset = /obj/item/device/radio/headset/headset_mining
-	bowman = /obj/item/device/radio/headset/headset_mining/alt
+	l_hand = /obj/item/rig/industrial/equipped
 
 	l_hand = /obj/item/coin/mining
 
@@ -236,7 +235,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
@@ -262,7 +261,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"
@@ -313,7 +312,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	supervisors = "the head of personnel"
 	selection_color = "#90524b"

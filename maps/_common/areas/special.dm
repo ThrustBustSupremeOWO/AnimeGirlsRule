@@ -320,55 +320,37 @@
 	requires_power = 0
 
 /area/moon
-	centcomm_area = 1
+	name = "Undefined Moon"
+	icon_state = "yellow"
 
 /area/moon/city
 	name = "City Limits"
 	icon_state = "yellow"
-	dynamic_lighting = 0
-	luminosity = 1
-	requires_power = 0
 
 /area/moon/city/dark
 	name = "City Limits Interior"
 	icon_state = "purple"
-	luminosity = 0
-	requires_power = 0
 
 /area/moon/sea
 	name = "Shallow Seas"
 	icon_state = "yellow"
-	dynamic_lighting = 0
-	luminosity = 1
-	requires_power = 0
 
 /area/moon/sea/dark
 	name = "Shallow Seas Interior"
 	icon_state = "purple"
-	luminosity = 0
-	requires_power = 0
 
 /area/moon/jungle
 	name = "Overgrowth"
-	dynamic_lighting = 0
 	icon_state = "yellow"
-	luminosity = 1
-	requires_power = 0
 
 /area/moon/jungle/dark
 	name = "Overgrowth Interior"
 	icon_state = "purple"
-	luminosity = 0
-	requires_power = 0
 
 /area/moon/ice
 	name = "Tundra"
 	icon_state = "yellow"
-	luminosity = 1
-	requires_power = 0
 
 /area/moon/ice/dark
 	name = "Tundra Interior"
 	icon_state = "purple"
-	luminosity = 0
-	requires_power = 0

@@ -207,6 +207,39 @@ obj/item/gun/energy/retro
 	desc = "A Nanotrasen designed laser weapon, designed to split a single amplified beam four times. This one is marked for expeditionary use."
 	pin = /obj/item/device/firing_pin/away_site
 
+/obj/item/gun/energy/telescope
+	name = "black omniscope"
+	desc = "A strange, black telescope. It reeks of menace and possesses an aura of insidious, piercing truth."
+	desc_info = null
+	has_safety = FALSE
+	icon = 'icons/moons.dmi'
+	icon_state = "telescope"
+	item_state = "telescope"
+	fire_sound = 'sound/weapons/gunshot/telescope.ogg'
+	projectile_type = /obj/item/projectile/beam/gammaray
+	charge_cost = 1500
+	max_shots = 1
+	force = 10
+	w_class = ITEMSIZE_SMALL
+	accuracy = -3 //shooting at the hip
+	scoped_accuracy = 4
+	self_recharge = 1
+
+	is_wieldable = TRUE
+
+	fire_delay_wielded = 35
+	accuracy_wielded = 0
+
+/obj/item/gun/energy/telescope/verb/scope()
+	set category = "Object"
+	set name = "Use Telescope"
+	set popup_menu = 1
+
+	if(wielded)
+		toggle_scope(2.0, usr)
+	else
+		to_chat(usr, "<span class='warning'>You can't look through the telescope without both hands stabilizing it!</span>")
+
 ////////Laser Tag////////////////////
 
 /obj/item/gun/energy/lasertag

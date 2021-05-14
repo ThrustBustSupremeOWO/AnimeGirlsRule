@@ -95,6 +95,19 @@
 	..()
 	icon_state = "snowgrassall[rand(1, 3)]"
 
+//moon flora
+/obj/structure/flora/moons/thickbrush
+	name = "thick brush"
+	desc = "Thick alien flora."
+	icon = 'icons/obj/flora/moons.dmi'
+	icon_state = "thickbrush1"
+	anchored = 1
+	opacity = 1
+
+/obj/structure/flora/bush/New()
+	..()
+	icon_state = "thickbrush[rand(1, 8)]"
+
 //bushes
 /obj/structure/flora/bush
 	name = "bush"

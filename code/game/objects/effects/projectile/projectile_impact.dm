@@ -86,3 +86,7 @@
 /obj/effect/projectile/impact/tesla
 	icon_state = "impact_lightning"
 	light_color = LIGHT_COLOR_CYAN
+
+/obj/effect/projectile/impact/gammaray
+	icon_state = "gammaray"
+	light_color = LIGHT_COLOR_GREEN

@@ -1,5 +1,5 @@
 /datum/job/assistant
-	title = "Assistant"
+	title = "Expedition Crewman"
 	flag = ASSISTANT
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
@@ -33,7 +33,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = -1
+	total_positions = 0
 	spawn_positions = -1
 	supervisors = "any authority figure"
 	selection_color = "#90524b"

@@ -4,7 +4,7 @@
 	departments = list(DEPARTMENT_SCIENCE = JOBROLE_SUPERVISOR, DEPARTMENT_COMMAND)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	intro_prefix = "the"
 	supervisors = "the captain"
@@ -51,14 +51,14 @@
 
 
 /datum/job/scientist
-	title = "Scientist"
+	title = "Expedition Researcher"
 	flag = SCIENTIST
 	departments = SIMPLEDEPT(DEPARTMENT_SCIENCE)
 	department_flag = MEDSCI
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the research director"
+	supervisors = "the Coalition research and colonial oversight authority"
 	selection_color = "#a44799"
 	economic_modifier = 7
 
@@ -79,8 +79,6 @@
 	uniform = /obj/item/clothing/under/rank/scientist
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/science
 	shoes = /obj/item/clothing/shoes/science
-	headset = /obj/item/device/radio/headset/headset_sci
-	bowman = /obj/item/device/radio/headset/headset_sci/alt
 	tab_pda = /obj/item/modular_computer/handheld/pda/research
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/research
 	tablet = /obj/item/modular_computer/handheld/preset/research
@@ -101,9 +99,9 @@
 	departments = SIMPLEDEPT(DEPARTMENT_SCIENCE)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 3
+	total_positions = 0
 	spawn_positions = 2
-	supervisors = "the research director"
+	supervisors = "the Coalition research and colonial oversight authority"
 	selection_color = "#a44799"
 	economic_modifier = 7
 
@@ -133,9 +131,9 @@
 	departments = SIMPLEDEPT(DEPARTMENT_SCIENCE)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 2
+	total_positions = 0
 	spawn_positions = 2
-	supervisors = "research director"
+	supervisors = "the Coalition research and colonial oversight authority"
 	selection_color = "#a44799"
 	economic_modifier = 5
 
@@ -184,7 +182,7 @@
 	departments = SIMPLEDEPT(DEPARTMENT_SCIENCE)
 	department_flag = MEDSCI
 	faction = "Station"
-	total_positions = 3
+	total_positions = 0
 	spawn_positions = 3
 	supervisors = "the Research Director"
 	selection_color = "#a44799"

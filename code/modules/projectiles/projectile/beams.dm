@@ -159,6 +159,19 @@
 	tracer_type = /obj/effect/projectile/tracer/xray
 	impact_type = /obj/effect/projectile/impact/xray
 
+/obj/item/projectile/beam/gammaray
+	name = "gamma ray burst"
+	icon_state = "gamma"
+	damage = 750
+	armor_penetration = 100
+	stun = 20
+	weaken = 3
+	stutter = 3
+
+	muzzle_type = /obj/effect/projectile/muzzle/gammaray
+	tracer_type = /obj/effect/projectile/tracer/gammaray
+	impact_type = /obj/effect/projectile/impact/gammaray
+
 /obj/item/projectile/beam/stun
 	name = "stun beam"
 	icon_state = "stun"
