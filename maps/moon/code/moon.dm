@@ -1,9 +1,9 @@
-/datum/map/aurora
+/datum/map/moon
 	name = "Spire"
 	full_name = "Coalition Survey Vessel Spire"
 	path = "moon"
 
-	lobby_icons = list('icons/misc/titlescreens/aurora/humans.dmi', 'icons/misc/titlescreens/aurora/synthetics.dmi', 'icons/misc/titlescreens/aurora/king_of_the_world.dmi', 'icons/misc/titlescreens/aurora/tajara.dmi')
+	lobby_icons = list('icons/misc/titlescreens/moons/moons.dmi')
 	lobby_transitions = 10 SECONDS
 
 	station_levels = list(1, 2, 3, 4, 5)

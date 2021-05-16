@@ -73,3 +73,83 @@
 		return TRUE
 	else
 		to_chat(usr, SPAN_WARNING("[src] ignores you."))
+
+/mob/living/simple_animal/hostile/commanded/associate_core
+	name = "Associate Core"
+	desc = "A cute looking Coalition oversight bot. It comprehends simplistic commands and will probably follow you to your inevitable demise."
+	named = TRUE
+
+	icon = 'icons/mob/npc/associate_core.dmi'
+	icon_state = "associate_core"
+	icon_living = "associate_core"
+	icon_dead = "associate_core_dead"
+
+	blood_overlay_icon = null
+
+	health = 150
+	maxHealth = 150
+
+	belongs_to_station = TRUE
+	stop_automated_movement_when_pulled = TRUE
+	density = 0
+
+	speak_chance = 1
+	turns_per_move = 7
+	see_in_dark = 6
+
+	speak = list("Automated report : You are a fantastic explorer!", "Automated report : Your homeland needs you!")
+	speak_emote = list("ponders audibly", "scans its own grippers")
+	emote_hear = list("prods its grippers together pensively", "drifts its optic downwards solemnly")
+	sad_emote = list("bwoops sadly")
+
+	ranged = TRUE
+	projectilesound = 'sound/weapons/taser2.ogg'
+	projectiletype = /obj/item/projectile/beam/hivebot/harmless
+
+	attacktext = "harmlessly clawed"
+	harm_intent_damage = 5 // the damage we take
+	melee_damage_lower = 0
+	melee_damage_upper = 0
+	resist_mod = 2
+
+	mob_size = 5
+
+	organ_names = list("core", "head", "tail")
+	response_help = "pets"
+	response_harm = "hits"
+	response_disarm = "pushes"
+
+	hunger_enabled = FALSE
+
+	destroy_surroundings = FALSE
+	attack_emote = "blares a tiny siren"
+
+/mob/living/simple_animal/hostile/commanded/associate_core/get_bullet_impact_effect_type(var/def_zone)
+	return BULLET_IMPACT_METAL
+
+/mob/living/simple_animal/hostile/commanded/associate_core/death()
+	..(null, "blows apart!")
+	var/T = get_turf(src)
+	new /obj/effect/gibspawner/robot(T)
+	spark(T, 1, alldirs)
+	qdel(src)
+
+/mob/living/simple_animal/hostile/commanded/associate_core/verb/befriend()
+	set name = "Befriend Really Adorable, Slightly Menacing Robot"
+	set category = "IC"
+	set src in view(1)
+
+	if(!master)
+		var/mob/living/carbon/human/H = usr
+		if(istype(H))
+			master = usr
+			audible_emote("[pick(emote_hear)].",0)
+			playsound(src,'sound/voice/warble.ogg',100, 1)
+			. = 1
+	else if(usr == master)
+		. = 1 //already friends, but show success anyways
+
+	else
+		to_chat(usr, "<span class='notice'>[src] ignores you.</span>")
+
+	return

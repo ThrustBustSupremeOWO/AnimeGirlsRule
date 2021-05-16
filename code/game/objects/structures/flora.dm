@@ -104,9 +104,9 @@
 	anchored = 1
 	opacity = 1
 
-/obj/structure/flora/bush/New()
-	..()
-	icon_state = "thickbrush[rand(1, 8)]"
+/obj/structure/flora/moons/thickbrush/Initialize()
+  . = ..()
+  icon_state = "thickbrush[rand(1, 8)]"
 
 //bushes
 /obj/structure/flora/bush

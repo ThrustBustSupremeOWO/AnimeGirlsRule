@@ -512,6 +512,23 @@
 	icon_opened = "dropcrate-grey-open"
 	icon_closed = "dropcrate-grey"
 
+/obj/structure/closet/crate/oracle
+	name = "strange machinery"
+	desc = "A bizarre machine. It is approximately the size of a Human and has a large hatch on the front of it."
+	icon = 'icons/moons.dmi'
+	icon_state = "oracle"
+	icon_opened = "oracle-open"
+	icon_closed = "oracle"
+
+/obj/structure/closet/crate/injector
+	name = "phoron injection manifold"
+	desc = "A complicated device which injects Phoron into a below-deck bluespace engine manifold, securely initiating a launch sequence."
+	desc_fluff = "Use this before moving to the Slingshot escape path! If you don't have phoron inside, you'll simply drop back out of Bluespace!"
+	icon = 'icons/moons.dmi'
+	icon_state = "injector"
+	icon_opened = "injector-open"
+	icon_closed = "injector"
+
 /obj/structure/closet/crate/radiation
 	name = "radioactive gear crate"
 	desc = "A crate with a radiation sign on it."
