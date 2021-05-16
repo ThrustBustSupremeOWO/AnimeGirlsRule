@@ -2240,6 +2240,7 @@
 #include "code\modules\mob\living\simple_animal\friendly\corgi.dm"
 #include "code\modules\mob\living\simple_animal\friendly\crab.dm"
 #include "code\modules\mob\living\simple_animal\friendly\farm_animals.dm"
+#include "code\modules\mob\living\simple_animal\friendly\firefly.dm"
 #include "code\modules\mob\living\simple_animal\friendly\fox.dm"
 #include "code\modules\mob\living\simple_animal\friendly\hakhma.dm"
 #include "code\modules\mob\living\simple_animal\friendly\lizard.dm"
