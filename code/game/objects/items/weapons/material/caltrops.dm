@@ -58,3 +58,6 @@
 				return
 			check -= picked
 		return
+
+/obj/item/material/caltrops/get_cutting_power()
+	return 0

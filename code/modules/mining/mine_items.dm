@@ -419,6 +419,7 @@
 	icon = 'icons/obj/mining.dmi'
 	var/upright = FALSE
 	var/base_state
+	var/list/turf/stickable_turfs = list(/turf/unsimulated/floor/asteroid/ash, /turf/unsimulated/floor/jungle_grass, /turf/unsimulated/floor/dirt)
 
 	light_color = LIGHT_COLOR_TUNGSTEN
 	light_power = 1.8
@@ -483,7 +484,7 @@
 	var/obj/item/stack/flag/F = locate() in get_turf(src)
 
 	var/turf/T = get_turf(src)
-	if(!T || !istype(T, /turf/unsimulated/floor/asteroid))
+	if(!T || !is_type_in_list(T, stickable_turfs))
 		to_chat(user, SPAN_WARNING("The beacon won't stand up in this terrain."))
 		return
 

@@ -188,3 +188,5 @@
 /turf/simulated/wall/shuttle/dark/corner/underlay/copy_turf(turf/simulated/wall/shuttle/dark/corner/underlay/other, ignore_air = FALSE)
 	.=..()
 	other.underlay_dir = underlay_dir
+
+

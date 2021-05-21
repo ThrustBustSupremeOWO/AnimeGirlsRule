@@ -77,6 +77,12 @@
 	icon_state = "ore_hydrogen"
 	material = ORE_HYDROGEN
 
+/obj/item/ore/dirt
+	name = "soil"
+	desc = "Yep. That's dirt."
+	icon_state = "slag"
+	material = ORE_DIRT
+
 // maybe someone can think of a creative way to use slag
 // and make slagging shit not absolutely bomb mining - geeves
 /obj/item/ore/slag

@@ -1,11 +1,115 @@
+/obj/structure/flora/
+	anchored = TRUE
+	desc_info = "Most flora can be cut down using a sharp object, except when on help intent."
+	var/cross_difficulty = 0 //How difficult this is to cross. Used for thick brush. 
+	var/can_cut = TRUE //Chopping through brush
+	var/is_cut = FALSE //True if cut already. Used for multi-stage cutting.
+	var/being_chopped = FALSE //True when being chopped at. Spam prevention.
+	var/chop_difficulty = 5 //Compared to item force value, higher is harder to cut
+
+/obj/structure/flora/Initialize()
+	. = ..()
+	if(cross_difficulty)
+		update_cross_difficulty(cross_difficulty, get_turf(src))
+
+/obj/structure/flora/Destroy()
+	update_cross_difficulty(0, get_turf(src))
+	. = ..()
+
+/obj/structure/flora/proc/update_cross_difficulty(var/amount, var/turf/T)
+	if(!istype(T))
+		return 0
+	if(!amount)
+		T.movement_cost = initial(T.movement_cost)
+	else
+		T.movement_cost += amount
+
+/obj/structure/flora/proc/do_cut(mob/user, var/obj/item/I, var/chop_power) //Cutting pre-check.
+	if(being_chopped)
+		to_chat(user, SPAN_WARNING("\The [src] is already being cut!"))
+		return
+	if(chop_power < chop_difficulty)
+		to_chat(user, SPAN_WARNING("\The [src] is too tough to chop with \the [I]!"))
+		return
+
+/obj/structure/flora/attackby(var/obj/item/I, mob/user) 
+	if(can_cut)
+		var/cutting = I.get_cutting_power()
+		if(cutting)
+			if(user.a_intent != I_HELP) //Intent check is here because if we check initially sometimes we get the "Bob Bingus hit plant with sword"
+				do_cut(user, I, cutting)
+			return
+	return ..()
+
 //trees
 /obj/structure/flora/tree
 	name = "tree"
-	anchored = 1
-	density = 1
+	density = TRUE
 	pixel_x = -16
 	layer = 9
+	can_cut = FALSE //Chopping mechanics are different
+	var/chop_count //Chops made
+	var/chop_fall = 10 //Chops until we drop
+	var/list/drops = list() //should be equal to % chance of getting, example list(/obj/item/fruit = 100, /obj/item/nuke = 1)
+	var/wood_amount = 5 //Slight variation
+	var/obj/item/stack/material/wood_product = /obj/item/stack/material/wood
 
+/obj/structure/flora/tree/attackby(var/obj/item/I, mob/user)
+	if(I.can_woodcut())
+		if(istype(I, /obj/item/material/twohanded/chainsaw))
+			chainsaw(user, I)
+		else
+			woodcut(user, I)
+		return
+	return ..()
+
+/obj/structure/flora/tree/proc/woodcut(mob/user, var/obj/item/I)
+	if(being_chopped)
+		to_chat(user, SPAN_WARNING("\The [src] is already being cut!"))
+		return
+	being_chopped = TRUE
+	if(do_after(user, (chop_difficulty * 40) / I.force))
+		if(prob(25))
+			user.visible_message(SPAN_WARNING("[user] chops at \the [src] with \the [I]!"), SPAN_WARNING("You chop at \the [src]!"))
+		if(istype(I, /obj/item/melee/energy))
+			playsound(get_turf(src), 'sound/weapons/blade.ogg', 50, 1)
+		else
+			playsound(get_turf(src), 'sound/effects/woodcutting.ogg', 50, 1)
+		shake_animation()
+		chop_count += rand(1,2)
+	being_chopped = FALSE
+	if(chop_count >= chop_fall)
+		fall()
+
+/obj/structure/flora/tree/proc/chainsaw(mob/user, var/obj/item/material/twohanded/chainsaw/I)
+	if(!istype(I))
+		return
+	if(being_chopped)
+		to_chat(user, SPAN_WARNING("\The [src] is already being cut!"))
+		return
+	being_chopped = TRUE
+	while(do_after(user, 20) && I.powered && chop_count < chop_fall)
+		I.RemoveFuel(1)
+		if(!I.powered)
+			being_chopped = FALSE
+			break
+		chop_count += rand(1,3)
+	being_chopped = FALSE
+	if(chop_count >= chop_fall)
+		fall()
+
+/obj/structure/flora/tree/proc/fall()
+	playsound(get_turf(src), 'sound/species/diona/gestalt_grow.ogg', 50, 1)
+	visible_message(SPAN_WARNING("\The [src] falls!"))
+	var/obj/item/stack/material/M = new wood_product(get_turf(src), rand(wood_amount - 1, wood_amount + 1))
+	M.update_icon()
+	if(length(drops))
+		for(var/obj/O in drops)
+			if(prob(drops[O]))
+				new O(get_turf(src))
+	new /obj/structure/flora/tree/stump(get_turf(src))
+	qdel(src)
+	
 /obj/structure/flora/tree/pine
 	name = "pine tree"
 	icon = 'icons/obj/flora/pinetrees.dmi'
@@ -45,22 +149,31 @@
 	pixel_x = -32
 	icon = 'icons/obj/flora/jungletreesmall.dmi'
 
-//Jungle grass
-/obj/structure/flora/grass/jungle
-	name = "jungle grass"
-	desc = "Thick alien flora."
-	icon = 'icons/obj/flora/jungleflora.dmi'
-	icon_state = "grassa"
+/obj/structure/flora/tree/stump
+	name = "tree stump"
+	desc = "Used to be much taller."
+	desc_info = null
+	icon = 'icons/jungle.dmi'
+	density = FALSE
+	opacity = FALSE
 
-/obj/structure/flora/grass/jungle/b
-	icon_state = "grassb"
+/obj/structure/flora/tree/stump/woodcut(mob/user, var/obj/item/I)
+	return
+
+/obj/structure/flora/tree/stump/chainsaw(mob/user, var/obj/item/I)
+	return
+
+/obj/structure/flora/tree/stump/fall()
+	return
 
 //rocks
 /obj/structure/flora/rock
 	icon_state = "basalt"
 	desc = "A rock."
+	desc_info = null
 	icon = 'icons/obj/flora/rocks_grey.dmi'
 	density = TRUE
+	can_cut = FALSE
 
 /obj/structure/flora/rock/pile
 	name = "rocks"
@@ -71,7 +184,15 @@
 /obj/structure/flora/grass
 	name = "grass"
 	icon = 'icons/obj/flora/snowflora.dmi'
-	anchored = 1
+
+/obj/structure/flora/grass/do_cut(mob/user, var/obj/item/I, var/chop_power)
+	..()
+	being_chopped = TRUE
+	if(do_after(user, 100/chop_power))
+		user.visible_message(SPAN_NOTICE("\The [user] cuts down \the [src]!"), SPAN_NOTICE("You cut down \the [src]."))
+		being_chopped = FALSE
+		qdel(src)
+	being_chopped = FALSE
 
 /obj/structure/flora/grass/brown
 	icon_state = "snowgrass1bb"
@@ -95,36 +216,82 @@
 	..()
 	icon_state = "snowgrassall[rand(1, 3)]"
 
+//Jungle grass
+/obj/structure/flora/grass/jungle
+	name = "jungle grass"
+	desc = "Thick alien flora."
+	icon = 'icons/obj/flora/jungleflora.dmi'
+	icon_state = "grassa"
+	cross_difficulty = 0.5
+
+/obj/structure/flora/grass/jungle/b
+	icon_state = "grassb"
+
 //moon flora
 /obj/structure/flora/moons/thickbrush
 	name = "thick brush"
 	desc = "Thick alien flora."
 	icon = 'icons/obj/flora/moons.dmi'
 	icon_state = "thickbrush1"
-	anchored = 1
-	opacity = 1
+	cross_difficulty = 2
+	opacity = TRUE
+	can_cut = TRUE
+	chop_difficulty = 10
 
 /obj/structure/flora/moons/thickbrush/Initialize()
   . = ..()
   icon_state = "thickbrush[rand(1, 8)]"
+
+/obj/structure/flora/moons/thickbrush/do_cut(mob/user, var/obj/item/I, var/chop_power)
+	..()
+	user.visible_message(SPAN_WARNING("[user] starts chopping at \the [src] with \the [I]!"), SPAN_WARNING("You start chopping at \the [src]!"))
+	being_chopped = TRUE
+	if(do_after(user, 600/chop_power))
+		if(is_cut)
+			user.visible_message(SPAN_WARNING("\The [user] hacks away the rest of \the [src]!"), SPAN_WARNING("You hack away the rest of \the [src]!"))
+			qdel(src)
+			return
+		user.visible_message(SPAN_WARNING("\The [user] chops away some of \the [src]!"), SPAN_WARNING("You chop away some of \the [src]!"))
+		is_cut = TRUE
+		icon_state = "[icon_state]_open"
+		opacity = FALSE
+		update_cross_difficulty(0, get_turf(src))
+		update_icon()
+	being_chopped = FALSE
+
+/obj/structure/flora/moons/thickbrush/Crossed(AM)
+	if(isliving(AM) && prob(50) && !is_cut)
+		playsound(loc, 'sound/effects/plantshake.ogg', 50, 1)
 
 //bushes
 /obj/structure/flora/bush
 	name = "bush"
 	icon = 'icons/obj/flora/snowflora.dmi'
 	icon_state = "snowbush1"
-	anchored = 1
+	cross_difficulty = 0.5
 
 /obj/structure/flora/bush/New()
 	..()
 	icon_state = "snowbush[rand(1, 6)]"
 
+/obj/structure/flora/bush/do_cut(mob/user, var/obj/item/I, var/chop_power)
+	..()
+	being_chopped = TRUE
+	if(do_after(user, 400/chop_power))
+		user.visible_message(SPAN_NOTICE("\The [user] cuts down \the [src]!"), SPAN_NOTICE("You cut down \the [src]."))
+		being_chopped = FALSE
+		qdel(src)
+	being_chopped = FALSE
+
 /obj/structure/flora/pottedplant
 	name = "potted plant"
+	desc_info = null
 	icon = 'icons/obj/plants.dmi'
 	icon_state = "plant-26"
 	var/dead = 0
 	var/obj/item/stored_item
+	anchored = FALSE
+	can_cut = FALSE
 
 /obj/structure/flora/pottedplant/Destroy()
 	QDEL_NULL(stored_item)
@@ -136,6 +303,7 @@
 		name = "dead [name]"
 		desc = "It looks dead."
 		dead = 1
+
 //No complex interactions, just make them fragile
 /obj/structure/flora/pottedplant/ex_act(var/severity = 2.0)
 	death()
@@ -252,26 +420,10 @@
 	name = "bush"
 	icon = 'icons/obj/flora/ausflora.dmi'
 	icon_state = "firstbush_1"
-	anchored = 1
 
 /obj/structure/flora/ausbushes/New()
 	..()
 	icon_state = "firstbush_[rand(1, 4)]"
-
-/obj/structure/flora/ausbushes/attackby(var/obj/item/W as obj, var/mob/user as mob)
-	if(istype(W,/obj/item/material/scythe/sickle))
-		if(prob(50))
-			new /obj/item/stack/material/wood(get_turf(src), 2)
-		if(prob(40))
-			new /obj/item/stack/material/wood(get_turf(src), 4)
-		if(prob(10))
-			var/pickberry = pick(list(/obj/item/seeds/berryseed,/obj/item/seeds/blueberryseed))
-			new /obj/item/stack/material/wood(get_turf(src), 4)
-			new pickberry(get_turf(src), 4)
-			to_chat(usr, "<span class='notice'>You find some seeds as you hack the bush away!</span>")
-		to_chat(usr, "<span class='notice'>You slice at the bush!</span>")
-		qdel(src)
-		playsound(src.loc, 'sound/effects/woodcutting.ogg', 50, 1)
 
 /obj/structure/flora/ausbushes/reedbush
 	icon_state = "reedbush_1"
