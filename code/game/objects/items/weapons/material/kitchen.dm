@@ -78,6 +78,9 @@
 	icon_state = "fork"
 	sharp = TRUE
 
+/obj/item/material/kitchen/utensil/fork/get_cutting_power()
+	return 0
+
 /obj/item/material/kitchen/utensil/fork/plastic
 	default_material = MATERIAL_PLASTIC
 

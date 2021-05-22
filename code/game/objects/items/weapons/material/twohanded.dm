@@ -224,6 +224,9 @@
 		cleave(user, target)
 	..()
 
+/obj/item/material/twohanded/fireaxe/can_woodcut()
+	return TRUE
+
 //spears, bay edition
 /obj/item/material/twohanded/spear
 	icon_state = "spearglass0"
@@ -411,6 +414,7 @@
 	slot_flags = initial(slot_flags)
 	STOP_PROCESSING(SSfast_process, src)
 	powered = FALSE
+	cutting = FALSE
 	update_held_icon()
 
 /obj/item/material/twohanded/chainsaw/shatter(var/consumed)
@@ -521,6 +525,9 @@
 	set src in usr
 
 	AltClick(usr)
+
+/obj/item/material/twohanded/chainsaw/can_woodcut()
+	return powered
 
 /obj/item/material/twohanded/pike
 	icon_state = "pike0"

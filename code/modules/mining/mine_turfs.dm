@@ -38,7 +38,7 @@ var/list/mineral_can_smooth_with = list(
 	density = TRUE
 	blocks_air = TRUE
 	temperature = T0C
-	var/mined_turf = /turf/unsimulated/floor/asteroid/ash/rocky
+	var/mined_turf = /turf/unsimulated/floor/dirt
 	var/ore/mineral
 	var/mined_ore = 0
 	var/last_act = 0
@@ -545,8 +545,6 @@ var/list/mineral_can_smooth_with = list(
 	oxygen = 0
 	nitrogen = 0
 	temperature = TCMB
-	var/dug = 0 //Increments by 1 everytime it's dug. 11 is the last integer that should ever be here.
-	var/digging
 	has_resources = 1
 	footstep_sound = /decl/sound_category/asteroid_footstep
 
@@ -748,7 +746,7 @@ var/list/asteroid_floor_smooth = list(
 		..(W, user)
 	return
 
-/turf/unsimulated/floor/asteroid/proc/gets_dug(mob/user)
+/turf/unsimulated/floor/asteroid/gets_dug(mob/user)
 	add_overlay("asteroid_dug", TRUE)
 
 	if(prob(75))

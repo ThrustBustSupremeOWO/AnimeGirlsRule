@@ -30,11 +30,14 @@
 			make_plating(1)
 			playsound(src, C.usesound, 80, 1)
 			return
-		else if(istype(C, /obj/item/shovel) && (flooring.flags & TURF_REMOVE_SHOVEL))
-			to_chat(user, "<span class='notice'>You shovel off the [flooring.descriptor].</span>")
-			make_plating(1)
-			playsound(src, 'sound/items/Deconstruct.ogg', 80, 1)
-			return
+		else if(is_type_in_typecache(C, digging_tools))
+			if((flooring.flags & TURF_REMOVE_SHOVEL))
+				to_chat(user, "<span class='notice'>You shovel off the [flooring.descriptor].</span>")
+				make_plating(1)
+				playsound(src, 'sound/items/Deconstruct.ogg', 80, 1)
+				return
+			else if(can_dig)
+				do_dig(user, C)
 		else if(C.iswelder() && (flooring.flags & TURF_REMOVE_WELDER))
 			var/obj/item/weldingtool/WT = C
 			if(!WT.isOn())
@@ -86,6 +89,18 @@
 				set_flooring(use_flooring)
 				playsound(src, 'sound/items/Deconstruct.ogg', 80, 1)
 				return
+		if(istype(C,/obj/item/storage/bag/ore))
+			var/obj/item/storage/bag/ore/S = C
+			if(S.collection_mode)
+				for(var/obj/item/ore/O in contents)
+					O.attackby(C, user)
+					return
+		if(istype(C,/obj/item/storage/bag/fossils))
+			var/obj/item/storage/bag/fossils/S = C
+			if(S.collection_mode)
+				for(var/obj/item/fossil/F in contents)
+					F.attackby(C, user)
+					return
 		// Repairs.
 		else if(C.iswelder())
 			var/obj/item/weldingtool/welder = C

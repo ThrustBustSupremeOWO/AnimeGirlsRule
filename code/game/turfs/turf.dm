@@ -44,7 +44,7 @@
 
 	//Mining resources (for the large drills).
 	var/has_resources
-	var/list/resources
+	var/list/resources = list()
 
 	// Plating data.
 	var/base_name = "plating"
@@ -52,6 +52,14 @@
 	var/base_icon = 'icons/turf/flooring/plating.dmi'
 	var/base_icon_state = "plating"
 	var/last_clean //for clean log spam.
+
+	var/static/list/digging_tools = typecacheof(list(/obj/item/shovel, /obj/item/pickaxe/drill, /obj/item/pickaxe/diamonddrill, /obj/item/pickaxe/hand))
+	var/can_dig = FALSE //If we can dig into this
+	var/dug //dig counter
+	var/digging //being dug?
+	var/image/hole_overlay
+	var/covered_hole //true if we buried something here
+	var/can_plate = FALSE //can put plating on
 
 // Parent code is duplicated in here instead of ..() for performance reasons.
 // There's ALSO a copy of this in mine_turfs.dm!
@@ -94,6 +102,9 @@
 
 	if (flags & MIMIC_BELOW)
 		setup_zmimic(mapload)
+
+	if(has_resources)
+		generate_resources() 
 
 	return INITIALIZE_HINT_NORMAL
 
@@ -540,3 +551,236 @@ var/const/enterloopsanity = 100
 		return 15
 	else
 		return 0
+
+/turf/proc/generate_resources()
+	resources = list()
+	resources["silicates"] = rand(1, 3)
+	resources["carbonaceous rock"] = rand(3,5)
+	resources["uranium"] =  rand(0, 2)
+	resources["diamond"] =  rand(0, 2)
+	resources["iron"] =     rand(2, 4)
+	resources["gold"] =     rand(0, 2)
+	resources["silver"] =   rand(2, 4)
+	if(prob(25))
+		resources[MATERIAL_PHORON] =   rand(0, 2)
+		resources["osmium"] =   rand(0, 2)
+		resources["hydrogen"] = rand(0, 2)
+	if(prob(50))
+		resources["artifact"] = rand(1, 2)
+
+/turf/proc/do_flooring(mob/user, var/obj/item/W)
+	if(istype(W, /obj/item/stack/rods))
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		if(L)
+			return
+		var/obj/item/stack/rods/R = W
+		if(R.use(1))
+			to_chat(user, SPAN_NOTICE("Constructing support lattice..."))
+			playsound(src, 'sound/weapons/genhit.ogg', 50, 1)
+			ReplaceWithLattice()
+			can_dig = FALSE
+		return
+
+	if(istype(W, /obj/item/stack/tile/floor))
+		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
+		if(L)
+			var/obj/item/stack/tile/floor/S = W
+			if(S.get_amount() < 1)
+				return
+			qdel(L)
+			playsound(src, 'sound/weapons/genhit.ogg', 50, TRUE)
+			S.use(1)
+			ChangeTurf(/turf/simulated/floor/plating)
+			can_dig = FALSE
+			return
+		else
+			to_chat(user, SPAN_WARNING("The plating is going to need some support.")) //turf psychiatrist lmaooo
+			return
+
+
+/turf/proc/do_dig(mob/user, var/obj/item/W)
+	if(!W || !user)
+		return FALSE
+
+	if(dug > 10)
+		to_chat(user, SPAN_WARNING("You can't dig any deeper!"))
+	else
+		var/turf/T = get_turf(user)
+		var/oldtype = type
+		if(!istype(T))
+			return
+		if(digging)
+			return
+		if(dug)
+			if(!covered_hole)
+				to_chat(user, SPAN_NOTICE("You start digging deeper."))
+			playsound(get_turf(user), 'sound/effects/stonedoor_openclose.ogg', 50, TRUE)
+			digging = TRUE
+			if(!do_after(user, 60 / W.toolspeed))
+				digging = FALSE
+				return
+
+			// Turfs are special. They don't delete. So we need to check if it's
+			// still the same turf as before the sleep.
+			if(!istype(src, oldtype) && !istype(src, baseturf))
+				digging = FALSE
+				return
+
+			if(covered_hole)
+				to_chat(user, SPAN_NOTICE("The soil was loose. Looks like a hole was already made, then covered up!"))
+				covered_hole = FALSE
+				digging = FALSE
+				hole_overlay = image('icons/turf/overlays.dmi', "dug", TURF_LAYER + 0.1)
+				add_overlay(hole_overlay, TRUE)
+				verbs += /turf/proc/fill_dirt
+				return
+
+			playsound(get_turf(user), 'sound/effects/stonedoor_openclose.ogg', 50, TRUE)
+			if(prob(33))
+				switch(dug)
+					if(1)
+						to_chat(user, SPAN_NOTICE("You've made a little progress."))
+					if(2)
+						to_chat(user, SPAN_NOTICE("You notice the hole is a little deeper."))
+					if(3)
+						to_chat(user, SPAN_NOTICE("You think you're making good progress."))
+					if(4)
+						to_chat(user, SPAN_NOTICE("You finish up lifting another pile of dirt."))
+					if(5)
+						to_chat(user, SPAN_NOTICE("You dig a bit deeper. You could fit your whole body in."))
+					if(6)
+						to_chat(user, SPAN_NOTICE("It's getting harder to make progress..."))
+					if(7)
+						to_chat(user, SPAN_NOTICE("The hole looks pretty deep now."))
+					if(8)
+						to_chat(user, SPAN_NOTICE("The dirt is starting to feel a lot looser."))
+					if(9)
+						to_chat(user, SPAN_NOTICE("You've dug a really deep hole."))
+					if(10)
+						to_chat(user, SPAN_NOTICE("Just a little deeper..."))
+					else
+						to_chat(user, SPAN_NOTICE("You hit bedrock! You can't go any deeper."))
+			else
+				if(dug <= 10)
+					to_chat(user, SPAN_NOTICE("You dig a little deeper."))
+				else
+					to_chat(user, SPAN_NOTICE("You dug a big hole. Congratulations.")) // how ceremonious
+
+			gets_dug(user)
+			digging = FALSE
+			return
+
+		to_chat(user, SPAN_WARNING("You start digging."))
+		playsound(get_turf(user), 'sound/effects/stonedoor_openclose.ogg', 50, TRUE)
+
+		digging = TRUE
+		if(!do_after(user, 40))
+			digging = FALSE
+			return
+
+		// Turfs are special. They don't delete. So we need to check if it's
+		// still the same turf as before the sleep.
+		if(!istype(src, oldtype) && !istype(src, baseturf))
+			digging = FALSE
+			return
+
+		to_chat(user, SPAN_NOTICE("You dug a hole."))
+		digging = FALSE
+		verbs += /turf/proc/fill_dirt
+
+		gets_dug(user)
+		return
+
+/turf/proc/gets_dug(mob/user)
+	for(var/obj/structure/flora/grass/G in contents)
+		qdel(G)
+	if(prob(50))
+		new /obj/item/ore/dirt(src)
+	if(prob(25) && has_resources)
+		var/list/ore = list()
+		for(var/metal in resources)
+			switch(metal)
+				if("silicates")
+					ore += /obj/item/ore/glass
+				if("carbonaceous rock")
+					ore += /obj/item/ore/coal
+				if("iron")
+					ore += /obj/item/ore/iron
+				if("gold")
+					ore += /obj/item/ore/gold
+				if("silver")
+					ore += /obj/item/ore/silver
+				if("diamond")
+					ore += /obj/item/ore/diamond
+				if("uranium")
+					ore += /obj/item/ore/uranium
+				if("phoron")
+					ore += /obj/item/ore/phoron
+				if("osmium")
+					ore += /obj/item/ore/osmium
+				if("hydrogen")
+					ore += /obj/item/ore/hydrogen
+				if("artifact")
+					if(prob(25))
+						switch(rand(1,5))
+							if(1)
+								ore += pick(subtypesof(/obj/effect/decal/remains))
+							if(2)
+								ore += /obj/item/rocksliver
+							if(3)
+								ore += /obj/item/fossil
+							if(4)
+								ore += /obj/item/archaeological_find
+							if(5)
+								ore += /obj/random/seed
+					else
+						ore += /obj/item/ore/glass
+		if(length(ore))
+			var/ore_path = pick(ore)
+			if(ore)
+				new ore_path(src)
+
+	if(dug <= 10)
+		dug += 1
+		hole_overlay = image('icons/turf/overlays.dmi', "dug", TURF_LAYER + 0.1)
+		add_overlay(hole_overlay, TRUE)
+
+/turf/proc/fill_dirt()
+	set name = "Fill Hole"
+	set desc = "OwO"
+	set src in view(1)
+
+	if(!ishuman(usr))
+		return
+	var/mob/living/carbon/human/H = usr
+	if(!(istype(H.l_hand, /obj/item/shovel) || istype(H.r_hand, /obj/item/shovel)))
+		to_chat(usr, SPAN_NOTICE("How do you expect to fill a hole without a shovel?"))
+		return
+	if(digging)
+		to_chat(H, "Someone is already digging or filling that hole.")
+		return
+	H.visible_message(SPAN_NOTICE("[H] starts filling the hole in the ground."), SPAN_NOTICE("You start filling the hole in the ground."))
+	digging = TRUE
+	if(do_after(H, dug*10))
+		H.visible_message(SPAN_NOTICE("[H] fills the hole in the ground."), SPAN_NOTICE("You fill the hole in the ground."))
+		cut_overlay(hole_overlay, TRUE)
+		covered_hole = TRUE
+		verbs -= /turf/proc/fill_dirt
+	digging = FALSE
+
+/turf/examine(mob/user)
+	if(..(user, 2) && dug)
+		var/dug_text = "There's a hole dug here. "
+		if(!covered_hole)
+			switch(dug)
+				if(1 to 2)
+					dug_text += "It seems shallow."
+				if(3 to 4)
+					dug_text += "It's moderately deep."
+				if(5 to 7)
+					dug_text += "It's pretty deep!"
+				else
+					dug_text += "It's extremely deep. You might not get out if you fall in!"
+			to_chat(user, SPAN_NOTICE(dug_text))
+		else
+			to_chat(user, SPAN_NOTICE("It looks like the surface was disturbed."))

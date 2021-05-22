@@ -27,10 +27,13 @@
 	. = ..()
 	if (restrict_placement)
 		if(!(istype(loc, /turf/space) || isopenturf(loc) || istype(loc, /turf/unsimulated/floor/asteroid)))
-			return INITIALIZE_HINT_QDEL
-	for(var/obj/structure/lattice/LAT in loc)
-		if(LAT != src)
-			qdel(LAT)
+			var/turf/T = get_turf(src)
+			if(T?.can_plate)
+				for(var/obj/structure/lattice/LAT in loc)
+					if(LAT != src)
+						qdel(LAT)
+			else
+				return INITIALIZE_HINT_QDEL
 
 /obj/structure/lattice/ex_act(severity)
 	switch(severity)

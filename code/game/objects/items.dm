@@ -940,3 +940,11 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 /obj/item/proc/get_mask_examine_text(var/mob/user)
 	return "on [user.get_pronoun("his")] face"
+/obj/item/proc/get_cutting_power() //For slicing through brush
+	if(!sharp)
+		return 0 //Can't cut. Don't need to check edge bc only sharp items have edges. Theoretically.
+	var/power = edge ? force * 1.25 : force //Anything with an edge should already be sharp
+	return min(power, 50)
+
+/obj/item/proc/can_woodcut()
+	return FALSE

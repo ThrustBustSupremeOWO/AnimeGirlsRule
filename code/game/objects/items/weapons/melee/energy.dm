@@ -131,6 +131,9 @@
 	. += "Projectile Reflection Chance: [base_reflectchance]<br>"
 	. += "Shield Rating: [shield_power]<br>"
 
+/obj/item/melee/energy/can_woodcut()
+	return active
+
 /obj/item/melee/energy/glaive
 	name = "energy glaive"
 	desc = "An energized glaive."
@@ -202,6 +205,9 @@
 	shield_power = 0
 	can_block_bullets = 0
 	armor_penetration = 35
+
+/obj/item/melee/energy/axe/can_woodcut()
+	return TRUE
 
 /obj/item/melee/energy/axe/activate(mob/living/user)
 	..()

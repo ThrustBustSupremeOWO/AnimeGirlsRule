@@ -48,6 +48,10 @@ var/datum/controller/subsystem/events/SSevents
 	initialized = SSevents.initialized
 
 /datum/controller/subsystem/events/fire(resumed = FALSE)
+	if(!config.allow_random_events)
+		flags |= SS_NO_FIRE
+		return
+
 	if (!resumed)
 		processing_events = active_events.Copy()
 		pos = EVENT_LEVEL_MUNDANE

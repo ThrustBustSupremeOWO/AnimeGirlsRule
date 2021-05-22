@@ -16,7 +16,7 @@
 		"1" = /turf/space,
 		"2" = /turf/simulated/floor,
 		"3" = /turf/simulated/floor,
-		"4" = /turf/simulated/floor,
+		"4" = /turf/unsimulated/floor/dirt,
 		"5" = /turf/simulated/floor,
 		"6" = /turf/simulated/floor
 	)

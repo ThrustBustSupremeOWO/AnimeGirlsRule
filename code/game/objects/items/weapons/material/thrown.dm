@@ -27,3 +27,6 @@
 
 		if(prob(30))
 			M.Weaken(7)
+
+/obj/item/material/star/get_cutting_power()
+	return 0

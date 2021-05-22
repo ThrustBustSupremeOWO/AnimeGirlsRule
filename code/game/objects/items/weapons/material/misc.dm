@@ -24,6 +24,9 @@
 	explosion(get_turf(src), -1, -1, 2)
 	qdel(src)
 
+/obj/item/material/harpoon/get_cutting_power()
+	return 0
+
 /obj/item/material/hatchet
 	name = "hatchet"
 	desc = "A very sharp axe blade upon a short fibremetal handle. It has a long history of chopping things, but now it is used for chopping wood."
@@ -45,6 +48,9 @@
 	drop_sound = 'sound/items/drop/axe.ogg'
 	pickup_sound = 'sound/items/pickup/axe.ogg'
 
+/obj/item/material/hatchet/can_woodcut()
+	return TRUE
+
 /obj/item/material/hatchet/butch
 	name = "butcher's cleaver"
 	icon = 'icons/obj/kitchen.dmi'
@@ -59,6 +65,9 @@
 	slot_flags = SLOT_BELT
 	attack_verb = list("cleaved", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
+/obj/item/material/hatchet/butch/can_woodcut()
+	return FALSE
+
 /obj/item/material/hatchet/unathiknife
 	name = "duelling knife"
 	desc = "A length of leather-bound wood studded with razor-sharp teeth. How crude."
@@ -69,6 +78,9 @@
 		)
 	icon_state = "unathiknife"
 	attack_verb = list("ripped", "torn", "cut")
+
+/obj/item/material/hatchet/unathiknife/can_woodcut()
+	return FALSE
 
 /obj/item/material/hook
 	name = "meat hook"
@@ -83,6 +95,9 @@
 	sharp = 1
 	edge = TRUE
 	force_divisor = 0.25
+
+/obj/item/material/hook/get_cutting_power()
+	return 0
 
 /obj/item/material/minihoe // -- Numbers
 	name = "mini hoe"
@@ -117,6 +132,9 @@
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	attack_verb = list("chopped", "sliced", "cut", "reaped")
+
+/obj/item/material/scythe/get_cutting_power()
+	return (force * 1.5)
 
 /obj/item/material/scythe/sickle
 	name = "sickle"
