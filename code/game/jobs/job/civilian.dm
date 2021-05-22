@@ -170,14 +170,14 @@
 	name = "Cargo Technician"
 	jobtype = /datum/job/cargo_tech
 
-	uniform = /obj/item/clothing/under/rank/cargo
+	uniform = /obj/item/clothing/under/prospector
 	tab_pda = /obj/item/modular_computer/handheld/pda/supply
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/supply
 	tablet = /obj/item/modular_computer/handheld/preset/supply
 	id = /obj/item/card/id/silver
-	shoes = /obj/item/clothing/shoes/brown
-	headset = /obj/item/device/radio/headset/headset_cargo
-	bowman = /obj/item/device/radio/headset/headset_cargo/alt
+	shoes = /obj/item/clothing/shoes/workboots
+	headset = null
+	bowman = null
 
 
 /datum/job/mining
@@ -204,15 +204,15 @@
 	name = "Shaft Miner"
 	jobtype = /datum/job/mining
 
-	uniform = /obj/item/clothing/under/rank/miner
+	uniform = /obj/item/clothing/under/prospector
 	tab_pda = /obj/item/modular_computer/handheld/pda/supply/miner
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/supply/miner
 	tablet = /obj/item/modular_computer/handheld/preset/civilian
 	id = /obj/item/card/id/silver
-	shoes = /obj/item/clothing/shoes/black
+	shoes = /obj/item/clothing/shoes/workboots
+	headset = null
+	bowman = null
 	l_hand = /obj/item/rig/industrial/equipped
-
-	l_hand = /obj/item/coin/mining
 
 	backpack_contents = list(
 		/obj/item/storage/bag/ore = 1

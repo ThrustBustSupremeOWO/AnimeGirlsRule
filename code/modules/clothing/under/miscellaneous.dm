@@ -567,3 +567,17 @@
 	item_state = "lance_dress_m"
 	worn_state = "lance_dress_m"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+//Moons
+/obj/item/clothing/under/prospector
+	name = "padded uniform"
+	desc = "A padded terraforming uniform produced by Hephaestus armorers. It looks sturdy and very warm."
+	icon_state = "prospector_uniform"
+	item_state = "prospector_uniform"
+	worn_state = "prospector_uniform"
+	icon = 'icons/obj/clothing/moons/moons.dmi'
+	contained_sprite = TRUE
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(
+		melee = ARMOR_MELEE_MINOR
+		)
+	siemens_coefficient = 0.75

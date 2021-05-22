@@ -76,13 +76,15 @@
 	name = "Scientist"
 	jobtype = /datum/job/scientist
 
-	uniform = /obj/item/clothing/under/rank/scientist
+	uniform = /obj/item/clothing/under/prospector
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/science
-	shoes = /obj/item/clothing/shoes/science
+	shoes = /obj/item/clothing/shoes/workboots
 	tab_pda = /obj/item/modular_computer/handheld/pda/research
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/research
 	tablet = /obj/item/modular_computer/handheld/preset/research
 	id = /obj/item/card/id/white
+	headset = null
+	bowman = null
 
 	backpack = /obj/item/storage/backpack/toxins
 	satchel = /obj/item/storage/backpack/satchel_tox

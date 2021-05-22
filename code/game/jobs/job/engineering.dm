@@ -81,7 +81,7 @@
 	name = "Engineer"
 	jobtype = /datum/job/engineer
 
-	uniform = /obj/item/clothing/under/rank/engineer
+	uniform = /obj/item/clothing/under/prospector
 	head = /obj/item/clothing/head/hardhat
 	belt = /obj/item/storage/belt/utility
 	tab_pda = /obj/item/modular_computer/handheld/pda/engineering
@@ -89,8 +89,8 @@
 	tablet = /obj/item/modular_computer/handheld/preset/engineering
 	id = /obj/item/card/id/silver
 	shoes = /obj/item/clothing/shoes/workboots
-	headset = /obj/item/device/radio/headset/headset_eng
-	bowman = /obj/item/device/radio/headset/headset_eng/alt
+	headset = null
+	bowman = null
 	r_pocket = /obj/item/device/t_scanner
 
 	backpack = /obj/item/storage/backpack/industrial

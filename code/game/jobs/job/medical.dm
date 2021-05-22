@@ -91,14 +91,16 @@
 	base_name = "Physician"
 	jobtype = /datum/job/doctor
 
-	uniform = /obj/item/clothing/under/rank/medical
+	uniform = /obj/item/clothing/under/prospector
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/medical
-	shoes = /obj/item/clothing/shoes/medical
+	shoes = /obj/item/clothing/shoes/workboots
 	tab_pda = /obj/item/modular_computer/handheld/pda/medical
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/medical
 	tablet = /obj/item/modular_computer/handheld/preset/medical
 	id = /obj/item/card/id/white
 	suit_store = /obj/item/device/flashlight/pen
+	headset = null
+	bowman = null
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel_med

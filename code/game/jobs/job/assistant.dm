@@ -24,8 +24,8 @@
 	name = "Assistant"
 	jobtype = /datum/job/assistant
 
-	uniform = /obj/item/clothing/under/color/grey
-	shoes = /obj/item/clothing/shoes/black
+	uniform = /obj/item/clothing/under/prospector
+	shoes = /obj/item/clothing/shoes/workboots
 
 /datum/job/visitor
 	title = "Visitor"

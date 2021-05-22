@@ -183,13 +183,15 @@
 	name = "Security Officer"
 	jobtype = /datum/job/officer
 
-	uniform = /obj/item/clothing/under/syndicate
+	uniform = /obj/item/clothing/under/prospector
 	shoes = /obj/item/clothing/shoes/jackboots
 	tab_pda = /obj/item/modular_computer/handheld/pda/security
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/security
 	tablet = /obj/item/modular_computer/handheld/preset/security
 	l_pocket = /obj/item/device/flash
 	l_hand = /obj/item/rig/gunslinger
+	headset = null
+	bowman = null
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel_sec

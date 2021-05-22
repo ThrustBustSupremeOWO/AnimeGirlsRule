@@ -54,3 +54,13 @@
 	icon_state = "helmet_paramed"
 	item_state = "helmet_paramed"
 	light_overlay = "EMS_light"
+
+/obj/item/clothing/head/hardhat/prospector
+	name = "padded olive helm"
+	desc = "A padded, hefty and safe-looking helmet. It's stamped with the Hephaestus Industries logo and resembles terraforming gear - probably built for similar reasons."
+	icon = 'icons/obj/clothing/moons/moons.dmi'
+	icon_state = "prospector_hat"
+	item_state = "prospector_hat"
+	contained_sprite = TRUE
+	light_overlay = "prospector_hat"
+	light_color = "#003064"

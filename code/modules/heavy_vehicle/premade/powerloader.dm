@@ -58,7 +58,7 @@
 /obj/item/mech_component/sensors/ripley/prebuild()
 	..()
 	software = new(src)
-	software.installed_software = list(MECH_SOFTWARE_UTILITY, MECH_SOFTWARE_ENGINEERING)
+	software.installed_software = list(MECH_SOFTWARE_UTILITY, MECH_SOFTWARE_WEAPONS)
 
 /obj/item/mech_component/chassis/ripley
 	name = "open exosuit chassis"
@@ -68,10 +68,69 @@
 	desc = "A Xion industrial brand roll cage. Technically OSHA compliant. Technically. This variant has an extra compartment for a copilot, but has no sealed atmosphere."
 	max_damage = 200
 	power_use = 5000
+//Packmule
+/obj/item/mech_component/manipulators/ripley/packmule
+	name = "commercial lifter hydraulic manifolds"
+	exosuit_desc_string = "heavy-duty industrial lifters"
+	max_damage = 75
+	power_use = 500
+	melee_damage = 40
+	icon_state = "packmule_arms"
+	desc = "A Hephaestus generic interaction manifold which proves difficult to actually maneuver. Very light."
+	punch_sound = 'sound/mecha/mech_punch_slow.ogg'
+	has_hardpoints = list(HARDPOINT_LEFT_SHOULDER, HARDPOINT_RIGHT_SHOULDER, HARDPOINT_LEFT_HAND, HARDPOINT_RIGHT_HAND)
+
+/obj/item/mech_component/propulsion/ripley/packmule
+	name = "commercial lifter legs"
+	exosuit_desc_string = "reinforced hydraulic legs"
+	desc = "Thin, widely actuating legs with flexible range of motion. Perfect for small lifting duties."
+	icon_state = "packmule_legs"
+	max_damage = 150
+	move_delay = 3
+	turn_delay = 4
+	power_use = 500
+	trample_damage = 60
+
+/obj/item/mech_component/sensors/ripley/packmule
+	name = "commercial lifter chassis"
+	gender = PLURAL
+	icon_state = "packmule_head"
+	exosuit_desc_string = "simple collision detection sensors"
+	desc = "A simplistic set of sensors providing multi-angle coverage, at least the optics can pivot."
+	max_damage = 200
+	power_use = 0
+
+/obj/item/mech_component/chassis/ripley/packmule
+	name = "commercial lifter chassis"
+	hatch_descriptor = "roll cage"
+	pilot_coverage = 100
+	icon_state = "packmule_body"
+	exosuit_desc_string = "an industrial compartment"
+	desc = "An industrial lifter chassis with refined power cores and improved air conditioning, definitely a step up from your usual APLU."
+	max_damage = 200
+	power_use = 1500
 
 /obj/item/mech_component/chassis/ripley/prebuild()
 	. = ..()
 	armor = new /obj/item/robot_parts/robot_component/armor/mech(src)
+
+/mob/living/heavy_vehicle/premade/ripley/ripley/packmule
+	name = "Packmule"
+	desc = "A Hephaestus commercial lifter usually granted to Coalition expedition forces for, confusingly enough, lifting purposes. Also xenofauna."
+	icon_state = "durand"
+
+	e_head = /obj/item/mech_component/sensors/ripley/packmule
+	e_body = /obj/item/mech_component/chassis/ripley/packmule
+	e_arms = /obj/item/mech_component/manipulators/ripley/packmule
+	e_legs = /obj/item/mech_component/propulsion/ripley/packmule
+	e_color = COLOR_RIPLEY
+
+	h_r_shoulder = /obj/item/mecha_equipment/mounted_system/combat/smg
+	h_l_shoulder = /obj/item/mecha_equipment/mounted_system/combat/smg
+	h_back = /obj/item/mecha_equipment/shield
+	h_r_hand = /obj/item/mecha_equipment/clamp
+	h_l_hand = /obj/item/mecha_equipment/clamp
+	h_head = /obj/item/mecha_equipment/light
 
 /obj/item/mech_component/chassis/ripley/Initialize()
 	pilot_positions = list(
