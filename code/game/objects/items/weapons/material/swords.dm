@@ -147,6 +147,16 @@
 	item_state = "amohdan_sword"
 	slot_flags = SLOT_BELT
 
+/obj/item/material/sword/machete
+	name = "machete"
+	desc = "The best tool for murdering innocent plants."
+	icon_state = "machete"
+	item_state = "machete"
+	slot_flags = SLOT_BELT
+
+/obj/item/material/sword/machete/get_cutting_power()
+	return force * 2
+
 // improvised sword
 /obj/item/material/sword/improvised_sword
 	name = "selfmade sword"

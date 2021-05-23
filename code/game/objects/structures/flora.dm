@@ -1,7 +1,17 @@
 /obj/structure/flora/
 	anchored = TRUE
 	desc_info = "Most flora can be cut down using a sharp object, except when on help intent."
-	var/cross_difficulty = 0 //How difficult this is to cross. Used for thick brush. 
+
+	//Bioluminescence settings
+	var/glows = FALSE //If it glows!
+	var/glow_range = 1.5 //Minimum useful light is 1.4 so going lower is useless.
+	var/glow_strength = 1
+	var/glow_color = COLOR_WHITE
+
+	var/cross_difficulty = 0 //How difficult this is to walk through. Used for thick brush, grass, bushes, etc.
+	var/fragile = FALSE //true if digging here deletes this
+
+	//Cutting
 	var/can_cut = TRUE //Chopping through brush
 	var/is_cut = FALSE //True if cut already. Used for multi-stage cutting.
 	var/being_chopped = FALSE //True when being chopped at. Spam prevention.
@@ -11,9 +21,12 @@
 	. = ..()
 	if(cross_difficulty)
 		update_cross_difficulty(cross_difficulty, get_turf(src))
+	if(glows)
+		set_light(glow_range, glow_strength, glow_color)
 
 /obj/structure/flora/Destroy()
 	update_cross_difficulty(0, get_turf(src))
+	set_light(0)
 	. = ..()
 
 /obj/structure/flora/proc/update_cross_difficulty(var/amount, var/turf/T)
@@ -184,6 +197,7 @@
 /obj/structure/flora/grass
 	name = "grass"
 	icon = 'icons/obj/flora/snowflora.dmi'
+	fragile = TRUE
 
 /obj/structure/flora/grass/do_cut(mob/user, var/obj/item/I, var/chop_power)
 	..()
@@ -223,6 +237,7 @@
 	icon = 'icons/obj/flora/jungleflora.dmi'
 	icon_state = "grassa"
 	cross_difficulty = 0.5
+	fragile = TRUE
 
 /obj/structure/flora/grass/jungle/b
 	icon_state = "grassb"
@@ -263,15 +278,124 @@
 	if(isliving(AM) && prob(50) && !is_cut)
 		playsound(loc, 'sound/effects/plantshake.ogg', 50, 1)
 
+
+/obj/structure/flora/moons/bush
+	name = "generic moon bush"
+	desc = "This shouldn't be a thing you see."
+	icon = 'icons/obj/flora/moons.dmi'
+	fragile = TRUE
+	cross_difficulty = 0.25
+
+/obj/structure/flora/moons/grass
+	name = "generic moon grass"
+	desc = "This shouldn't be a thing you see."
+	icon = 'icons/obj/flora/moons.dmi'
+	fragile = TRUE
+
+/obj/structure/flora/moons/bush/geist
+	name = "geist lily"
+	desc = "A purple bioluminescent plant that prefers damp climates and low-light conditions."
+	icon_state = "geist_1"
+	glows = TRUE
+	glow_strength = 0.5
+	glow_color = COLOR_VIOLET
+
+/obj/structure/flora/moons/bush/geist/Initialize()
+	. = ..()
+	icon_state = "geist_[rand(1, 4)]"
+
+/obj/structure/flora/moons/grass/geist
+	name = "geist fungus"
+	desc = "A purple bioluminescent fungus related to the flowers of the same name."
+	icon_state = "sprouts1"
+	glows = TRUE
+	glow_strength = 1
+	glow_color = COLOR_VIOLET
+
+/obj/structure/flora/moons/grass/geist/Initialize()
+	. = ..()
+	icon_state = "sprouts[rand(1,3)]"
+
+/obj/structure/flora/moons/grass/cratercrawl
+	name = "cratercrawl"
+	desc = "A peculiar grass that grows out of a central bulb, which can get so large it bulges out through the top of the soil. The leaves have many fine hairs which tend to cling to anything they touch."
+	icon_state = "cratercrawl1"
+	cross_difficulty = 0.75
+
+/obj/structure/flora/moons/grass/cratercrawl/Initialize()
+	. = ..()
+	icon_state = "cratercrawl[rand(1,3)]"
+
+/obj/structure/flora/moons/bush/maidens_lantern
+	name = "maiden's lantern plant"
+	desc = "A peculiar plant that tends to grow in geometric patterns. It uses light to attract insects; when they land on it, they take its pollen with it. These plants are fragile and rarely reach maturity."
+	icon = 'icons/obj/flora/moons.dmi'
+	icon_state = "spire"
+	glows = TRUE
+	glow_range = 3
+	glow_strength = 2
+	glow_color = COLOR_GOLD
+
+/obj/structure/flora/moons/bush/maidens_lantern/Initialize()
+	. = ..()
+	icon_state = pick("spire", "block", "globe")
+
+/obj/structure/flora/moons/bush/novabloom
+	name = "novabloom"
+	desc = "A huge plant that can reach up to four feet in height, with leaves half as wide. When disturbed, it shudders and releases a cloud of spores, which are toxic to many living creatures."
+	icon_state = "novabloom"
+	cross_difficulty = 1.5
+	fragile = FALSE
+	glows = TRUE
+	glow_strength = 1
+	glow_color = COLOR_VIOLET
+	var/next_spore = 0
+
+/obj/structure/flora/moons/bush/novabloom/Crossed(var/atom/movable/AM)
+	if(world.time < next_spore)
+		return ..()
+	if(isliving(AM))
+		release_spores()
+	if(isitem(AM))
+		var/obj/item/I = AM
+		if(I.w_class > 1 && prob(I.w_class * 20))
+			release_spores()
+
+/obj/structure/flora/moons/bush/novabloom/attackby(obj/item/I, mob/user)
+	release_spores()
+	return ..()
+
+/obj/structure/flora/moons/bush/novabloom/proc/release_spores()
+	var/datum/effect/effect/system/smoke_spread/chem/C = new /datum/effect/effect/system/smoke_spread/chem
+	C.attach(src)
+	C.chemholder.reagents.add_reagent(/decl/reagent/toxin/novatoxin, rand(10, 30))
+	C.show_log = FALSE
+	C.set_up(C.chemholder.reagents, rand(6, 9), 0, get_turf(src), 40)
+	C.start()
+	next_spore = world.time + rand(100, 300)
+
+/obj/structure/flora/moons/bush/twinklebulb
+	name = "twinklebulb"
+	desc = "A hardy, large bush with tough, flat leaves and bluish sap-filled cysts that twinkle with bioluminescent light."
+	icon = 'icons/obj/flora/moons.dmi'
+	icon_state = "twinklebulb"
+	glows = TRUE
+	glow_range = 2
+	glow_strength = 2
+	glow_color = COLOR_CYAN
+	density = TRUE //Just can't move through
+	fragile = FALSE
+
 //bushes
 /obj/structure/flora/bush
 	name = "bush"
 	icon = 'icons/obj/flora/snowflora.dmi'
 	icon_state = "snowbush1"
 	cross_difficulty = 0.5
+	fragile = TRUE
 
-/obj/structure/flora/bush/New()
-	..()
+/obj/structure/flora/bush/Initialize()
+	. = ..()
 	icon_state = "snowbush[rand(1, 6)]"
 
 /obj/structure/flora/bush/do_cut(mob/user, var/obj/item/I, var/chop_power)
@@ -420,6 +544,7 @@
 	name = "bush"
 	icon = 'icons/obj/flora/ausflora.dmi'
 	icon_state = "firstbush_1"
+	fragile = TRUE
 
 /obj/structure/flora/ausbushes/New()
 	..()
@@ -455,6 +580,7 @@
 
 /obj/structure/flora/ausbushes/grassybush
 	icon_state = "grassybush_1"
+	cross_difficulty = 0.25
 
 /obj/structure/flora/ausbushes/grassybush/New()
 	..()
@@ -462,6 +588,7 @@
 
 /obj/structure/flora/ausbushes/fernybush
 	icon_state = "fernybush_1"
+	cross_difficulty = 0.5
 
 /obj/structure/flora/ausbushes/fernybush/New()
 	..()
@@ -469,6 +596,7 @@
 
 /obj/structure/flora/ausbushes/sunnybush
 	icon_state = "sunnybush_1"
+	cross_difficulty = 0.5
 
 /obj/structure/flora/ausbushes/sunnybush/New()
 	..()
@@ -476,6 +604,7 @@
 
 /obj/structure/flora/ausbushes/genericbush
 	icon_state = "genericbush_1"
+	cross_difficulty = 0.5
 
 /obj/structure/flora/ausbushes/genericbush/New()
 	..()
@@ -483,6 +612,7 @@
 
 /obj/structure/flora/ausbushes/pointybush
 	icon_state = "pointybush_1"
+	cross_difficulty = 0.5
 
 /obj/structure/flora/ausbushes/pointybush/New()
 	..()
@@ -525,6 +655,7 @@
 
 /obj/structure/flora/ausbushes/fullgrass
 	icon_state = "fullgrass_1"
+	cross_difficulty = 0.25
 
 /obj/structure/flora/ausbushes/fullgrass/New()
 	..()

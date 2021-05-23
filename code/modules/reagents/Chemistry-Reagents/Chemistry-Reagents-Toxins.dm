@@ -799,3 +799,28 @@
 /decl/reagent/toxin/coagulated_blood/affect_blood(mob/living/carbon/M, alien, removed, datum/reagents/holder)
 	M.add_chemical_effect(CE_NEPHROTOXIC, 0) // deal no damage, but prevent regeneration
 	..()
+
+/decl/reagent/toxin/novatoxin
+	name = "Novatoxin"
+	description = "A toxic spore released by the novabloom."
+	reagent_state = LIQUID
+	color = "#660c4b"
+	taste_description = "burning chalk"
+	taste_mult = 1.2
+	fallback_specific_heat = 0.75
+
+	target_organ = BP_LUNGS
+	strength = 0.5
+
+/decl/reagent/toxin/novatoxin/affect_blood(mob/living/carbon/M, alien, removed, datum/reagents/holder)
+	M.adjustOxyLoss(removed)
+	M.add_chemical_effect(CE_EMETIC, removed * 0.3)
+	M.add_chemical_effect(CE_ITCH, removed)
+	..()
+
+/decl/reagent/toxin/novatoxin/affect_breathe(mob/living/carbon/M, alien, removed, datum/reagents/holder)
+	M.adjustOxyLoss(3 * removed)
+	M.add_chemical_effect(CE_BREATHLOSS, 1)
+
+/decl/reagent/toxin/novatoxin/affect_touch(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
+	M.add_chemical_effect(CE_ITCH, removed * 1.5)
