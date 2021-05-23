@@ -956,3 +956,31 @@
 
 		qdel(src)
 
+//Graves
+/obj/structure/grave_marker
+	name = "grave marker"
+	desc = "A marker for the dearly departed."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "cross_1"
+	density = FALSE
+	opacity = FALSE
+	anchored = TRUE
+	var/engraved = FALSE
+
+/obj/structure/grave_marker/Initialize()
+	. = ..()
+	icon_state = "cross_[rand(1,2)]"
+
+/obj/structure/grave_marker/attackby(obj/item/I, mob/user)
+	if(istype(I, /obj/item/pen) || is_sharp(I))
+		if(engraved)
+			to_chat(user, SPAN_WARNING("There's already a message here."))
+			return
+		var/msg = sanitizeSafe(input(user, "Choose a name or message to engrave", "Final Words") as text|null, MAX_LNAME_LEN)
+		if(!msg)
+			return
+		user.visible_message(SPAN_NOTICE("[user] marks a message on \the [src] with \the [I]"), SPAN_NOTICE("You put your message on \the [src]."))
+		desc += " It reads: [msg]"
+		engraved = TRUE
+		return
+	return ..()

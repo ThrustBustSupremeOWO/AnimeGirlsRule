@@ -59,6 +59,7 @@
 	var/digging //being dug?
 	var/image/hole_overlay
 	var/covered_hole //true if we buried something here
+	var/obj/structure/hole/hole //Hole created on this turf
 	var/can_plate = FALSE //can put plating on
 
 // Parent code is duplicated in here instead of ..() for performance reasons.
@@ -126,6 +127,9 @@
 
 	if (bound_overlay)
 		QDEL_NULL(bound_overlay)
+
+	if(hole)
+		QDEL_NULL(hole)
 
 	..()
 	return QDEL_HINT_IWILLGC
@@ -633,6 +637,10 @@ var/const/enterloopsanity = 100
 				hole_overlay = image('icons/turf/overlays.dmi', "dug", TURF_LAYER + 0.1)
 				add_overlay(hole_overlay, TRUE)
 				verbs += /turf/proc/fill_dirt
+				if(hole)
+					for(var/atom/movable/A in hole.contents)
+						A.forceMove(src)
+				dug++
 				return
 
 			playsound(get_turf(user), 'sound/effects/stonedoor_openclose.ogg', 50, TRUE)
@@ -687,13 +695,16 @@ var/const/enterloopsanity = 100
 		to_chat(user, SPAN_NOTICE("You dug a hole."))
 		digging = FALSE
 		verbs += /turf/proc/fill_dirt
-
+		if(!hole)
+			hole = new /obj/structure/hole
+			hole.dug_turf = src
 		gets_dug(user)
 		return
 
 /turf/proc/gets_dug(mob/user)
-	for(var/obj/structure/flora/grass/G in contents)
-		qdel(G)
+	for(var/obj/structure/flora/G in contents)
+		if(G.fragile)
+			qdel(G)
 	if(prob(50))
 		new /obj/item/ore/dirt(src)
 	if(prob(25) && has_resources)
@@ -742,12 +753,14 @@ var/const/enterloopsanity = 100
 
 	if(dug <= 10)
 		dug += 1
-		hole_overlay = image('icons/turf/overlays.dmi', "dug", TURF_LAYER + 0.1)
-		add_overlay(hole_overlay, TRUE)
+		if(!hole_overlay)
+			hole_overlay = image('icons/turf/overlays.dmi', "dug", TURF_LAYER + 0.1)
+			add_overlay(hole_overlay, TRUE)
 
 /turf/proc/fill_dirt()
 	set name = "Fill Hole"
 	set desc = "OwO"
+	set category = "IC"
 	set src in view(1)
 
 	if(!ishuman(usr))
@@ -757,7 +770,7 @@ var/const/enterloopsanity = 100
 		to_chat(usr, SPAN_NOTICE("How do you expect to fill a hole without a shovel?"))
 		return
 	if(digging)
-		to_chat(H, "Someone is already digging or filling that hole.")
+		to_chat(H, SPAN_WARNING("Someone is already digging or filling that hole."))
 		return
 	H.visible_message(SPAN_NOTICE("[H] starts filling the hole in the ground."), SPAN_NOTICE("You start filling the hole in the ground."))
 	digging = TRUE
@@ -766,6 +779,21 @@ var/const/enterloopsanity = 100
 		cut_overlay(hole_overlay, TRUE)
 		covered_hole = TRUE
 		verbs -= /turf/proc/fill_dirt
+		if(hole)
+			for(var/atom/movable/A in contents)
+				if(A == hole)
+					continue
+				if(isobj(A))
+					var/obj/O = A
+					if(O.w_class > dug || O.anchored)
+						continue
+					O.forceMove(hole)
+				if(isliving(A))
+					var/mob/living/L = A
+					if(L.stat == DEAD && dug >= 5)
+						L.forceMove(hole)
+		dug = max(1, dug - 1)
+				
 	digging = FALSE
 
 /turf/examine(mob/user)
@@ -774,13 +802,28 @@ var/const/enterloopsanity = 100
 		if(!covered_hole)
 			switch(dug)
 				if(1 to 2)
-					dug_text += "It seems shallow."
+					dug_text += "It seems shallow. You could probably bury small items in here."
 				if(3 to 4)
-					dug_text += "It's moderately deep."
+					dug_text += "It's moderately deep. You can almost fit inside."
 				if(5 to 7)
-					dug_text += "It's pretty deep!"
+					dug_text += "It's pretty deep! You could bury a lot in here."
 				else
 					dug_text += "It's extremely deep. You might not get out if you fall in!"
 			to_chat(user, SPAN_NOTICE(dug_text))
 		else
 			to_chat(user, SPAN_NOTICE("It looks like the surface was disturbed."))
+
+//Holder for the turf holes. Items move into this when buried. 
+/obj/structure/hole
+	name = "hole"
+	desc = "A hole in the ground"
+	invisibility = INVISIBILITY_ABSTRACT
+	var/turf/dug_turf
+
+/obj/structure/hole/Destroy()
+	if(dug_turf)
+		dug_turf.hole = null
+	. = ..()
+
+/obj/structure/hole/ex_act(severity)
+	return
