@@ -72,6 +72,37 @@
 		for(var/obj/effect/plant/SV in loc)
 			SV.die_off(1)
 
+/mob/living/simple_animal/hostile/retaliate/goat/bird
+	name = "giant bird"
+	desc = "A bird covered in beautiful feathers and about the size of three men. It's huge, and rather flightless."
+	icon = 'icons/mob/npc/moons_fauna.dmi'
+	icon_state = "bird"
+	icon_living = "bird"
+	icon_dead = "bird_dead"
+	speak = list("HOOOOOO","ERRRGGCKGH")
+	speak_emote = list("pecks at the ground")
+	emote_hear = list("moans raucously")
+	emote_see = list("groans heavily", "rakes a talon on the ground", "glares")
+	speak_chance = 15
+	turns_per_move = 5
+	see_in_dark = 6
+	meat_type = /obj/item/reagent_containers/food/snacks/meat
+	meat_amount = 16
+	mob_size = 5.5//weight based on ostriches
+	organ_names = list("pathetic bird body", "wing")
+	response_help  = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm   = "kicks"
+	faction = "goat"
+	attacktext = "kicked"
+	maxHealth = 85
+	melee_damage_lower = 25
+	melee_damage_upper = 35
+	canbrush = TRUE
+	emote_sounds = list('sound/effects/creatures/chick.ogg')
+	has_udder = TRUE
+	hostile_nameable = TRUE
+
 //cow
 /mob/living/simple_animal/cow
 	name = "cow"
