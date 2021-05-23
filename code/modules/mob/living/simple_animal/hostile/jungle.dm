@@ -1,0 +1,21 @@
+/mob/living/simple_animal/hostile/boar
+	name = "jungle boar"
+	desc = "A tough and highly aggressive tusked pig. Notorious for being difficult to kill."
+	faction = "boar"
+	icon_state = "boar"
+	icon_living = "boar"
+	icon_dead = "boar_dead"
+	icon = 'icons/mob/npc/moons_fauna.dmi'
+	move_to_delay = 2
+	maxHealth = 125
+	health = 125
+	speed = 2
+	melee_damage_lower = 5
+	melee_damage_upper = 15
+	attacktext = "gored"
+	cold_damage_per_tick = 0
+	speak_chance = 5
+	speak = list("Hruuugh!","Hrunnph")
+	emote_see = list("paws the ground","shakes its head","stomps")
+	emote_hear = list("snuffles", "snorts")
+	mob_size = 10
