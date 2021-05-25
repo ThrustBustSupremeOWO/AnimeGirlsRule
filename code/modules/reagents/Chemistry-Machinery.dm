@@ -318,6 +318,8 @@
 	var/list/holdingitems = list()
 	var/list/sheet_reagents = list( //have a number of reagents which is a factor of REAGENTS_PER_SHEET (default 20) unless you like decimals
 		/obj/item/stack/material/iron = list(/decl/reagent/iron),
+		/obj/item/stack/material/copper = list(/decl/reagent/copper),
+		/obj/item/stack/material/aluminum = list(/decl/reagent/aluminum),
 		/obj/item/stack/material/uranium = list(/decl/reagent/uranium),
 		/obj/item/stack/material/phoron = list(/decl/reagent/toxin/phoron),
 		/obj/item/stack/material/gold = list(/decl/reagent/gold),
