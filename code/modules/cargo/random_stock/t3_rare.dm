@@ -104,12 +104,6 @@ STOCK_ITEM_RARE(voice, 1.5)
 STOCK_ITEM_RARE(prebuilt_ka, 0.5)
 	new /obj/random/prebuilt_ka(L)
 
-STOCK_ITEM_RARE(ipctags, 0.5)
-	if(prob(50))
-		new /obj/item/ipc_tag_scanner(L)
-	else
-		new /obj/item/implanter/ipc_tag(L)
-
 STOCK_ITEM_RARE(rfd, 0.5)
 	var/obj/item/rfd/rfd_spawn = pick(/obj/item/rfd/construction, /obj/item/rfd/mining, /obj/item/rfd/piping)
 	new rfd_spawn(L)

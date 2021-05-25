@@ -672,6 +672,39 @@
 	hitsound = 'sound/weapons/smash.ogg'
 	weapon_hitsound = 'sound/weapons/metalhit.ogg'
 
+/material/aluminum
+	name = MATERIAL_ALUMINUM
+	stack_type = /obj/item/stack/material/aluminum
+	icon_colour = "#918b8b"
+	weight = 12
+	conductivity = 35
+	hardness = 32
+	protectiveness = 7
+	integrity = 100
+
+/material/copper
+	name = MATERIAL_COPPER
+	stack_type = /obj/item/stack/material/copper
+	icon_colour = "#a57d31"
+	weight = 20
+	conductivity = 75
+	hardness = 40
+	protectiveness = 8
+	integrity = 125
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
+
+/material/prydinate
+	name = MATERIAL_PRYDINATE
+	stack_type = /obj/item/stack/material/prydinate
+	icon_colour = "#5875b6"
+	weight = 25
+	conductivity = 5
+	hardness = 40
+	protectiveness = 7
+	integrity = 125
+	melting_point = 5500
+
 // Adminspawn only, do not let anyone get this.
 /material/elevatorium
 	name = MATERIAL_ELEVATOR

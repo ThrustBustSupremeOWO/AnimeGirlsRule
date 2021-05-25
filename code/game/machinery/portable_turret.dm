@@ -598,7 +598,13 @@
 		return TURRET_NOT_TARGET
 
 	if(isanimal(L) || issmall(L)) // Animals are not so dangerous
-		return check_wildlife ? TURRET_SECONDARY_TARGET : TURRET_NOT_TARGET
+		if(!istype(L, /mob/living/simple_animal/hostile))
+			return TURRET_NOT_TARGET
+		var/mob/living/simple_animal/hostile/H = L
+		if(H.assess_perp(src, check_access, check_weapons, check_records, check_arrest) > 3)
+			return check_wildlife ? TURRET_SECONDARY_TARGET : TURRET_NOT_TARGET
+		else
+			return TURRET_NOT_TARGET
 
 	if(isalien(L)) // Xenos are dangerous
 		return check_wildlife ? TURRET_PRIORITY_TARGET	: TURRET_NOT_TARGET
@@ -617,6 +623,9 @@
 		for(var/mob/pilot in M.pilots)
 			if(allowed(pilot)) // don't shoot if the mech contains at least one person with access
 				return TURRET_NOT_TARGET
+			if(ishuman(pilot))
+				if(assess_perp(pilot) < 4)
+					return TURRET_NOT_TARGET
 	return TURRET_PRIORITY_TARGET	//if the perp has passed all previous tests, congrats, it is now a "shoot-me!" nominee
 
 /obj/machinery/porta_turret/proc/assess_perp(var/mob/living/carbon/human/H)
@@ -625,6 +634,9 @@
 
 	if(emagged)
 		return 10
+
+	if(allowed(H)) //We have access, we shouldn't be shot. 
+		return 0
 
 	return H.assess_perp(src, check_access, check_weapons, check_records, check_arrest)
 

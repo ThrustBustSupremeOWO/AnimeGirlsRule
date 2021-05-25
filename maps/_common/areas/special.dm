@@ -322,6 +322,7 @@
 /area/moon
 	name = "Undefined Moon"
 	icon_state = "yellow"
+	sound_env = FOREST
 
 /area/moon/city
 	name = "City Limits"
@@ -342,6 +343,7 @@
 /area/moon/jungle
 	name = "Overgrowth"
 	icon_state = "yellow"
+	ambience = AMBIENCE_JUNGLE
 
 /area/moon/jungle/dark
 	name = "Overgrowth Interior"

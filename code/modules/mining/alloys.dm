@@ -8,6 +8,14 @@
 	var/product
 	var/metaltag
 
+/datum/alloy/titanium
+	metaltag = "titanium"
+	requires = list(ORE_TITANIUM = 2,
+	ORE_COAL = 2,
+	ORE_PLATINUM = 1)
+	product_mod = 0.3
+	product = /obj/item/stack/material/titanium
+
 /datum/alloy/plasteel
 	metaltag = "plasteel"
 	requires = list(

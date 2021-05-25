@@ -9,3 +9,7 @@
 #define ORE_PLATINUM	"platinum"
 #define ORE_HYDROGEN	"mhydrogen"
 #define ORE_SOIL		"soil"
+#define ORE_COPPER		"copper"
+#define ORE_ALUMINUM	"aluminum"
+#define ORE_TITANIUM	"titanium"
+#define ORE_PRYDINATE	"prydinate"

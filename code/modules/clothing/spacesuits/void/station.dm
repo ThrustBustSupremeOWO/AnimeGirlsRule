@@ -256,7 +256,7 @@
 	desc = "A special suit that designed for usage by NanoTrasen research personnel in hazardous, low pressure environments."
 	item_state = "rig-sci"
 	icon_state = "rig-sci"
-	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit)
+	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit, /obj/item/material/sword/machete)
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		laser = ARMOR_LASER_MINOR,

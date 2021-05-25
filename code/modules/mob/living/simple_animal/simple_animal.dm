@@ -541,7 +541,7 @@
 		return
 
 	else if(meat_type && (stat == DEAD))	//if the animal has a meat, and if it is dead.
-		if(istype(O, /obj/item/material/knife) || istype(O, /obj/item/material/kitchen/utensil/knife)|| istype(O, /obj/item/material/hatchet))
+		if(istype(O, /obj/item/material/knife) || istype(O, /obj/item/material/kitchen/utensil/knife)|| istype(O, /obj/item/material/hatchet) || istype(O, /obj/item/))
 			harvest(user)
 	else
 		attacked_with_item(O, user)
@@ -758,7 +758,7 @@
 	return 1
 
 // Harvest an animal's delicious byproducts
-/mob/living/simple_animal/proc/harvest(var/mob/user)
+/mob/living/simple_animal/proc/harvest(var/mob/user, var/neat = FALSE)
 	var/actual_meat_amount = max(1,(meat_amount*0.75))
 	if(meat_type && actual_meat_amount>0 && (stat == DEAD))
 		for(var/i=0;i<actual_meat_amount;i++)
@@ -770,7 +770,7 @@
 				for(var/i in 1 to number)
 					new path(get_turf(src))
 
-		if(issmall(src))
+		if(locate(/obj/structure/table) in get_turf(src))
 			user.visible_message("<b>\The [user]</b> chops up \the [src]!")
 			var/obj/effect/decal/cleanable/blood/splatter/S = new /obj/effect/decal/cleanable/blood/splatter(get_turf(src))
 			S.basecolor = blood_type

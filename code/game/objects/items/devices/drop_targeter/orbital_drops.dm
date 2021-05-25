@@ -1,9 +1,12 @@
 /obj/item/device/orbital_dropper/drill
 	name = "drill dropper"
-	desc = "A device used to paint a target, which will then promptly orbitally drop the requested items. This drill literally pierces the heavens."
+	desc = "A device used to paint a target, which will then deploy the drill stored on the CSV Spire to that location. This drill literally pierces the heavens."
+	drop_amount = 1
 
-	drop_message = "Stand by for drillfall, ETA ten seconds, clear the targetted area."
+	drop_message = "Launching stored drill, ETA ten seconds, clear the targetted area."
 	drop_message_emagged = "St%n^ b* for dr$llfa#l, ETA t@n s*c%&ds, RUN."
+	announcer_name = "CSV Spire Automated Deployment"
+	announcer_channel = "Common" // If not emagged, will announce to this channel. If emagged, will always announce on the common channel.
 
 	map = new /datum/map_template/drill
 

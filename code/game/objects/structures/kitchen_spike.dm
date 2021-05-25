@@ -1,7 +1,7 @@
 //////Kitchen Spike
 
 /obj/structure/kitchenspike
-	name = "a meat spike"
+	name = "meat spike"
 	icon = 'icons/obj/kitchen.dmi'
 	icon_state = "spike"
 	desc = "A spike for collecting meat from animals."
@@ -12,40 +12,46 @@
 	var/meat_type
 	var/victim_name = "corpse"
 
-/obj/structure/kitchenspike/attackby(obj/item/grab/G as obj, mob/user as mob)
+/obj/structure/kitchenspike/attackby(obj/item/grab/G, mob/user)
 	if(!istype(G, /obj/item/grab) || !G.affecting)
 		return
 	if(occupied)
 		to_chat(user, "<span class = 'danger'>The spike already has something on it, finish collecting its meat first!</span>")
-	else
-		if(spike(G.affecting))
-			visible_message("<span class = 'danger'>[user] has forced [G.affecting] onto the spike, killing them instantly!</span>")
-			qdel(G.affecting)
-			qdel(G)
-		else
-			to_chat(user, "<span class='danger'>They are too big for the spike, try something smaller!</span>")
+		return
+	if(spike(G.affecting))
+		var/dead = G.affecting.stat != DEAD ? ", killing them instantly" : ""
+		visible_message("<span class = 'danger'>[user] has forced [G.affecting] onto the spike[dead]!</span>")
+		qdel(G.affecting)
+		qdel(G)
 
 /obj/structure/kitchenspike/proc/spike(var/mob/living/victim)
 
 	if(!istype(victim))
 		return
 
-	if(istype(victim, /mob/living/carbon/human))
+	if(issilicon(victim))
+		return
+
+	if(isanimal(victim))
+		var/mob/living/simple_animal/SA = victim
+		if(SA.meat_type)
+			playsound(get_turf(src), 'sound/effects/squelch1.ogg')
+		SA.harvest(neat = TRUE)
+
+	if(ishuman(victim))
 		var/mob/living/carbon/human/H = victim
 		if(!issmall(H))
-			return 0
+			return FALSE
 		meat_type = H.species.meat_type
 		icon_state = "spikebloody"
 	else if(istype(victim, /mob/living/carbon/alien))
 		meat_type = /obj/item/reagent_containers/food/snacks/xenomeat
 		icon_state = "spikebloodygreen"
-	else
-		return 0
-
 	victim_name = victim.name
 	occupied = 1
+
 	meat = 5
-	return 1
+	return TRUE
 
 /obj/structure/kitchenspike/attack_hand(mob/user as mob)
 	if(..() || !occupied)

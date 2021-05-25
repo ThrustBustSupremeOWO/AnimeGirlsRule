@@ -1,12 +1,13 @@
 "ab" = (/obj/machinery/cryopod{dir = 2},/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "ag" = (/obj/structure/flora/grass/jungle/b,/mob/living/simple_animal/firefly,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "aH" = (/turf/simulated/wall/wood,/area/moon/jungle)
-"bb" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/obj/machinery/power/radial_floodlight,/turf/simulated/floor/plating,/area/moon/jungle)
+"bb" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/obj/machinery/floodlight/old,/turf/simulated/floor/plating,/area/moon/jungle)
 "bL" = (/obj/effect/decal/cleanable/dirt,/obj/item/stock_parts/console_screen,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "bT" = (/obj/structure/flora/ausbushes/ppflowers,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
 "bW" = (/mob/living/carbon/human,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
 "cf" = (/obj/machinery/light/small/emergency,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "cw" = (/obj/structure/table/wood/gamblingtable,/obj/item/woodcirclet,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
+"cE" = (/obj/structure/flora/moons/thickbrush,/obj/machinery/floodlight/old,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "dc" = (/obj/effect/decal/cleanable/dirt,/obj/item/gun/custom_ka/frameB/prebuilt,/turf/simulated/floor/wood,/area/moon/jungle)
 "dq" = (/obj/machinery/porta_turret_construct/dark,/turf/simulated/floor/plating,/area/moon/jungle)
 "dN" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped,/obj/item/crossbowframe,/turf/simulated/floor/plating,/area/moon/jungle)
@@ -38,6 +39,7 @@
 "lw" = (/obj/structure/flora/grass/jungle/b,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "ly" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/wretch,/turf/simulated/floor/wood,/area/moon/jungle)
 "lG" = (/obj/structure/sign/securearea{pixel_y = 29},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
+"lT" = (/obj/machinery/floodlight/old,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "mu" = (/obj/item/stack/material/wood/full,/obj/structure/bed/chair/wood/wings,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "mB" = (/obj/structure/flora/ausbushes/fullgrass,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "oe" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
@@ -157,14 +159,14 @@
 "TX" = (/obj/effect/rune,/turf/simulated/floor/wood,/area/moon/jungle)
 "Ub" = (/obj/machinery/porta_turret/stationary,/obj/effect/decal/warning_stripes,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "Ue" = (/obj/structure/closet/crate/oracle,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
-"Ui" = (/obj/effect/decal/cleanable/dirt,/obj/structure/closet/crate/drop,/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4},/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/obj/effect/decal/cleanable/spiderling_remains,/turf/simulated/floor/plating,/area/moon/jungle)
+"Ui" = (/obj/effect/decal/cleanable/dirt,/obj/structure/closet/crate/drop,/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4},/obj/effect/decal/cleanable/spiderling_remains,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/turf/simulated/floor/plating,/area/moon/jungle)
 "UM" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "UU" = (/obj/structure/girder,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "Vu" = (/obj/structure/simple_door/wood,/turf/simulated/floor/wood,/area/moon/jungle)
 "Vv" = (/obj/item/clothing/gloves/swat/tactical,/obj/item/storage/belt/security/tactical,/obj/item/clothing/shoes/jackboots,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
 "Vx" = (/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "VL" = (/mob/living/simple_animal/hostile/boar,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
-"Wq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/closet/crate/drop,/obj/structure/railing/mapped{dir = 1},/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/obj/item/storage/field_ration/nanotrasen,/turf/simulated/floor/plating,/area/moon/jungle)
+"Wq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/closet/crate/drop,/obj/structure/railing/mapped{dir = 1},/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/turf/simulated/floor/plating,/area/moon/jungle)
 "Wv" = (/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "WJ" = (/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "WK" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/plating,/area/moon/jungle)
@@ -202,7 +204,7 @@ LctStStStStStStSWJtSWJWJtSWJWJWJtStStStStStSWJgJWJWJWJVxWJWJWJWJWJVxWJWJWJWJWJWJ
 LctStStStStStSWJWJtStSWJWJtSWJWJWJtStStStStSWJWJWJWJVxVxWJWJWJWJShWJWJWJWJWJWJWJWJWJWJWJtStStStSWJtSWJWJWJWJtStStStStStStStStStStSWJPWWJVxwawaWJLcLcWJWJmBmBWJWJWJqYqYqYVxHmHmHmgoVxqYVxHmHmwawawawaHmHmHmvWVxVxVxVxqYVxVxqYVxVxVxWJWJWJWJtStSLc
 LctStStStStStStStStSWJWJWJWJPWWJWJtStStStStStSWJWJWJVxShWJWJgJWJWJWJtStSWJWJWJVxVxVxWJWJWJtStStStSWJtStSWJWJtStStStStStStStStStStSWJPWWJVxwawaWJWJLcLcWJWJmBWJWJHtWJVxVxVxqYVxVxVxVxqYVxbTwawawazCwaHmHmHmvWvWzdVxVxVxVxVxVxqYVxVxtSWJWJWJtStSLc
 LctStStStStStStStStSWJWJtStSPWWJWJtStStStStStStStSWJVxWJWJWJWJWJtStStSWJWJWJVxwawaVxVxWJWJWJqYtStStSWJVxVxVxWJtStStStStStStStStStSWJPWWJWJwawaWJWJLcLcLcWJWJWJWJmBWJWJhtWJHmVxVxVxVxqYVxHmwawawawawaHmHmHmHmvWqYVxVxqYVxVxVxVxqYqYWJtSWJWJtStSLc
-LctStStStStStSWJtSWJWJWJWJWJWJPWWJtStStStStStStStStSVxtStStStStStSWJVxWJWJWJVxzCwawaVxWJWJWJtStSqYWJtSWJWJVxWJtStStStStStStStStStSWJPWWJWJwawawaWJWJLcLcLcWJWJWJWJmBmBWJWJWJVxqYVxqYqYVxHmwazCwawaHmHmHmwaHmHmVxqYVxVxqYVxVxVxqYtSWJtSWJWJtStSLc
+LctStStStStStSWJtSWJWJWJWJWJWJPWWJtStStStStStStStStSVxtStStStStStSWJVxWJWJWJVxzCwawaVxWJWJWJtStSqYWJtSWJWJVxWJtStScEtStStStStStStSWJPWWJWJwawawaWJWJLcLcLcWJWJWJWJmBmBWJWJWJVxqYVxqYqYVxHmwazCwawaHmHmHmwaHmHmVxqYVxVxqYVxVxVxqYtSWJtSWJWJtStSLc
 LctStStStStStStStSWJWJWJtSWJWJPWWJtStSWJWJWJWJWJtStSVxtStStStStStStSWJWJWJWJVxVxzCwaVxWJWJWJtStStStStSWJWJVxtStStStStStStStStStStStSPWWJWJWJwawaVxWJWJWJLcLcLcLcWJWJmBmBWJWJVxVxqYVxVxVxHmHmwawawawaHmzCwaHmHmVxqYVxVxVxVxVxVxqYtStStSWJWJtStSLc
 LctStStStStStStSWJWJWJtSWJtSWJPWWJWJtSPWPWPWPWWJWJWJVxVxWJtStStStStStSWJWJWJWJVxVxVxWJWJVxWJtStStStStStSWJWJWJtStSqYtStStStStStStStSWJPWWJwawazCVxWJWJWJWJLcLcLcLcLcLcWJmBmBmBWJWJHtVxVxVxHmHmwawawawawaHmzdVxVxqYVxVxqYVxVxVxqYtStStSWJWJtStSLc
 LctStStStStSWJtStSWJtSWJtSWJWJPWPWWJWJPWPWWJPWPWPWWJWJVxWJWJtStStStStStSWJWJWJWJWJWJWJWJWJqYtStStSWJtSWJtSWJWJtStStStStStSqYtStStStSWJPWWJwawawaVxWJWJWJWJWJWJWJLcLcLcLcWJWJWJWJmBWJWJqYqYqYHmHmHmHmHmHmVxVxVxVxqYVxVxqYVxqYVxWJtStStSWJWJtStSLc
@@ -273,7 +275,7 @@ LctStStStSWJWJWJPWWJWJWJWJtStStStSWJWJPWWJWJPWPWtStStStStStStStStStSWJWJPWPWWJWJ
 LctStStStStStSWJWJWJWJWJWJtStStStSWJWJWJPWWJoWPWPWWJWJWJWJtStStStStStSWJWJWJPWWJWJWJtStSWJWJoWwawaVxVxtStStStSWJWJWJoWVxWJGLdNrKWJtStStStStStStSWJWJWJtSWJPWWJtStStSVxwawawaVxVxVxLcLcVxVxVxVxLcVxVxWJtSWJtStStStStSWJtStStStStStStStStStStStSLc
 LctStStStStStSWJWJPWWJtStStStStStStStSWJWJPWWJoWWJWJPWWJWJtStStStStStStSWJWJPWPWWJWJtSWJtStSVxwawawaoWtStStSWJWJSuPWWJWJVxWJtStStStStStStStStStSWJWJWJPWWJWJWJtStStSVxVxwawaVxVxVxVxLcVxVxVxVxLcVxqYtStSWJWJtStStStStStStStStStStStStStStStStSLc
 LctStStStStStSVLWJPWWJtSoWWJtSWJtStStStStSWJPWWJoWoWWJPWWJtStStStStStStStStSWJWJPWWJtStStStSWJVxoWwaoWtStStStSWJWJWJPWWOCnLOtStStStStStStStSWJWJPWPWWJWJPWPWWJWJWJWJWJVxwawaVxVxVxVxLcLcVxVxLcLcVxVxtStStStStSWJWJtStStStStStStStStStStStStStSLc
-LctStStStStStSWJWJPWWJtSoWWJtSWJtStStStStSWJPWPWWJoWoWWJWJtStStStStStStStStStSWJPWPWtStStStSWJWJoWoWoWWJtStStSoWoWoWWJaHaHWWaHaHtStStStStStSWJWJPWWJWJWJWJWJPWWJWJWJWJVxzCwaVxVxVxVxLcLcVxVxLcVxVxqYtStStSWJtStStStStSWJWJtSWJtSWJWJWJWJtStStSLc
+LctStStStStStSWJWJPWWJtSoWWJtSWJtStStStStSWJPWPWWJoWoWWJWJtStStStStStStStStStSWJPWPWtStStStSWJWJoWoWoWWJtStStSoWoWoWWJaHaHWWaHaHtStStStStStSWJWJPWWJWJWJWJWJPWWJWJWJWJVxzCwaVxVxVxVxLcLcVxVxLclTVxqYtStStSWJtStStStStSWJWJtSWJtSWJWJWJWJtStStSLc
 LctStStStStStSWJWJWJWJWJoWWJtStSWJtStStStStSWJWJPWWJWJWJWJtStStStStStStStStStSWJPWWJtStStStSWJtSWJWJtStStStStSWJoWWJoWBprqePhJaHtStStSWJWJWJWJWJPWtSWJWJWJtSPWWJWJWJWJVxwawaVxVxVxVxVxLcLcyZLcWJWJVxWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJLc
 LctStStStStStStSWJWJtSoWoWVxVxtStStStStStStStStSWJPWPWPWWJtStStStStStStStStStSWJWJWJWJtStStStStStStSWJWJtStSWJoWoWoWoWBpzsePePWWLOtStSWJWJWJWJPWWJtStStSWJtSWJPWPWWJWJVxwawawaVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxWJWJWJWJWJWJWJWJWJWJWJLc
 LctStStStStStStStStSoWoWVxWJWJVxtStStStStStStStSWJWJWJWJpZpZtStStStStStStStStStStStSSuWJWJWJWJtStStSWJWJVxVxWJoWoWoWoWBpBpBpaHaHqzVxPWWJWJWJWJWJWJWJtStStStSWJWJPWWJWJVxwawawawawawawawaVxVxVxVxVxVxVxwawawawawawawawaVxVxVxVxVxVxVxVxVxVxVxVxLc
@@ -285,7 +287,7 @@ LctStStSWJtStStStStStStStStStStStStStSWJWJPWPWWJtStStStStSWJtSWJtStStStStSWJPWWJ
 LctStStStStStStStStStStStStStStStStStStStSWJPWPWWJWJtStStStStStStStSWJWJWJPWPWWJWJWJWJtSWJWJtStStStStStStStStStStStStSWJWJPWWJVxVxVxWJWJVxtStStStStStStStStStStSWJtSVxwawawaVxWJWJWJtSWJWJWJtStSWJWJtStStSWJWJtStStStStStStStStStStStStStStStSLc
 LctStStStStSWJWJWJtStStStStStStStStStStStStSWJPWPWWJWJtStStSWJtStSWJWJWJPWPWWJtSWJWJWJtSWJWJtStStStStStStStStStStStStSWJWJWJPWVxPWPWPWWJWJtStStStStStStStStStSWJWJtSVxwawawaVxWJWJWJtStSWJWJtSWJtSWJtStStSWJtStStStStSWJWJWJWJWJtStStStStStStSLc
 LctStSWJPWtSWJPWWJtStStStStStStStStStStStStStStSWJPWPWWJWJWJWJtSWJPWPWPWPWWJWJtStStStStSPWPWtStStStStStStStStStStStStStSWJWJWJWJtSVxVxWJtSWJtStStStSWJtStStStStSWJWJVxwawaVxVxWJWJtStStStStStStSWJtStStStSWJtStSWJWJWJWJWJDJWJWJLcLcLcLcLcLcLcLc
-LctStSPWPWtSWJWJPWWJWJWJtStStStStStStStStStStStStStSWJWJWJVxVxWJPWPWWJWJWJWJWJtStStStStSWJPWWJWJtStStStStStStStStStStStStStStStStSVxtStStStSWJtStStSWJtStStStStSWJWJVxwawaVxWJWJWJtStSWJWJtStStStStStSWJtSWJtStSWJkgWJgdWJWJLcLcLcLcWJtStStStSLc
+LctStSPWPWtSWJWJPWWJWJWJtStStStStStStStScEtStStStStSWJWJWJVxVxWJPWPWWJWJWJWJWJtStStStStSWJPWWJWJtStStStStStStStStStStStStStStStStSVxtStStStSWJtStStSWJtStStStStSWJWJVxwawaVxWJWJWJtStSWJWJtStStStStStSWJtSWJtStSWJkgWJgdWJWJLcLcLcLcWJtStStStSLc
 LctStSWJWJWJaHaHaHaHaHaHaHaHaHUUaHaHaHaHaHWJWJWJWJWJWJWJPWVxWJPWPWWJtSWJWJtStStStStStStSWJPWPWWJWJWJtStStStStStStStStStStSWJtStSWJpotStStStStStStStStSWJtStStSWJtSWJVxwawaVxWJWJWJtSWJtStStStStStStStStStSWJWJWJWJOZWJWJNeLcLcWJWJWJWJWJWJtStSLc
 LctStStSWJVxaHkPPvvSaHPvVxVxVxEJVxEJEJePaHWJPWPWPWWJWJWJPWPWVxVxVxWJtSWJtStStStStStStStSWJWJPWWJWJWJtStStStStStStStStStStStStStSWJVxWJWJtStStStStStStStSWJtSWJtSWJWJVxwawaVxWJtStStStStSWJtSWJtSWJtSWJtSWJtSWJgdWJWJDJNeDJWJWJWJDJDJDJDJDJDJWJLc
 LctStStSWJVxaHvSTXLCaHPvSxSxaHEJVxePePEJaHWJWJPWWJWJVxVxVxWJVxVxVxWJtStStStStStStStStStSWJWJPWPWWJWJtSWJWJVxVxWJWJVxVxVxtStStSWJLWVxVxLWtStStStStSWJtStSWJtStStSWJWJVxzCwaVxWJWJtStStStStStStStSWJtSWJtStStStSWJgdWJNeDJDJDJWJWJDJDJDJDJDJDJDJLc

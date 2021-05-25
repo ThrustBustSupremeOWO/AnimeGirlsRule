@@ -32,10 +32,10 @@
 	var/list/hardness_craftables = list()
 	if(hardness >= 10)
 		hardness_craftables += new /datum/stack_recipe("[display_name] ashtray", /obj/item/material/ashtray, 2, one_per_turf = 1, on_floor = 1, supplied_material = "[name]")
-
-	if(hardness > 50)
 		hardness_craftables += new /datum/stack_recipe("[display_name] fork", /obj/item/material/kitchen/utensil/fork/plastic, 1, on_floor = 1, supplied_material = "[name]")
 		hardness_craftables += new /datum/stack_recipe("[display_name] spoon", /obj/item/material/kitchen/utensil/spoon/plastic, 1, on_floor = 1, supplied_material = "[name]")
+
+	if(hardness > 50)
 		hardness_craftables += new /datum/stack_recipe("[display_name] knife", /obj/item/material/kitchen/utensil/knife/plastic, 1, on_floor = 1, supplied_material = "[name]")
 		hardness_craftables += new /datum/stack_recipe("[display_name] blade", /obj/item/material/butterflyblade, 6, time = 20, one_per_turf = 0, on_floor = 1, supplied_material = "[name]")
 		hardness_craftables += new /datum/stack_recipe("[display_name] spearhead", /obj/item/material/spearhead, 6, time = 20, one_per_turf = 0, on_floor = 1, supplied_material = "[name]")
@@ -275,4 +275,11 @@
 		list(
 			new /datum/stack_recipe("leather briefcase", /obj/item/storage/briefcase/real, 4, 1, time = 20),
 			new /datum/stack_recipe("leather whip", /obj/item/melee/whip, 15, 1, time = 20)
+		))
+
+/material/prydinate/generate_recipes()
+	..()
+	recipes += new /datum/stack_recipe_list("[display_name] construction",
+		list(
+			new /datum/stack_recipe("prydinate floor tile", /obj/item/stack/tile/prydinate, 1, 4, 20)
 		))

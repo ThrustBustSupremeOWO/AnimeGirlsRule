@@ -603,6 +603,11 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "einstein_card"
 	overlay_state = "einstein_card"
 
+/obj/item/card/id/coc
+	name = "\improper Coalition of Colonies identification card"
+	desc = "A simple identification card, indicating affiliation with the Coalition of Colonies."
+	icon_state = "coalition_card"
+
 /obj/item/card/id/bluespace
 	name = "bluespace identification card"
 	desc = "A bizarre imitation of Nanotrasen identification cards. It seems to function normally as well."

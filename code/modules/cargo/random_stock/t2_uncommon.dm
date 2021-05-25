@@ -48,12 +48,6 @@ STOCK_ITEM_UNCOMMON(implants, 1)
 STOCK_ITEM_UNCOMMON(flashbang, 0.75)
 	new /obj/item/storage/box/flashbangs(L)
 
-STOCK_ITEM_UNCOMMON(arrest, 1)
-	if(prob(60))
-		new /obj/item/storage/box/handcuffs(L)
-	else
-		new /obj/item/device/holowarrant(L)
-
 STOCK_ITEM_UNCOMMON(monkey, 2)
 	if(prob(40))
 		var/type = pick( \
@@ -130,10 +124,6 @@ STOCK_ITEM_UNCOMMON(jetpack, 3)
 	if(prob(40))
 		new /obj/item/tank/emergency_oxygen/double(L)
 
-STOCK_ITEM_UNCOMMON(xenocostume, 1)
-	new /obj/item/clothing/suit/xenos(L)
-	new /obj/item/clothing/head/xenos(L)
-
 STOCK_ITEM_UNCOMMON(inhaler, 1)
 	var/obj/item/reagent_containers/inhaler/I = pick(subtypesof(/obj/item/reagent_containers/inhaler))
 	new I(L)
@@ -153,9 +143,6 @@ STOCK_ITEM_UNCOMMON(stunbaton, 0.75) //batons spawn with no powercell
 		QDEL_NULL(B.bcell)
 
 	B.queue_icon_update()
-
-STOCK_ITEM_UNCOMMON(firingpin, 3)
-	new /obj/item/storage/box/firingpins(L)
 
 STOCK_ITEM_UNCOMMON(watch, 3)
 	new /obj/random/watches(L)
@@ -199,44 +186,6 @@ STOCK_ITEM_UNCOMMON(fireaxe, 1)
 STOCK_ITEM_UNCOMMON(service, 2)
 	new /obj/item/rfd/service(L)
 
-STOCK_ITEM_UNCOMMON(robot, 2)
-	var/list/bots = list(
-		/mob/living/bot/cleanbot = 2,
-		/mob/living/bot/secbot = 0.7,
-		/mob/living/bot/medbot = 2,
-		/mob/living/bot/floorbot = 2.5,
-		/mob/living/bot/farmbot = 1,
-		/mob/living/bot/secbot/ed209 = 0.3
-	)
-
-	var/type = pickweight(bots)
-	if(type == /mob/living/bot/secbot/ed209)//ED is large and should spawn on the floor
-		L = get_turf(L)
-		if(!turf_clear(L))
-			for(var/turf/U in range(L,1))
-				if(turf_clear(U))
-					L = U
-					break
-
-	var/mob/living/bot/newbot = new type(L)
-	newbot.on = FALSE	//Deactivated
-	if(prob(10))
-		newbot.emag_act(9999, null)
-
-STOCK_ITEM_UNCOMMON(headset, 2)
-	var/list/sets = list(
-		/obj/item/device/radio/headset/headset_eng = 1,
-		/obj/item/device/radio/headset/headset_rob = 0.4,
-		/obj/item/device/radio/headset/headset_med = 1,
-		/obj/item/device/radio/headset/headset_sci = 0.8,
-		/obj/item/device/radio/headset/headset_medsci = 0.4,
-		/obj/item/device/radio/headset/headset_cargo = 1,
-		/obj/item/device/radio/headset/headset_service = 1
-	)
-
-	var/type = pickweight(sets)
-	new type(L)
-
 STOCK_ITEM_UNCOMMON(bat, 1.2)
 	new /obj/item/material/twohanded/baseballbat(L)
 
@@ -245,13 +194,6 @@ STOCK_ITEM_UNCOMMON(scythe, 0.75)
 
 STOCK_ITEM_UNCOMMON(laserpoint, 0.75)
 	new /obj/item/device/laser_pointer(L)
-
-STOCK_ITEM_UNCOMMON(manual, 2)
-	var/list/booklist = subtypesof(/obj/item/book/manual)
-	booklist -= /obj/item/book/manual/wiki //just this one. we want to keep the subtypes.
-	booklist -= /obj/item/book/manual/nuclear //yeah no
-	var/type = pick(booklist)
-	new type(L)
 
 STOCK_ITEM_UNCOMMON(spystuff, 0.75)
 	if(prob(40))
@@ -319,15 +261,6 @@ STOCK_ITEM_UNCOMMON(bang, 0.5)
 	var/obj/item/gun/bang/B = pick(subtypesof(/obj/item/gun/bang))
 	new B(L)
 
-STOCK_ITEM_UNCOMMON(cookingoil, 1)
-	var/turf/T = get_turf(L)
-	if(!turf_clear(T))
-		for(var/turf/U in range(T,1))
-			if(turf_clear(U))
-				T = U
-				break
-	new /obj/structure/reagent_dispensers/cookingoil(T)
-
 STOCK_ITEM_UNCOMMON(coin, 1.3)
 	new /obj/random/coin(L)
 	if(prob(20))
@@ -347,16 +280,6 @@ STOCK_ITEM_UNCOMMON(apiary, 1)
 		new /obj/item/bee_smoker(L)
 	if(prob(30))
 		new /obj/item/honey_frame(L)
-
-STOCK_ITEM_UNCOMMON(wristbound, 0.5)
-	var/list/possible_wristbounds = list()
-	for(var/thing in subtypesof(/obj/item/modular_computer/handheld/wristbound/preset))
-		var/obj/item/modular_computer/handheld/wristbound/preset/P = thing
-		if(initial(P.hidden))
-			continue
-		possible_wristbounds += P
-	var/wristbound_type = pick(possible_wristbounds)
-	new wristbound_type(L)
 
 STOCK_ITEM_UNCOMMON(pops, 0.5)
 	if(prob(85))

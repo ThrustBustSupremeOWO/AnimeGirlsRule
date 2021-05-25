@@ -63,8 +63,8 @@
 
 	minimum_character_age = 25
 
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_genetics, access_eva)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva, access_expedition)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_genetics, access_eva, access_expedition)
 	outfit = /datum/outfit/job/doctor
 
 /datum/job/surgeon

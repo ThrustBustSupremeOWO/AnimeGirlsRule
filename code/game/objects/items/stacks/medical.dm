@@ -165,6 +165,15 @@ Contains:
 			else
 				to_chat(user, "<span class='notice'>The [affecting.name] is cut open, you'll need more than a bandage!</span>")
 
+/obj/item/stack/medical/bruise_pack/lily
+	name = "cosmolily leaves"
+	singular_name = "cosmolily leaf"
+	desc = "A sterile plant leaf to wrap around bloody stumps."
+	icon_state = "lilypack"
+	heal_brute = 2
+	amount = 2
+	icon_has_variants = FALSE
+
 // Ointment.
 /obj/item/stack/medical/ointment
 	name = "ointment"
