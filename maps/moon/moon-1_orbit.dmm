@@ -71,7 +71,7 @@
 "pl" = (/obj/structure/closet/crate/hydroponics/prespawned,/turf/simulated/floor/tiled,/area/shuttle/barge)
 "pV" = (/obj/structure/bed/chair/office/bridge/generic{dir = 4},/obj/effect/landmark/start{name = "Expedition Researcher"},/turf/simulated/floor/carpet/rubber,/area/shuttle/barge)
 "qa" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
-"qe" = (/obj/machinery/door/airlock{name = "Common Room"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/white,/area/shuttle/barge/common)
+"qe" = (/obj/machinery/door/airlock{name = "Common Room"},/obj/machinery/door/firedoor,/turf/simulated/floor/wood,/area/shuttle/barge/common)
 "qj" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/obj/effect/floor_decal/industrial/warning{dir = 9},/obj/machinery/porta_turret/stationary{req_one_access = list(1,19, 201)},/turf/simulated/floor/reinforced,/area/shuttle/barge)
 "qn" = (/obj/machinery/alarm{dir = 8; pixel_x = 28},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "qq" = (/obj/machinery/door/blast/regular{id = "outside"},/obj/machinery/button/remote/blast_door{id = "inside"; name = "Internal Lock"; pixel_x = -22; pixel_y = -8},/obj/machinery/button/remote/blast_door{id = "outside"; name = "External Lock"; pixel_x = -22},/turf/simulated/floor,/area/shuttle/barge)
@@ -87,7 +87,7 @@
 "sI" = (/obj/structure/bed/chair/office/bridge/generic{dir = 4},/obj/effect/landmark/start{name = "Expedition Engineer"},/turf/simulated/floor/carpet/rubber,/area/shuttle/barge)
 "tI" = (/obj/effect/floor_decal/corner/black/diagonal,/turf/simulated/floor/tiled/white,/area/shuttle/barge)
 "tM" = (/obj/structure/table/reinforced,/obj/item/glass_jar,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
-"tR" = (/obj/machinery/door/airlock/hatch{name = "Unisex Restroom"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/freezer,/area/shuttle/barge)
+"tR" = (/obj/machinery/door/airlock/hatch{name = "Unisex Restroom"},/obj/machinery/door/firedoor,/turf/simulated/floor/wood,/area/shuttle/barge)
 "ue" = (/obj/effect/landmark/start{name = "Expedition Prospector"},/turf/simulated/floor/tiled,/area/shuttle/barge)
 "uf" = (/turf/simulated/floor/tiled,/area/shuttle/barge)
 "uC" = (/obj/structure/window/reinforced,/obj/structure/lattice/catwalk/indoor/grate,/obj/effect/debugging/marker{density = 1; icon_state = null},/turf/simulated/floor,/area/shuttle/barge)
@@ -219,7 +219,7 @@
 "Zm" = (/obj/machinery/light/small{dir = 1},/obj/structure/closet/walllocker/emerglocker/north,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "Zo" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "Zw" = (/obj/effect/floor_decal/industrial/hatch/red,/obj/structure/closet/crate/loot,/obj/random/tech_supply,/obj/effect/decal/cleanable/dirt,/obj/item/robot_parts/robot_component/actuator,/obj/item/robot_parts/robot_component/armor/mech/combat,/obj/item/robot_parts/robot_component/binary_communication_device,/obj/item/robot_parts/robot_component/camera,/obj/item/robot_parts/robot_component/diagnosis_unit,/obj/item/robot_parts/robot_component/radio,/turf/simulated/floor,/area/shuttle/barge)
-"ZI" = (/obj/machinery/door/airlock{name = "Common Room"},/turf/simulated/floor,/area/shuttle/barge)
+"ZI" = (/obj/machinery/door/airlock{name = "Common Room"},/turf/simulated/floor/wood,/area/shuttle/barge)
 "ZT" = (/obj/structure/bed/padded,/obj/structure/curtain/open/bed,/obj/item/bedsheet/captain,/obj/effect/landmark/start{name = "Expedition Engineer"},/turf/simulated/floor/carpet/art,/area/shuttle/barge)
 
 (1,1,1) = {"
