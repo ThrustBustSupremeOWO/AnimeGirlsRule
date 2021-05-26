@@ -75,6 +75,7 @@
 			filled_bag.add_overlay(I)
 			filled_bag.add_overlay("evidence")
 			filled_bag.w_class = ITEMSIZE_TINY
+			filled_bag.stored_item = R
 
 			to_chat(user, "<span class='notice'>You take a core sample of the [item_to_sample].</span>")
 	else
@@ -93,3 +94,99 @@
 		icon_state = "sampler0"
 	else
 		to_chat(usr, "<span class='warning'>The core sampler is empty.</span>")
+
+/obj/item/device/sample_scanner
+	name = "sample analyzer"
+	desc = "A tool that acts as a mobile laboratory. It can analyze rock slivers taken by a core sampler. It's not always the most reliable, but gives a general sense for field work."
+	desc_info = "Rock slivers must be in a sample bag to be analyzed. Alt+Click to remove the sample bag."
+	icon = 'icons/obj/device.dmi'
+	icon_state = "geosample_anal"
+	item_state = "screwdriver_brown"
+	w_class = ITEMSIZE_SMALL
+	var/obj/item/evidencebag/current_sample
+	var/report_num
+	var/datum/geosample/last_loaded_data //Remembers 1 analysis
+
+/obj/item/device/sample_scanner/Destroy()
+	if(current_sample)
+		QDEL_NULL(current_sample)
+	. = ..()
+
+/obj/item/device/sample_scanner/attackby(obj/item/I, mob/user)
+	if(istype(I, /obj/item/evidencebag))
+		if(current_sample)
+			to_chat(user, SPAN_WARNING("There's already a loaded sample!"))
+			return
+		var/obj/item/evidencebag/E = I
+		if(!E.stored_item)
+			to_chat(user, SPAN_WARNING("There's no sample to analyze!"))
+			return
+		if(!istype(E.stored_item, /obj/item/rocksliver))
+			to_chat(user, SPAN_WARNING("\The [src] can't analyze [E.stored_item]! It only accepts samples taken by a core sampler!"))
+			return
+		to_chat(user, SPAN_NOTICE("You insert the sample."))
+		user.drop_from_inventory(E, src)
+		current_sample = E
+		return
+	..()
+
+/obj/item/device/sample_scanner/AltClick(mob/user)
+	if(current_sample)
+		to_chat(user, SPAN_NOTICE("You eject the sample."))
+		current_sample.forceMove(get_turf(src))
+		user.put_in_hands(current_sample)
+		current_sample = null
+		return
+	else
+		to_chat(user, SPAN_NOTICE("There's no sample to eject."))
+
+/obj/item/device/sample_scanner/attack_self(mob/user)
+	if(current_sample)
+		var/obj/item/rocksliver/R = current_sample.stored_item
+		if(R)
+			var/turf/T = get_turf(src)
+			T.visible_message(SPAN_NOTICE("\The [src] hums and beeps as it begins to analyze the sample."))
+			addtimer(CALLBACK(src, .proc/print_analysis, R.geological_data, user), 5 SECONDS)
+	else
+		if(last_loaded_data)
+			to_chat(user, SPAN_NOTICE("No sample loaded. Printing last known sample data."))
+			print_analysis(last_loaded_data, user)
+		else
+			to_chat(user, SPAN_WARNING("There's no sample to analyze!"))
+
+/obj/item/device/sample_scanner/proc/print_analysis(var/datum/geosample/G, mob/user)
+	if(G)
+		//create report
+		var/obj/item/paper/P = new(src)
+		report_num++
+		P.name = "Sample Analysis Report #0[report_num]: [G.source_mineral]"
+		P.stamped = list(/obj/item/stamp)
+		P.overlays = list("paper_stamped")
+
+		//work out data
+		var/data
+		data = "Spectometric analysis on mineral sample has determined type: [(G.source_mineral)]<br>"
+		if(G.age_billion > 0)
+			data += " - Radiometric dating shows age of [G.age_billion].[G.age_million] billion years<br>"
+		else if(G.age_million > 0)
+			data += " - Radiometric dating shows age of [G.age_million].[G.age_thousand] million years<br>"
+		else if(G.age_thousand > 0)
+			data += " - Radiometric dating shows age of [G.age_thousand * 1000 + G.age] years<br>"
+
+		if(length(G.sample_data))
+			for(var/D in G.sample_data)
+				data += "[D]<br>"
+
+		P.info = "<b><u>Sample Analysis - Report #0[report_num]</u></b><br>"
+		P.info += "<b>Scanned item:</b> [G.source_mineral]<br><br>" + data
+		last_loaded_data = G
+		var/turf/T = get_turf(src)
+		T.visible_message(SPAN_NOTICE("\The [src] dings and spits out a report!"))
+		playsound(T, 'sound/machines/ping.ogg')
+		playsound(T, 'sound/items/polaroid1.ogg')
+		P.forceMove(T)
+		if(!isturf(loc))
+			if(loc == user)
+				user.put_in_hands(P)
+			else
+				P.forceMove(loc)
