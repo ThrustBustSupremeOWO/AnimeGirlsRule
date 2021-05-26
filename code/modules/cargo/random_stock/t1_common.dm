@@ -133,7 +133,9 @@ STOCK_ITEM_COMMON(circuitboard, 1)
 	var/list/allboards = subtypesof(/obj/item/circuitboard)
 	var/list/exclusion = list(
 		/obj/item/circuitboard/unary_atmos,
-		/obj/item/circuitboard/telecomms
+		/obj/item/circuitboard/telecomms,
+		/obj/item/circuitboard/clonepod,
+		/obj/item/circuitboard/clonescanner
 	)
 	exclusion += typesof(/obj/item/circuitboard/mecha)
 
@@ -253,20 +255,6 @@ STOCK_ITEM_COMMON(binoculars, 1.5)
 
 STOCK_ITEM_COMMON(flash, 1)
 	new /obj/item/device/flash(L)
-
-STOCK_ITEM_COMMON(maglock, 2)
-	if(prob(50))
-		new /obj/item/device/magnetic_lock/engineering(L)
-	else
-		new /obj/item/device/magnetic_lock/security(L)
-
-STOCK_ITEM_COMMON(forensic, 1)
-	if(prob(50))
-		new /obj/item/reagent_containers/spray/luminol(L)
-	else
-		new /obj/item/device/uv_light(L)
-	if(prob(25))
-		new /obj/item/storage/box/slides(L)
 
 STOCK_ITEM_COMMON(cleaning, 3.5)
 	if(prob(80))

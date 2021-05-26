@@ -12,7 +12,7 @@
 	icon_state = "tube_empty"
 	desc = "A lighting fixture."
 	anchored = TRUE
-	layer = 5  					// They were appearing under mobs which is a little weird - Ostaf
+	layer = 5 					// They were appearing under mobs which is a little weird - Ostaf
 	use_power = 2
 	idle_power_usage = 2
 	active_power_usage = 20
@@ -75,6 +75,11 @@
 	supports_nightmode = FALSE
 	bulb_is_noisy = FALSE
 	chain = TRUE
+
+/obj/machinery/light/small/Initialize(mapload)
+	. = ..()
+	if(dir == 1)
+		layer = BELOW_MOB_LAYER
 
 /obj/machinery/light/small/emergency
 	brightness_range = 6
