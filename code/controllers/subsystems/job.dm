@@ -743,14 +743,7 @@
 			if(G.augment) //augments are handled somewhere else
 				continue
 
-			var/permitted
-			if(G.allowed_roles)
-				for(var/job_name in G.allowed_roles)
-					if(job.title == job_name)
-						permitted = TRUE
-						break
-			else
-				permitted = TRUE
+			var/permitted = TRUE
 
 			if(!G.check_species_whitelist(H))
 				permitted = FALSE
