@@ -208,7 +208,7 @@
 	tab_pda = /obj/item/modular_computer/handheld/pda/supply/miner
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/supply/miner
 	tablet = /obj/item/modular_computer/handheld/preset/civilian
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/coc
 	shoes = /obj/item/clothing/shoes/workboots
 	headset = null
 	bowman = null

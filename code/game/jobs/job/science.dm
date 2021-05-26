@@ -82,7 +82,7 @@
 	tab_pda = /obj/item/modular_computer/handheld/pda/research
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/research
 	tablet = /obj/item/modular_computer/handheld/preset/research
-	id = /obj/item/card/id/white
+	id = /obj/item/card/id/coc
 	headset = null
 	bowman = null
 

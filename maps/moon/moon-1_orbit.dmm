@@ -15,6 +15,7 @@
 "dC" = (/obj/structure/cryofeed,/obj/structure/window/reinforced,/turf/simulated/floor/wood,/area/shuttle/barge)
 "dJ" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/obj/structure/sink/kitchen{layer = 3.3; pixel_y = 26},/turf/simulated/floor/wood,/area/shuttle/barge)
 "ep" = (/obj/machinery/door/firedoor,/obj/machinery/light/small{dir = 8},/turf/simulated/floor,/area/shuttle/barge)
+"eH" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/obj/structure/closet/walllocker/emerglocker/north{pixel_x = 31; pixel_y = 0},/turf/simulated/floor/wood,/area/shuttle/barge)
 "fZ" = (/obj/machinery/door/airlock/hatch{name = "Bridge"},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "gc" = (/obj/structure/table/reinforced,/obj/machinery/light/small{dir = 8},/obj/machinery/turretid/stun{name = "Perimeter Point Defense"; req_access = null},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "gw" = (/obj/effect/floor_decal/corner/green/diagonal,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/white,/area/shuttle/barge)
@@ -50,7 +51,7 @@
 "kU" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "lb" = (/obj/structure/bed/padded,/obj/structure/curtain/open/bed,/obj/item/bedsheet/red,/obj/effect/landmark/start{name = "Expedition Ranger"},/turf/simulated/floor/carpet/art,/area/shuttle/barge)
 "lE" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
-"lG" = (/obj/structure/table/standard,/obj/item/storage/firstaid/combat,/obj/effect/floor_decal/corner/green/diagonal,/obj/item/storage/box/syringes,/obj/item/storage/box/gloves,/obj/item/deployable_kit/iv_drip,/turf/simulated/floor/tiled/white,/area/shuttle/barge)
+"lG" = (/obj/structure/table/standard,/obj/item/storage/firstaid/combat,/obj/effect/floor_decal/corner/green/diagonal,/obj/item/storage/box/syringes,/obj/item/storage/box/gloves,/obj/item/deployable_kit/iv_drip,/obj/item/storage/box/masks,/turf/simulated/floor/tiled/white,/area/shuttle/barge)
 "lK" = (/obj/structure/bed/padded,/obj/structure/curtain/open/bed,/obj/item/bedsheet/clown,/obj/effect/landmark/start{name = "Expedition Crewman"},/turf/simulated/floor/carpet/art,/area/shuttle/barge)
 "lZ" = (/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "ml" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/turf/simulated/floor/wood,/area/shuttle/barge)
@@ -117,7 +118,7 @@
 "AT" = (/obj/structure/bed/padded,/obj/structure/curtain/open/bed,/obj/item/bedsheet/rainbow,/obj/effect/landmark/start{name = "Expedition Crewman"},/turf/simulated/floor/carpet/art,/area/shuttle/barge)
 "AV" = (/obj/machinery/computer/operating,/obj/effect/floor_decal/corner/green/diagonal,/turf/simulated/floor/tiled/white,/area/shuttle/barge)
 "AY" = (/obj/structure/railing/mapped{dir = 1},/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/machinery/light/small{dir = 4},/turf/simulated/floor/reinforced,/area/shuttle/barge)
-"Bu" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/closet/crate/loot,/obj/random/tech_supply,/obj/item/robot_parts/robot_component/actuator,/obj/item/robot_parts/robot_component/armor/mech/combat,/obj/item/robot_parts/robot_component/binary_communication_device,/obj/item/robot_parts/robot_component/camera,/obj/item/robot_parts/robot_component/diagnosis_unit,/obj/item/robot_parts/robot_component/radio,/turf/simulated/floor,/area/shuttle/barge)
+"Bu" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/closet/crate/loot,/obj/random/tech_supply,/obj/item/robot_parts/robot_component/actuator,/obj/item/robot_parts/robot_component/armor/mech/combat,/obj/item/robot_parts/robot_component/binary_communication_device,/obj/item/robot_parts/robot_component/camera,/obj/item/robot_parts/robot_component/diagnosis_unit,/obj/item/robot_parts/robot_component/radio,/obj/item/storage/box/bodybags,/turf/simulated/floor,/area/shuttle/barge)
 "BB" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/structure/table/steel,/turf/simulated/floor/tiled,/area/shuttle/barge)
 "BD" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/machinery/suspension_gen,/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled,/area/shuttle/barge)
 "BG" = (/obj/structure/table/reinforced,/obj/item/modular_computer/laptop/preset/research,/obj/machinery/recharger,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
@@ -141,13 +142,13 @@
 "GL" = (/obj/machinery/recharger/wallcharger{pixel_x = -23},/turf/simulated/floor/reinforced,/area/shuttle/barge)
 "GX" = (/obj/machinery/chem_heater,/obj/effect/floor_decal/corner/black/diagonal,/turf/simulated/floor/tiled/white,/area/shuttle/barge)
 "Hh" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 1},/obj/machinery/light/small,/turf/simulated/floor/wood,/area/shuttle/barge)
-"Hj" = (/obj/effect/floor_decal/spline/fancy/wood,/obj/structure/closet/cabinet,/obj/random/random_flag,/obj/random/random_flag,/obj/random/random_flag,/obj/random/random_flag,/obj/random/medical,/obj/random/loot,/obj/random/hoodie,/obj/random/hoodie,/obj/random/smokable,/obj/random/softcap,/obj/item/clothing/accessory/poncho/dominia,/obj/item/clothing/accessory/poncho/roles/cloak/research,/obj/item/clothing/accessory/poncho/roles/science,/obj/item/clothing/accessory/poncho/roles/cloak/engineer,/obj/item/clothing/accessory/poncho/roles/cloak/medical,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/turf/simulated/floor/wood,/area/shuttle/barge)
+"Hj" = (/obj/effect/floor_decal/spline/fancy/wood,/obj/structure/closet/cabinet,/obj/random/random_flag,/obj/random/random_flag,/obj/random/medical,/obj/random/loot,/obj/random/hoodie,/obj/random/hoodie,/obj/random/smokable,/obj/random/softcap,/obj/item/clothing/accessory/poncho/dominia,/obj/item/clothing/accessory/poncho/roles/cloak/research,/obj/item/clothing/accessory/poncho/roles/science,/obj/item/clothing/accessory/poncho/roles/cloak/engineer,/obj/item/clothing/accessory/poncho/roles/cloak/medical,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/turf/simulated/floor/wood,/area/shuttle/barge)
 "Ho" = (/obj/machinery/porta_turret/stationary{req_one_access = list(1,19, 201)},/obj/structure/railing/mapped{dir = 1},/obj/structure/railing/mapped{dir = 4},/obj/effect/floor_decal/industrial/warning{dir = 5},/turf/simulated/floor/reinforced,/area/shuttle/barge)
 "Ht" = (/obj/machinery/door/firedoor,/obj/machinery/light/small,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "HC" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/lattice/catwalk/indoor/grate,/obj/effect/debugging/marker{density = 1; icon_state = null},/turf/simulated/floor,/area/shuttle/barge)
 "HK" = (/obj/structure/window/reinforced,/obj/structure/table/reinforced,/obj/item/folder,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "HL" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 1},/obj/structure/closet/hydrant{pixel_x = -32},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
-"HY" = (/obj/machinery/light/small{dir = 1},/obj/machinery/recharge_station,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
+"HY" = (/obj/machinery/recharge_station,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "Ih" = (/obj/structure/table/reinforced,/obj/item/stack/material/steel/full,/obj/item/stack/material/steel/full,/obj/item/stack/material/glass/full,/obj/item/stack/material/glass/full,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "IR" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled,/area/shuttle/barge)
 "IT" = (/obj/structure/bed/padded,/obj/structure/curtain/open/bed,/obj/item/bedsheet/ce,/obj/effect/landmark/start{name = "Expedition Physician"},/turf/simulated/floor/carpet/art,/area/shuttle/barge)
@@ -161,7 +162,7 @@
 "KT" = (/turf/simulated/wall,/area/shuttle/barge/common)
 "KV" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/obj/machinery/alarm{dir = 8; pixel_x = 28},/obj/machinery/light/small{dir = 4},/turf/simulated/floor/wood,/area/shuttle/barge)
 "Le" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
-"Li" = (/obj/effect/floor_decal/spline/fancy/wood,/obj/structure/closet/cabinet,/obj/random/projectile,/obj/random/loot,/obj/random/hoodie,/obj/random/hoodie,/obj/random/smokable,/obj/random/softcap,/obj/structure/closet/walllocker/emerglocker/west,/obj/item/clothing/accessory/poncho/dominia,/obj/item/clothing/accessory/poncho/roles/cloak/research,/obj/item/clothing/accessory/poncho/roles/science,/obj/item/clothing/accessory/poncho/roles/cloak/engineer,/obj/item/clothing/accessory/poncho/roles/cloak/medical,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/turf/simulated/floor/wood,/area/shuttle/barge)
+"Li" = (/obj/effect/floor_decal/spline/fancy/wood,/obj/structure/closet/cabinet,/obj/random/projectile,/obj/random/loot,/obj/random/hoodie,/obj/random/hoodie,/obj/random/smokable,/obj/random/softcap,/obj/item/clothing/accessory/poncho/dominia,/obj/item/clothing/accessory/poncho/roles/cloak/research,/obj/item/clothing/accessory/poncho/roles/science,/obj/item/clothing/accessory/poncho/roles/cloak/engineer,/obj/item/clothing/accessory/poncho/roles/cloak/medical,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/turf/simulated/floor/wood,/area/shuttle/barge)
 "LD" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/obj/structure/closet/hydrant{pixel_x = 32},/turf/simulated/floor/wood,/area/shuttle/barge)
 "LR" = (/obj/structure/table/reinforced,/obj/item/paper_bin,/obj/item/pen/white,/obj/machinery/button/remote/blast_door{id = "total_lockdown"; name = "Ship Lockdown"; pixel_y = 25},/obj/item/reagent_containers/food/drinks/bottle/tequila{pixel_x = 13},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "Mu" = (/obj/machinery/mineral/input,/obj/effect/floor_decal/industrial/loading/yellow{dir = 8},/obj/effect/floor_decal/industrial/warning{dir = 1},/turf/simulated/floor,/area/shuttle/barge)
@@ -171,7 +172,7 @@
 "NA" = (/obj/effect/floor_decal/industrial/hatch,/obj/structure/closet/crate/loot,/obj/random/tech_supply,/obj/item/robot_parts/robot_component/actuator,/obj/item/robot_parts/robot_component/armor/mech/combat,/obj/item/robot_parts/robot_component/binary_communication_device,/obj/item/robot_parts/robot_component/camera,/obj/item/robot_parts/robot_component/diagnosis_unit,/obj/item/robot_parts/robot_component/radio,/obj/item/wrench,/turf/simulated/floor,/area/shuttle/barge)
 "ND" = (/obj/structure/ore_box,/turf/simulated/floor,/area/shuttle/barge)
 "NO" = (/obj/effect/map_effect/wingrille_spawn/reinforced/firedoor,/obj/machinery/door/blast/regular{id = "total_lockdown"; name = "Lockdown Shutters"},/turf/simulated/floor,/area/shuttle/barge/common)
-"NW" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/obj/structure/closet/cabinet,/obj/random/booze,/obj/random/booze,/obj/random/booze,/obj/random/booze,/obj/random/booze,/obj/random/booze,/obj/random/booze,/obj/random/loot,/obj/random/hoodie,/obj/random/hoodie,/obj/random/smokable,/obj/random/softcap,/obj/item/clothing/accessory/poncho/dominia,/obj/item/clothing/accessory/poncho/roles/cloak/research,/obj/item/clothing/accessory/poncho/roles/science,/obj/item/clothing/accessory/poncho/roles/cloak/engineer,/obj/item/clothing/accessory/poncho/roles/cloak/medical,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/turf/simulated/floor/wood,/area/shuttle/barge)
+"NW" = (/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/obj/structure/closet/cabinet,/obj/random/booze,/obj/random/booze,/obj/random/booze,/obj/random/booze,/obj/random/loot,/obj/random/hoodie,/obj/random/hoodie,/obj/random/smokable,/obj/random/softcap,/obj/item/clothing/accessory/poncho/dominia,/obj/item/clothing/accessory/poncho/roles/cloak/research,/obj/item/clothing/accessory/poncho/roles/science,/obj/item/clothing/accessory/poncho/roles/cloak/engineer,/obj/item/clothing/accessory/poncho/roles/cloak/medical,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/obj/item/clothing/shoes/workboots/grey,/turf/simulated/floor/wood,/area/shuttle/barge)
 "NY" = (/obj/structure/bed/chair/office/bridge/generic{dir = 8},/obj/structure/window/reinforced,/obj/effect/landmark/start{name = "Expedition Ranger"},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "Om" = (/obj/structure/curtain/open/shower,/obj/machinery/shower{pixel_y = 15},/obj/item/soap/water_soap,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/freezer,/area/shuttle/barge)
 "OZ" = (/obj/machinery/vending/dinnerware,/turf/simulated/floor/wood,/area/shuttle/barge)
@@ -198,7 +199,7 @@
 "Ue" = (/obj/machinery/light/small,/turf/simulated/floor/wood,/area/shuttle/barge)
 "Uw" = (/obj/effect/floor_decal/corner/green/diagonal,/turf/simulated/floor/tiled/white,/area/shuttle/barge)
 "Ux" = (/obj/effect/floor_decal/corner/green/diagonal,/obj/machinery/chem_master,/turf/simulated/floor/tiled/white,/area/shuttle/barge)
-"UR" = (/obj/structure/reagent_dispensers/peppertank{pixel_x = 28},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
+"UR" = (/obj/structure/reagent_dispensers/peppertank{pixel_x = 28},/obj/machinery/light/small{dir = 4},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "UV" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/effect/debugging/marker{density = 1; desc = "A massive globe which provides a detailed scan of things in your vicinity. It's hopelessly complex and probably does something."; icon = 'icons/effects/96x96.dmi'; icon_state = "globe"; name = "central intelligence command input"},/obj/structure/lattice/catwalk/indoor/grate,/turf/simulated/floor,/area/shuttle/barge)
 "UZ" = (/obj/machinery/light/small{dir = 8},/obj/structure/closet/hydrant{pixel_x = -32},/turf/simulated/floor/reinforced,/area/shuttle/barge)
 "Vc" = (/mob/living/simple_animal/cow{name = "Spapachy"; named = 1},/turf/simulated/floor/tiled,/area/shuttle/barge)
@@ -213,7 +214,7 @@
 "Ym" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/shuttle/barge)
 "Yv" = (/obj/machinery/light/small,/obj/structure/bed/chair/wood{dir = 8},/turf/simulated/floor/wood,/area/shuttle/barge/common)
 "Yz" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8},/obj/effect/floor_decal/industrial/warning{dir = 10},/obj/machinery/porta_turret/stationary{req_one_access = list(1,19, 201)},/turf/simulated/floor/reinforced,/area/shuttle/barge)
-"Ze" = (/obj/structure/filingcabinet/chestdrawer,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
+"Ze" = (/obj/structure/filingcabinet/chestdrawer,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
 "Zf" = (/obj/machinery/mech_recharger/hephaestus,/obj/effect/floor_decal/industrial/hatch/red,/mob/living/heavy_vehicle/premade/ripley/ripley/packmule,/turf/simulated/floor,/area/shuttle/barge)
 "Zi" = (/obj/structure/closet/excavation,/obj/item/book/manual/excavation,/turf/simulated/floor/tiled,/area/shuttle/barge)
 "Zm" = (/obj/machinery/light/small{dir = 1},/obj/structure/closet/walllocker/emerglocker/north,/turf/simulated/floor/tiled/dark,/area/shuttle/barge)
@@ -265,7 +266,7 @@ rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIcrZTlKAdVzzxHhmlmlmXcroYqn
 rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIVeiJATyqcrcrVeZIVecrcroYoYPQcrPbPCdJaLVerIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
 rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIcrsovLLDcrjwjwoYQjaAIYIYIYkUcQufufAdVhVerIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
 rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIVelbPxvfcrJpoYoYHtgKsISZxqqacrmHVcAdVhVerIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
-rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIcrkOITAdcrlEZoqwcrgKpVmxxqsucrgNplRvMxcrrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
+rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIcrkOITeHcrlEZoqwcrgKpVmxxqsucrgNplRvMxcrrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
 rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIcrcrcrtRcrxVNDgVcrgKwCzBPeqacrcrcrcrcrcrrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
 rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIcrMzOmdecrEoEoEocrHLXpXpXpjeVVUwgwAVJVcrrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
 rIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIVedeKsyicrgPgVkPVetMBGLexloYcriLUwUwmTVerIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrIrI
