@@ -131,3 +131,27 @@
 				cell = W
 				to_chat(user, SPAN_NOTICE("You insert the power cell."))
 	update_icon()
+
+/obj/machinery/floodlight/old
+	name = "old floodlight"
+	desc = "An older model of floodlight. Doesn't provide light unless securely placed on the ground."
+
+/obj/machinery/floodlight/old/Initialize()
+	. = ..()
+	if(cell)
+		cell.charge = rand(cell.maxcharge * 0.1, cell.maxcharge * 0.8)
+
+/obj/machinery/floodlight/old/attackby(obj/item/I, mob/user)
+	if(I.iswrench())
+		playsound(user, I.usesound, 30, 1)
+		anchored = !anchored
+		user.visible_message("[user] [anchored ? "anchors" : "unanchors"] \the [src]!")
+		if(!anchored)
+			turn_off()
+		return
+	..()
+
+/obj/machinery/floodlight/old/turn_on()
+	if(!anchored)
+		return FALSE
+	return ..()

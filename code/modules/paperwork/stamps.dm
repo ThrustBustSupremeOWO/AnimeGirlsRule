@@ -79,6 +79,10 @@
 	name = "\improper Sol Alliance rubber stamp"
 	icon_state = "stamp-sol"
 
+/obj/item/stamp/coc
+	name = "\improper Coalition of Colonies rubber stamp"
+	icon_state = "stamp-coalition"
+
 // Syndicate stamp to forge documents.
 /obj/item/stamp/chameleon/attack_self(mob/user as mob)
 	var/list/stamp_types = typesof(/obj/item/stamp)

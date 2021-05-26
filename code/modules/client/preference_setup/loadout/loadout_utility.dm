@@ -34,6 +34,7 @@
 	folders["red folder"] = /obj/item/folder/red
 	folders["white folder"] = /obj/item/folder/white
 	folders["yellow folder"] = /obj/item/folder/yellow
+	folders["coalition"] = /obj/item/folder/coc
 	gear_tweaks += new/datum/gear_tweak/path(folders)
 
 /datum/gear/utility/fountainpen

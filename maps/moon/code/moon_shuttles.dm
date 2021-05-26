@@ -3,7 +3,7 @@
 	name = "Survey Barge"
 	current_location = "nav_barge_start"
 	warmup_time = 10
-	shuttle_area = /area/shuttle/barge
+	shuttle_area = list(/area/shuttle/barge, /area/shuttle/barge/common)
 	dock_target = "Survey Barge"
 	destination_tags = list(
 		"nav_barge_start",

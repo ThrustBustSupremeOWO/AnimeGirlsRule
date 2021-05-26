@@ -63,4 +63,4 @@
 	item_state = "prospector_hat"
 	contained_sprite = TRUE
 	light_overlay = "prospector_hat"
-	light_color = "#003064"
+	light_color = "#5986b6"

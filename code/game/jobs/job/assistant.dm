@@ -16,9 +16,9 @@
 
 /datum/job/assistant/get_access(selected_title)
 	if(config.assistant_maint && selected_title == "Assistant")
-		return list(access_maint_tunnels)
+		return list(access_maint_tunnels, access_expedition)
 	else
-		return list()
+		return list(access_expedition)
 
 /datum/outfit/job/assistant
 	name = "Assistant"

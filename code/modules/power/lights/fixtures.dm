@@ -41,6 +41,7 @@
 	var/start_with_cell = TRUE	// if true, this fixture generates a very weak cell at roundstart
 	var/emergency_mode = FALSE	// if true, the light is in emergency mode.
 	var/no_emergency = FALSE	// if true, this light cannot enter emergency mode.
+	var/chain = FALSE			// if true we can ctrl + click this to turn it off and on
 
 	var/next_spark = 0
 
@@ -73,6 +74,7 @@
 	inserted_light = /obj/item/light/bulb
 	supports_nightmode = FALSE
 	bulb_is_noisy = FALSE
+	chain = TRUE
 
 /obj/machinery/light/small/emergency
 	brightness_range = 6
@@ -125,6 +127,9 @@
 	if (start_with_cell && !no_emergency)
 		cell = new /obj/item/cell/device/emergency_light(src)
 
+	if(chain)
+		desc += " There's a chain that can be pulled to turn the fixture on or off."
+
 	if (!must_start_working && mapload && loc && isNotAdminLevel(z))
 		switch(fitting)
 			if("tube")
@@ -135,6 +140,17 @@
 					broken(1)
 
 	update(0)
+
+/obj/machinery/light/CtrlClick(mob/user)
+	if(status == LIGHT_OK)
+		if(ishuman(user) && !use_check_and_message(user))
+			if(stat & POWEROFF)
+				stat &= ~POWEROFF
+			else
+				stat |= POWEROFF
+			playsound(user, /decl/sound_category/switch_sound, 30)
+			add_fingerprint(user)
+			update()
 
 /obj/machinery/light/Destroy()
 	QDEL_NULL(cell)

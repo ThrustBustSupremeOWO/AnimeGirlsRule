@@ -324,6 +324,12 @@
 	taste_description = "honey"
 	germ_adjust = 5
 
+/decl/reagent/nutriment/honey/sap
+	name = "Rigel Sap"
+	description = "Honeylike sap harvested from the Rigel's Folly plant."
+	nutriment_factor = 6
+	color = "#61a6df"
+
 /decl/reagent/nutriment/flour
 	name = "Flour"
 	description = "This is what you rub all over yourself to pretend to be a ghost."

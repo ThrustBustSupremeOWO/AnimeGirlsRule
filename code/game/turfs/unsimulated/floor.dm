@@ -67,6 +67,11 @@
 	has_resources = TRUE
 	can_dig = TRUE
 
+/turf/unsimulated/floor/dirt/Initialize()
+	. = ..()
+	if(prob(85))
+		add_overlay("redplanet[rand(1,13)]")
+
 /turf/unsimulated/floor/dirt/ex_act(severity)
 	switch(severity)
 		if(1.0 to 2.0)

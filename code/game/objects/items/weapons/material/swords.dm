@@ -152,7 +152,7 @@
 	desc = "The best tool for murdering innocent plants."
 	icon_state = "machete"
 	item_state = "machete"
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT | SLOT_BACK
 
 /obj/item/material/sword/machete/get_cutting_power()
 	return force * 2

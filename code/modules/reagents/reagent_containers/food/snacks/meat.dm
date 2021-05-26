@@ -47,6 +47,9 @@
 	filling_color = "#BBBBAA"
 	reagents_to_add = list(/decl/reagent/nutriment/protein = 6) //Chicken is low fat. Less total calories than other meats
 
+/obj/item/reagent_containers/food/snacks/meat/chicken/bird
+	name = "bird meat"
+
 /obj/item/reagent_containers/food/snacks/meat/pig
 	name = "pig meat"
 	reagents_to_add = list(/decl/reagent/nutriment/protein = 6, /decl/reagent/nutriment/triglyceride = 4)

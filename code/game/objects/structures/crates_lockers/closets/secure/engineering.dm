@@ -126,13 +126,26 @@
 	else
 		new /obj/item/clothing/accessory/storage/webbing(src)
 	new /obj/item/storage/toolbox/mechanical(src)
-	new /obj/item/device/radio/headset/headset_eng(src)
-	new /obj/item/device/radio/headset/headset_eng/alt(src)
 	new /obj/item/clothing/suit/storage/hazardvest(src)
 	new /obj/item/clothing/mask/gas(src)
 	new /obj/item/clothing/mask/gas/half(src)
 	new /obj/item/taperoll/engineering(src)
 	new /obj/item/clothing/accessory/storage/overalls/engineer(src)
+
+/obj/structure/closet/secure_closet/engineering_personal/very_full
+
+/obj/structure/closet/secure_closet/engineering_personal/very_full/fill()
+	..()
+	new /obj/item/clothing/head/welding(src)
+	new /obj/item/clothing/head/welding(src)
+	new /obj/item/weldingtool/largetank(src)
+	new /obj/item/weldingtool/largetank(src)
+	new /obj/item/reagent_containers/weldpack(src)
+	new /obj/item/clothing/gloves/yellow(src)
+	new /obj/item/clothing/gloves/yellow/specialu(src)
+	new /obj/item/clothing/gloves/yellow/specialt(src)
+	new /obj/item/storage/toolbox/electrical(src)
+	new /obj/item/device/multitool(src)
 
 /obj/structure/closet/secure_closet/atmos_personal
 	name = "atmospheric technician's locker"

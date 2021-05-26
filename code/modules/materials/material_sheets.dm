@@ -438,3 +438,38 @@
 	. = ..()
 	amount = max_amount
 	update_icon()
+
+/obj/item/stack/material/copper
+	name = "copper"
+	icon_state = "sheet-copper"
+	default_type = MATERIAL_COPPER
+	icon_has_variants = TRUE
+
+/obj/item/stack/material/copper/full/Initialize()
+	. = ..()
+	amount = max_amount
+	update_icon()
+
+/obj/item/stack/material/aluminum
+	name = "aluminum"
+	icon_state = "sheet-aluminum"
+	default_type = MATERIAL_ALUMINUM
+	icon_has_variants = TRUE
+
+/obj/item/stack/material/aluminum/full/Initialize()
+	. = ..()
+	amount = max_amount
+	update_icon()
+
+/obj/item/stack/material/prydinate
+	name = "prydinate"
+	desc = "A rare metal with limited uses. It has incredible insulating properties for a metal, but isn't strong enough for most industrial settings."
+	desc_fluff = "Prydinate ore occurs naturally on less than one one-millionth of surveyed planets, moons, and asteroids. While normally this would make it quite valuable, sheets can be reproduced quite readily in laboratory settings. Its main use is for decoration, and the raw ore is sometimes kept as a conversation piece."
+	icon_state = "sheet-prydinate"
+	default_type = MATERIAL_PRYDINATE
+	icon_has_variants = TRUE
+
+/obj/item/stack/material/prydinate/full/Initialize()
+	. = ..()
+	amount = max_amount
+	update_icon()

@@ -555,3 +555,8 @@ var/const/access_kataphract_trader = 116
 	id = access_none
 	access_type = ACCESS_TYPE_NONE
 
+/var/const/access_expedition = 201
+/datum/access/expedition
+	id = access_expedition
+	desc = "Expedition"
+	access_type = ACCESS_REGION_GENERAL

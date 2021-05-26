@@ -10,6 +10,8 @@
 	maxHealth = 125
 	health = 125
 	speed = 2
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/pig
+	meat_amount = 4
 	melee_damage_lower = 5
 	melee_damage_upper = 15
 	attacktext = "gored"
@@ -19,6 +21,7 @@
 	emote_see = list("paws the ground","shakes its head","stomps")
 	emote_hear = list("snuffles", "snorts")
 	mob_size = 10
+	butchering_products = list(/obj/item/stack/material/animalhide = 5)
 
 /mob/living/simple_animal/hostile/wretch
 	name = "shambling wretch"

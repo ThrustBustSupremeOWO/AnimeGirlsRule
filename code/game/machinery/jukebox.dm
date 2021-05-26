@@ -228,7 +228,18 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("Posin'", 'sound/music/recordplayer/Posin.ogg'),
 		new/datum/track("Jazz Instrumental", 'sound/music/recordplayer/JazzInstrumental.ogg'),
 		new/datum/track("Le Swing", 'sound/music/recordplayer/LeSwing.ogg'),
-		new/datum/track("Cosmorot", 'sound/music/recordplayer/Cosmorot.ogg')
+		new/datum/track("Cosmorot", 'sound/music/recordplayer/Cosmorot.ogg'),
+		new/datum/track("Beyond", 'sound/ambience/ambispace.ogg'),
+		new/datum/track("Velvet Rose", 'sound/music/Velvet-Rose.ogg'),
+		new/datum/track("80's All Over Again", 'sound/music/80salloveragain.ogg'),
+		new/datum/track("As Far as it Gets", 'sound/music/asfarasitgets.ogg'),
+		new/datum/track("In Orbit", 'sound/music/Chronox_-_03_-_In_Orbit.ogg'),
+		new/datum/track("Torn", 'sound/music/Macamoto_-_05_-_Torn.ogg'),
+		new/datum/track("Martian Cowboy", 'sound/music/Martian Cowboy.ogg'),
+		new/datum/track("Nebula", 'sound/music/Pulse_Emitter_-_04_-_Nebula.ogg'),
+		new/datum/track("Monument", 'sound/music/Six_Umbrellas_-_05_-_Monument.ogg'),
+		new/datum/track("Wild Encounters", 'sound/music/WildEncounters.ogg'),
+		new/datum/track("Orbital Bodies", 'sound/music/moon_jam.ogg')
 	)
 
 /obj/machinery/media/jukebox/phonograph/update_icon()

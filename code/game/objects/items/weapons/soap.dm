@@ -72,7 +72,10 @@
 			to_chat(user, "\The [target] is empty!")
 	else
 		if (!(last_clean && world.time < last_clean + 120))
-			to_chat(user, "You start scrubbing the [target.name]")
+			if(target == user)
+				to_chat(user, SPAN_NOTICE("You start washing yourself."))
+			else
+				to_chat(user, "You start scrubbing \the [target.name]")
 			clean_msg = TRUE
 			last_clean = world.time
 		else
@@ -81,7 +84,10 @@
 		if (do_after(user, 25, needhand = 0))
 			target.clean_blood()
 			if(clean_msg)
-				to_chat(user, SPAN_NOTICE("You scrub \the [target.name] out."))
+				if(target == user)
+					to_chat(user, SPAN_NOTICE("You scrub yourself clean."))	
+				else
+					to_chat(user, SPAN_NOTICE("You scrub \the [target.name] out."))
 			if(istype(target, /turf) || istype(target, /obj/effect/decal/cleanable) || istype(target, /obj/effect/overlay))
 				var/turf/T = get_turf(target)
 				if(T)

@@ -105,10 +105,6 @@ STOCK_ITEM_COMMON(bombsupply, 4.5)
 	for(var/i in 1 to rand(1, 3))
 		new /obj/random/bomb_supply(L)
 
-STOCK_ITEM_COMMON(tech, 5)
-	for(var/i in 1 to rand(1, 3))
-		new /obj/random/tech_supply(L)
-
 STOCK_ITEM_COMMON(smokable, 2)
 	if(prob(50))
 		new /obj/item/flame/lighter/random(L)
@@ -364,15 +360,6 @@ STOCK_ITEM_COMMON(booze, 3.7)
 			var/type = pick(drinks)
 			new type(L)
 
-STOCK_ITEM_COMMON(plant, 3.5)
-	var/turf/T = get_turf(L)
-	if(!turf_clear(T))
-		for (var/turf/U in range(T,1))
-			if (turf_clear(U))
-				T = U
-				break
-	new /obj/structure/flora/pottedplant/random(T)
-
 STOCK_ITEM_COMMON(bag, 2)
 	var/type = pick( \
 		/obj/item/storage/bag/trash, \
@@ -400,20 +387,6 @@ STOCK_ITEM_COMMON(hailer, 1.1)
 		new /obj/item/device/megaphone(L)
 	else
 		new /obj/item/device/hailer(L)
-
-//A target, for target practice
-//Take em up to science for gun testing
-STOCK_ITEM_COMMON(target, 0.5)
-	var/turf/T = get_turf(L)
-	if(!turf_clear(T))
-		for(var/turf/U in range(T,1))
-			if(turf_clear(U))
-				T = U
-				break
-	if(prob(50))
-		new /obj/item/target(T)
-	else
-		new /obj/structure/target_stake(T)
 
 STOCK_ITEM_COMMON(snacks, 4)
 	//Snackboxes are much more likely to spawn on tables than in crates.
@@ -506,9 +479,6 @@ STOCK_ITEM_COMMON(mining, 2)
 	for(var/i in 1 to rand(1, 2))
 		var/to_spawn = pick(mine_items)
 		new to_spawn(L)
-
-STOCK_ITEM_COMMON(paicard, 2)
-	new /obj/item/device/paicard(L)
 
 STOCK_ITEM_COMMON(hide, 1)
 	new /obj/item/stack/material/animalhide(L, rand(5,50))

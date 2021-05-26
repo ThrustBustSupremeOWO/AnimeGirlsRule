@@ -167,6 +167,13 @@
 		else if(istype(O,/obj/effect))
 			var/obj/effect/E = O
 			if(E.movable_flags & MOVABLE_FLAG_EFFECTMOVE)
+				if(istype(E, /obj/effect/landmark))
+					var/obj/effect/landmark/L = E
+					if(L.name == "JoinLateCryo")
+						latejoin_cryo -= L.loc
+						L.forceMove(new_turf)
+						latejoin_cryo += L.loc
+						continue
 				E.forceMove(new_turf)
 
 	for(var/mob/M in source)

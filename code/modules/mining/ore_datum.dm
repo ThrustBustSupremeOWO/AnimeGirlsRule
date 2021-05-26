@@ -141,3 +141,36 @@ var/global/list/ore_data = list()
 	compresses_to = MATERIAL_HYDROGEN_METALLIC
 	scan_icon = "mineral_rare"
 	worth = 30
+
+/ore/copper
+	name = ORE_COPPER
+	display_name = "copper"
+	smelts_to = MATERIAL_COPPER
+	scan_icon = "mineral_uncommon"
+	worth = 2
+
+/ore/aluminum
+	name = ORE_ALUMINUM
+	display_name = "aluminum"
+	smelts_to = MATERIAL_ALUMINUM
+	scan_icon = "mineral_common"
+	worth = 1
+
+/ore/titanium
+	name = ORE_TITANIUM
+	display_name = "titanium"
+	alloy = TRUE
+	scan_icon = "mineral_rare"
+	worth = 15
+
+/ore/prydinate
+	name = ORE_PRYDINATE
+	display_name = "prydinate"
+	smelts_to = MATERIAL_PRYDINATE
+	scan_icon = "mineral_rare"
+	worth = 40
+	xarch_ages = list(
+		"million" = 999,
+		"billion" = 13,
+		"billion_lower" = 10
+		)

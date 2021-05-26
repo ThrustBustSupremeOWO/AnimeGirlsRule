@@ -315,6 +315,14 @@
 	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK
 	build_type = /obj/item/stack/tile/diamond
 
+/decl/flooring/prydinate
+	name = "prydinate floor"
+	desc = "A well-insulated floor made out of lovely prydinate."
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_base = "prydinate"
+	flags = TURF_REMOVE_CROWBAR
+	build_type = /obj/item/stack/tile/prydinate
+
 //Shuttle turfs
 
 /decl/flooring/shuttle

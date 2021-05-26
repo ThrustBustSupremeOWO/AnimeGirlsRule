@@ -86,7 +86,7 @@
 	speak_chance = 15
 	turns_per_move = 5
 	see_in_dark = 6
-	meat_type = /obj/item/reagent_containers/food/snacks/meat
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/chicken/bird
 	meat_amount = 16
 	mob_size = 5.5//weight based on ostriches
 	organ_names = list("pathetic bird body", "wing")

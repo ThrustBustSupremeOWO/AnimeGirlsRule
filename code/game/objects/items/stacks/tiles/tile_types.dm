@@ -268,6 +268,12 @@
 	icon_state = "tile_diamond"
 	matter = list(MATERIAL_DIAMOND = TILE_MATERIAL_AMOUNT)
 
+/obj/item/stack/tile/prydinate
+	name = "prydinate floor tile"
+	singular_name = "prydinate floor tile"
+	icon_state = "tile_prydinate"
+	matter = list(MATERIAL_PRYDINATE = TILE_MATERIAL_AMOUNT)
+
 /*
  * Cyborg modules
  */

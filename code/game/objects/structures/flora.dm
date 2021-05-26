@@ -17,12 +17,19 @@
 	var/being_chopped = FALSE //True when being chopped at. Spam prevention.
 	var/chop_difficulty = 5 //Compared to item force value, higher is harder to cut
 
+	//Other properties
+	var/produces_sap = FALSE
+	reagents_to_add = list()
+
 /obj/structure/flora/Initialize()
 	. = ..()
 	if(cross_difficulty)
 		update_cross_difficulty(cross_difficulty, get_turf(src))
 	if(glows)
 		set_light(glow_range, glow_strength, glow_color)
+	if(produces_sap)
+		desc_info += " You can harvest reagents from this plant by attacking it with an open container."
+
 
 /obj/structure/flora/Destroy()
 	update_cross_difficulty(0, get_turf(src))
@@ -45,7 +52,10 @@
 		to_chat(user, SPAN_WARNING("\The [src] is too tough to chop with \the [I]!"))
 		return
 
-/obj/structure/flora/attackby(var/obj/item/I, mob/user) 
+/obj/structure/flora/attackby(var/obj/item/I, mob/user)
+	if(produces_sap && I.is_open_container())
+		harvest_sap(user, I)
+		return
 	if(can_cut)
 		var/cutting = I.get_cutting_power()
 		if(cutting)
@@ -53,6 +63,13 @@
 				do_cut(user, I, cutting)
 			return
 	return ..()
+
+/obj/structure/flora/proc/harvest_sap(mob/user, var/obj/item/reagent_containers/RC)
+	if(!istype(RC))
+		return
+	reagents.trans_to_obj(RC, 5)
+	to_chat(user, SPAN_NOTICE("You harvest some sap from \the [src]!"))
+
 
 //trees
 /obj/structure/flora/tree
@@ -278,7 +295,6 @@
 	if(isliving(AM) && prob(50) && !is_cut)
 		playsound(loc, 'sound/effects/plantshake.ogg', 50, 1)
 
-
 /obj/structure/flora/moons/bush
 	name = "generic moon bush"
 	desc = "This shouldn't be a thing you see."
@@ -377,7 +393,6 @@
 /obj/structure/flora/moons/bush/twinklebulb
 	name = "twinklebulb"
 	desc = "A hardy, large bush with tough, flat leaves and bluish sap-filled cysts that twinkle with bioluminescent light."
-	icon = 'icons/obj/flora/moons.dmi'
 	icon_state = "twinklebulb"
 	glows = TRUE
 	glow_range = 2
@@ -385,6 +400,107 @@
 	glow_color = COLOR_CYAN
 	density = TRUE //Just can't move through
 	fragile = FALSE
+
+/obj/structure/flora/moons/bush/sharpweed
+	name = "sharpweed"
+	desc = "As the name implies, the cyan leaves of this rigid, vinelike bush are incredibly sharp."
+	icon_state = "sharpweed"
+	cross_difficulty = 1
+	chop_difficulty = 15
+	fragile = FALSE
+
+/obj/structure/flora/moons/bush/sharpweed/Crossed(var/atom/movable/AM)
+	..()
+	if(ishuman(AM))
+		var/mob/living/carbon/human/H = AM
+		var/damage_coef = 1
+		if(H.buckled_to)
+			return
+		if(H.resting)
+			return
+
+		if(prob(H.m_intent == M_RUN ? 25 : 60))
+			return
+
+		to_chat(H, SPAN_DANGER("You step on \the [src]!"))
+
+		if(H.species.siemens_coefficient < 0.5 || (H.species.flags & (NO_EMBED)))
+			damage_coef -= 0.2
+
+		if(H.shoes || H.wear_suit?.body_parts_covered & FEET)
+			damage_coef -= 0.1
+
+		if (H.m_intent == M_RUN)
+			damage_coef += 0.4
+
+
+		var/list/check = list(BP_L_FOOT, BP_R_FOOT)
+		while(check.len)
+			var/picked = pick(check)
+			var/obj/item/organ/external/affecting = H.get_organ(picked)
+			if(affecting)
+				if(affecting.status & ORGAN_ROBOT)
+					damage_coef -= 0.4
+					return
+
+				if(H.apply_damage(15 * damage_coef, BRUTE, affecting))
+					H.updatehealth()
+
+					if(H.can_feel_pain())
+						H.Weaken(4)
+
+				return
+			check -= picked
+		return
+
+/obj/structure/flora/moons/bush/wormroot
+	name = "wormroot"
+	desc = "A foul-smelling plant that seems to have a symbiotic relationship with worms and maggots burrowed inside of it."
+	icon_state = "wormroot1"
+	cross_difficulty = 0
+
+/obj/structure/flora/moons/bush/wormroot/Initialize()
+	. = ..()
+	icon_state = "wormroot[rand(1,2)]"
+
+/obj/structure/flora/moons/bush/wormroot/Crossed(var/atom/movable/AM)
+	..()
+	if(ishuman(AM))
+		for(var/mob/living/carbon/human/H in range(1))
+			if(H.wear_mask && (H.wear_mask.item_flags & BLOCK_GAS_SMOKE_EFFECT || H.wear_mask.item_flags & AIRTIGHT))
+				continue
+			if(H.head && (H.head.item_flags & BLOCK_GAS_SMOKE_EFFECT || H.head.item_flags & AIRTIGHT))
+				continue
+			if(prob(80))
+				var/msg = pick("It smells like a corpse...", "You gag at the awful stench!", "All you can smell is decay and rot!")
+				to_chat(H, SPAN_WARNING(msg))
+				if(prob(30))
+					to_chat(H, pick("You feel nauseous", "Ugghh....", "Your stomach churns uncomfortably", "You feel like you're about to throw up", "You feel queasy","You feel pressure in your abdomen"))
+					H.Weaken(1)
+
+/obj/structure/flora/moons/bush/cosmolily
+	name = "cosmo lilies"
+	desc = "A common flower that grows near or in shallow water. Their hollow structure creates a whistling noise during strong winds. Its leaves are unusually sterile for a plant, and can be used as a makeshift gauze."
+	icon_state = "cosmolilies"
+	cross_difficulty = 0
+	var/harvested = FALSE
+
+/obj/structure/flora/moons/bush/cosmolily/attack_hand(mob/user)
+	if(!harvested)
+		user.visible_message(SPAN_NOTICE("[user] harvests some leaves from \the [src]."), SPAN_NOTICE("You harvest some leaves from \the [src]."))
+		harvested = TRUE
+		var/obj/item/stack/medical/bruise_pack/lily/L = new /obj/item/stack/medical/bruise_pack/lily(get_turf(src))
+		user.put_in_hands(L)
+		icon_state = "[initial(icon_state)]_harvest"
+	else
+		to_chat(user, SPAN_NOTICE("There are no more usable leaves."))
+
+/obj/structure/flora/moons/bush/rigelfolly
+	name = "\improper Rigel's Folly"
+	desc = "Named after the late explorer Jeb Rigel, this plant secretes a honeylike sap that's good for eating... Provided you filter out the toxins that come with it, which Rigel didn't."
+	icon_state = "rigelfolly"
+	produces_sap = TRUE
+	reagents_to_add = list(/decl/reagent/nutriment/honey/sap = 12, /decl/reagent/toxin = 3, /decl/reagent/toxin/dextrotoxin = 3)
 
 //bushes
 /obj/structure/flora/bush

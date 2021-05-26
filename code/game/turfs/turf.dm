@@ -565,10 +565,14 @@ var/const/enterloopsanity = 100
 	resources["iron"] =     rand(2, 4)
 	resources["gold"] =     rand(0, 2)
 	resources["silver"] =   rand(2, 4)
+	resources["copper"] =   rand(1, 3)
+	resources["aluminum"] = rand(2, 4)
 	if(prob(25))
-		resources[MATERIAL_PHORON] =   rand(0, 2)
-		resources["osmium"] =   rand(0, 2)
+		resources[MATERIAL_PHORON] =   rand(0, 1)
 		resources["hydrogen"] = rand(0, 2)
+		resources["titanium"] = rand(0, 2)
+	if(prob(15))
+		resources["prydinate"] = rand(0, 1)
 	if(prob(50))
 		resources["artifact"] = rand(1, 2)
 
@@ -731,6 +735,14 @@ var/const/enterloopsanity = 100
 					ore += /obj/item/ore/osmium
 				if("hydrogen")
 					ore += /obj/item/ore/hydrogen
+				if("copper")
+					ore += /obj/item/ore/copper
+				if("aluminum")
+					ore += /obj/item/ore/aluminum
+				if("titanium")
+					ore += /obj/item/ore/titanium
+				if("prydinate")
+					ore += /obj/item/ore/prydinate
 				if("artifact")
 					if(prob(25))
 						switch(rand(1,5))

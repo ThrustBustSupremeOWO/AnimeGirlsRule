@@ -83,6 +83,28 @@
 	icon_state = "ore_soil"
 	material = ORE_SOIL
 
+/obj/item/ore/copper
+	name = "copper"
+	icon_state = "ore_copper"
+	material = ORE_COPPER
+
+/obj/item/ore/aluminum
+	name = "aluminum"
+	icon_state = "ore_aluminum"
+	material = ORE_ALUMINUM
+
+/obj/item/ore/titanium
+	name = "titanium"
+	desc = "Titanium ore, which can be alloyed with coal and platinum to create titanium sheets."
+	icon_state = "ore_titanium"
+	material = ORE_TITANIUM
+
+/obj/item/ore/prydinate
+	name = "prydinate"
+	desc = "Raw prydinate is rarely found on known planets, only slightly more common than Phoron. Given its limited uses and ability to be synthesized, though, it's not terribly valuable."
+	icon_state = "ore_prydinate"
+	material = ORE_PRYDINATE
+
 // maybe someone can think of a creative way to use slag
 // and make slagging shit not absolutely bomb mining - geeves
 /obj/item/ore/slag

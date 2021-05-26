@@ -82,3 +82,25 @@
 	new /obj/item/reagent_containers/food/snacks/tajaran_bread(src)
 	new /obj/item/reagent_containers/food/drinks/cans/adhomai_milk(src)
 	desc += " This one has the stamp of the Adhomai Liberation Army."
+
+/obj/item/storage/field_ration/coalition
+	icon_state = "ration_food"
+	desc_fluff = null
+
+/obj/item/storage/field_ration/coalition/create_ration()
+	var/selected_ration = rand(1, 2)
+
+	switch(selected_ration)
+
+		if(1)
+			new /obj/item/reagent_containers/food/snacks/liquidfood(src)
+			new /obj/item/reagent_containers/food/snacks/spacetwinkie(src)
+			new /obj/item/reagent_containers/food/drinks/cans/tonic(src)
+			desc += " This one has the stamp of the Coalition of Colonies."
+
+		if(2)
+			new /obj/item/reagent_containers/food/snacks/tastybread(src)
+			new /obj/item/reagent_containers/food/snacks/ricetub(src)
+			new /obj/item/reagent_containers/food/drinks/cans/tonic(src)
+			desc += " This one claims to be vegetarian-friendly."
+			icon_state = "ration_veg"

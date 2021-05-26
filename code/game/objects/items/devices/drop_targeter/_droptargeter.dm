@@ -43,8 +43,8 @@
 	var/turf/targloc = get_turf(target)
 	if(!emagged)
 		for(var/turf/t in block(locate(targloc.x+3,targloc.y+3,targloc.z), locate(targloc.x-3,targloc.y-3,targloc.z)))
-			if (!istype(t.loc, /area/mine))
-				to_chat(user, SPAN_WARNING("You can't do this so close to the station, point the laser further into the mine!"))
+			if (istype(t.loc, /area/shuttle/barge))
+				to_chat(user, SPAN_WARNING("ERROR: You can't do this so close to the ship!"))
 				return
 			if (!isfloor(targloc))
 				to_chat(user, SPAN_WARNING("You cannot request this on unstable flooring!"))

@@ -194,8 +194,8 @@
 
 	minimum_character_age = 18
 
-	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
-	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
+	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station, access_expedition)
+	minimal_access = list(access_mining, access_mining_station, access_mailsorting, access_expedition)
 	alt_titles = list("Drill Technician")
 	alt_outfits = list("Drill Technician" = /datum/outfit/job/mining/drill)
 	outfit = /datum/outfit/job/mining

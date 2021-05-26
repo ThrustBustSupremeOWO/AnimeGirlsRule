@@ -101,4 +101,9 @@
 /area/shuttle/barge
 	name = "Salvaging Barge"
 	flags = RAD_SHIELDED | NO_CREW_EXPECTED
+	sound_env = STANDARD_STATION
 	base_turf = /turf/unsimulated/floor/plating
+
+/area/shuttle/barge/common
+	name = "Salvaging Barge - Common Area"
+	sound_env = MEDIUM_SOFTFLOOR

@@ -176,3 +176,9 @@
 	'sound/ambience/hangar/hangar5.ogg',\
 	'sound/ambience/hangar/hangar6.ogg'\
 	)
+
+//In the jungle, the might jungle. Sounds from freesound.org under creative commons.
+#define AMBIENCE_JUNGLE list(\
+	'sound/ambience/moons/rainforest_1.ogg',\
+	'sound/ambience/moons/rainforest_2.ogg'\
+	)
