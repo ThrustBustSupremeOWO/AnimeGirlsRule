@@ -106,19 +106,6 @@ STOCK_ITEM_UNCOMMON(robolimbs, 3)
 		)
 		new type(L, manuf)
 
-STOCK_ITEM_UNCOMMON(circuitboards, 3)
-	var/list/allboards = subtypesof(/obj/item/circuitboard)
-	var/list/exclusion = list(
-		/obj/item/circuitboard/unary_atmos,
-		/obj/item/circuitboard/telecomms
-	)
-	exclusion += typesof(/obj/item/circuitboard/mecha)
-
-	allboards -= exclusion
-	for(var/i in 1 to rand(1, 2))
-		var/type = pick(allboards)
-		new type(L)
-
 STOCK_ITEM_UNCOMMON(jetpack, 3)
 	new /obj/item/tank/jetpack/void(L)
 	if(prob(40))
@@ -271,15 +258,6 @@ STOCK_ITEM_UNCOMMON(plushie, 1)
 
 STOCK_ITEM_UNCOMMON(flag, 1)
 	new /obj/random/random_flag(L)
-
-STOCK_ITEM_UNCOMMON(apiary, 1)
-	new /obj/item/bee_pack(L)
-	if(prob(75))
-		new /obj/item/bee_net(L)
-	if(prob(60))
-		new /obj/item/bee_smoker(L)
-	if(prob(30))
-		new /obj/item/honey_frame(L)
 
 STOCK_ITEM_UNCOMMON(pops, 0.5)
 	if(prob(85))

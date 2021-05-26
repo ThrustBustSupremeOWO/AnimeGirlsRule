@@ -26,6 +26,7 @@
 
 	uniform = /obj/item/clothing/under/prospector
 	shoes = /obj/item/clothing/shoes/workboots
+	id = /obj/item/card/id/coc
 
 /datum/job/visitor
 	title = "Visitor"

@@ -114,6 +114,7 @@
 	uniform = /obj/item/clothing/under/rank/medical/blue
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/surgeon
 	shoes = /obj/item/clothing/shoes/surgeon
+	id = /obj/item/card/id/coc
 
 /datum/outfit/job/doctor/surgeon/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()

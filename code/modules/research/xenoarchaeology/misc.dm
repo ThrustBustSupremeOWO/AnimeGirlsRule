@@ -101,6 +101,8 @@
 	new /obj/item/storage/bag/fossils(src)
 	new /obj/item/device/hand_labeler(src)
 	new /obj/item/ore_detector(src)
+	new /obj/item/storage/box/evidence(src)
+	new /obj/item/device/sample_scanner(src)
 
 //---- Isolation room air alarms
 

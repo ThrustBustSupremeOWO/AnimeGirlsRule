@@ -190,6 +190,7 @@
 	tablet = /obj/item/modular_computer/handheld/preset/security
 	l_pocket = /obj/item/device/flash
 	l_hand = /obj/item/rig/gunslinger
+	id = /obj/item/card/id/coc
 	headset = null
 	bowman = null
 

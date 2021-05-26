@@ -6,6 +6,7 @@
 	w_class = ITEMSIZE_SMALL
 	throwforce = 10
 	var/datum/geosample/geologic_data
+	var/list/ore_data = list()
 	var/material
 
 /obj/item/ore/uranium
@@ -83,6 +84,30 @@
 	icon_state = "ore_soil"
 	material = ORE_SOIL
 
+/obj/item/ore/dirt/GenerateOreProperties()
+	var/ratio_silt = rand(1, 99)
+	var/ratio_sand = rand(0, 100 - ratio_silt)
+	var/ratio_clay = 100 - (ratio_sand + ratio_silt)
+	var/trace_phoron = pick("None", "Insignificant", "Inconclusive", "Less than 0.001 ppm")
+	ore_data = list("Organic Matter %: [rand(1, 15)]",
+	"Trace Phoron: [trace_phoron]",
+	"NO2-N ppm: [rand(5, 25)]",
+	"NaHCO3-P ppm: [rand(10, 60)]",
+	"K ppm: [rand(10, 100)]",
+	"Ca ppm: [rand(400, 1400)]",
+	"Na ppm: [rand(5, 35)]",
+	"SO4-S ppm: [rand(2, 24)]",
+	"Zn ppm: [rand(0, 10)]",
+	"Mg ppm: [rand(0, 10)]",
+	"Fe ppm: [rand(0, 10)]",
+	"Cu ppm: [rand(0, 10)]",
+	"B ppm: [rand(0, 8)]",
+	"Cl ppm: [rand(0, 3)]",
+	"pH: [rand(3, 11)]",
+	"Silt %: [ratio_silt]",
+	"Sand %: [ratio_sand]",
+	"Clay %: [ratio_clay]")
+
 /obj/item/ore/copper
 	name = "copper"
 	icon_state = "ore_copper"
@@ -113,10 +138,17 @@
 	icon_state = "slag"
 	material = null
 
+/obj/item/ore/slag/GenerateOreProperties()
+	return
+
 /obj/item/ore/Initialize()
 	. = ..()
 	if((randpixel_xy()) && icon_state == "ore1")
 		icon_state = "ore[pick(1,2,3)]"
+	GenerateOreProperties()
+	if(!geologic_data)
+		geologic_data = new /datum/geosample
+		RandomizeAndApplyData()
 
 /obj/item/ore/attackby(obj/item/W, mob/user)
 	if(istype(W,/obj/item/device/core_sampler))
@@ -124,3 +156,20 @@
 		C.sample_item(src, user)
 	else
 		return ..()
+
+/obj/item/ore/proc/RandomizeAndApplyData()
+	var/list/newdata = list()
+	for(var/D in ore_data)
+		if(prob(5))
+			D = pick("Measure Inconclusive", "ERROR%^#", "Device Error", "Buffer Overflow")
+		newdata += D
+	geologic_data.GenerateOreData(src, newdata)
+
+/obj/item/ore/proc/GenerateOreProperties()
+	var/list/prop = list("None" = 24, "Unusual Magnetism" = 2, "Excessive Compression" = 2, "Trace Radiation" = 2, "ERROR_UNREADABLE" = 1)
+	ore_data = list(
+		"Purity%: [rand(15, 95)]",
+		"FE2O3%: [rand(1, 20)]",
+		"Organic Material%: [rand(3, 20)/10]",
+		"Anomalous Properties: [pickweight(prop)]"
+	)

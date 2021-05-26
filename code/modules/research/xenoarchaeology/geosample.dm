@@ -47,10 +47,24 @@
 	//var/source_mineral
 	//all potential finds are initialised to null, so nullcheck before you access them
 	var/list/find_presence = list()
+	var/list/sample_data = list() //fluff data
 
 /datum/geosample/New(var/turf/simulated/mineral/container)
 
-	UpdateTurf(container)
+	if(container)
+		UpdateTurf(container)
+
+/datum/geosample/proc/GenerateOreData(var/obj/item/ore/O, var/list/ore_data = list())
+	source_mineral = O.name
+	sample_data = ore_data
+	if(istype(O, /obj/item/ore/dirt)) //No dirt age
+		return
+	age_thousand = rand(1,999)
+	if(prob(98))
+		age_million = rand(1,999)
+		if(prob(40))
+			age_billion = rand(1,5)
+
 
 //this should only need to be called once
 /datum/geosample/proc/UpdateTurf(var/turf/simulated/mineral/container)

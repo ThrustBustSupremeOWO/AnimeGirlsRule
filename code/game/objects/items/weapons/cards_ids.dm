@@ -604,8 +604,8 @@ var/const/NO_EMAG_ACT = -50
 	overlay_state = "einstein_card"
 
 /obj/item/card/id/coc
-	name = "\improper Coalition of Colonies identification card"
-	desc = "A simple identification card, indicating affiliation with the Coalition of Colonies."
+	name = "\improper Coalition of Colonies expedition identification card"
+	desc = "A simple identification card, indicating affiliation with an official Coalition of Colonies expedition."
 	icon_state = "coalition_card"
 
 /obj/item/card/id/bluespace
