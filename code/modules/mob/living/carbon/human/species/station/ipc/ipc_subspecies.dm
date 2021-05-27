@@ -472,6 +472,56 @@
 	if (istype(H))
 		return rgb(H.r_eyes, H.g_eyes, H.b_eyes)
 
+/datum/species/machine/ass
+	name = SPECIES_IPC_ASS
+	short_name = "ass"
+	bodytype = BODYTYPE_IPC_ASS
+
+	icobase = 'icons/mob/human_races/ipc/r_ind_asscore.dmi'
+	deform = 'icons/mob/human_races/ipc/r_ind_asscore.dmi'
+	preview_icon = 'icons/mob/human_races/ipc/asscore_preview.dmi'
+
+	eyes = null
+	brute_mod = 4.5
+	burn_mod = 3.0
+	sprint_speed_factor = 1.5
+
+	grab_mod = 1.1 // Smooth, fast
+	resist_mod = 4 // Not super strong, but still rather strong
+
+	allowed_accents = list(ACCENT_CETI, ACCENT_GIBSON, ACCENT_SOL, ACCENT_COC, ACCENT_ERIDANI, ACCENT_ERIDANIDREG, ACCENT_ELYRA, ACCENT_KONYAN, ACCENT_JUPITER, ACCENT_MARTIAN, ACCENT_LUNA,
+							ACCENT_HIMEO, ACCENT_VENUS, ACCENT_VENUSJIN, ACCENT_PHONG, ACCENT_SILVERSUN_EXPATRIATE, ACCENT_TTS, ACCENT_EUROPA, ACCENT_EARTH, ACCENT_ASSUNZIONE)
+
+	slowdown = -1.3
+
+	appearance_flags = HAS_EYE_COLOR | HAS_UNDERWEAR | HAS_SOCKS
+
+	examine_color = "#ff00ff"
+
+	has_limbs = list(
+		BP_CHEST  = list("path" = /obj/item/organ/external/chest/ipc/industrial/ass),
+		BP_GROIN  = list("path" = /obj/item/organ/external/groin/ipc/industrial/ass),
+		BP_HEAD   = list("path" = /obj/item/organ/external/head/ipc/industrial/ass),
+		BP_L_ARM  = list("path" = /obj/item/organ/external/arm/ipc/industrial/ass),
+		BP_R_ARM  = list("path" = /obj/item/organ/external/arm/right/ipc/industrial/ass),
+		BP_L_LEG  = list("path" = /obj/item/organ/external/leg/ipc/industrial/ass),
+		BP_R_LEG  = list("path" = /obj/item/organ/external/leg/right/ipc/industrial/ass),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand/ipc/industrial/ass),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/ipc/industrial/ass),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/ipc/industrial/ass),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/ipc/industrial/ass)
+	)
+
+	inherent_verbs = list(
+		/mob/living/carbon/human/proc/self_diagnostics,
+		/mob/living/carbon/human/proc/check_tag
+		)
+
+
+/datum/species/machine/ass/get_light_color(mob/living/carbon/human/H)
+	if (istype(H))
+		return rgb(H.r_eyes, H.g_eyes, H.b_eyes)
+
 /datum/species/machine/bishop
 	name = SPECIES_IPC_BISHOP
 	short_name = "bcf"

@@ -34,7 +34,7 @@
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
 	footstep_sound = /decl/sound_category/snow_footstep
-
+//Stophs
 /turf/unsimulated/floor/jungle_grass
 	name = "grass"
 	icon = 'icons/turf/total_floors.dmi'
@@ -90,6 +90,47 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "shimmer"
 	footstep_sound = /decl/sound_category/asteroid_footstep
+//Apostali
+/turf/unsimulated/floor/marble/apostali
+	name = "carved alien marble"
+	desc = "A glamorous marble floor, engraved with indescribable inscriptions. It seems to be perpetually slippery."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "marble"
+
+/turf/unsimulated/floor/jungle_grass/apostali
+	name = "rich violet growth"
+	desc = "A beautiful pink-ish violet overgrowth, looks plush and easy to rest on."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "pink"
+	footstep_sound = /decl/sound_category/grass_footstep
+	baseturf = /turf/unsimulated/floor/dirt/apostali
+	has_resources = TRUE
+	can_dig = TRUE
+
+/turf/unsimulated/floor/jungle_grass/apostali/saturated
+	name = "rich purple growth"
+	desc = "A beautiful, dark purple overgrowth, looks plush and easy to rest on."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "purple1"
+	footstep_sound = /decl/sound_category/grass_footstep
+	baseturf = /turf/unsimulated/floor/dirt/apostali
+	has_resources = TRUE
+	can_dig = TRUE
+
+/turf/unsimulated/floor/jungle_grass/apostali/saturated/Initialize(mapload)
+	if(prob(20))
+		var/variant = rand(1,3)
+		icon_state = "purple[variant]"
+	. = ..()
+
+/turf/unsimulated/floor/dirt/apostali
+	name = "decrepit waste"
+	desc = "A gloomy and dark tinted ground riddled with barbs and hardened roots."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "decrepit"
+	footstep_sound = /decl/sound_category/asteroid_footstep
+	has_resources = TRUE
+	can_dig = TRUE
 
 /turf/unsimulated/mask
 	name = "mask"

@@ -87,6 +87,13 @@ var/global/datum/robolimb/basic_robolimb
 	linked_frame = SPECIES_IPC_G1
 	fabricator_available = TRUE
 
+/datum/robolimb/ass
+	company = PROSTHETIC_ASS
+	desc = "This limb consists of multiple hovering segments, seeming to keep together by sheer force of will."
+	icon = 'icons/mob/human_races/ipc/r_ind_asscore.dmi'
+	unavailable_at_chargen = 1
+	linked_frame = SPECIES_IPC_ASS
+
 /datum/robolimb/terminator
 	company = PROSTHETIC_HK
 	desc = "A ludicrously expensive and EMP shielded component, these types of limbs are best suited for highly specialized cyborgs."

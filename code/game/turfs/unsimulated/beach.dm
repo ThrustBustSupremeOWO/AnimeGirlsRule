@@ -19,6 +19,12 @@
 	icon_state = "water"
 	footstep_sound = /decl/sound_category/water_footstep
 
+/turf/unsimulated/beach/water/pink
+	name = "pink water"
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "seadeep"
+	footstep_sound = /decl/sound_category/water_footstep
+
 /turf/unsimulated/beach/water/Initialize()
 	. = ..()
-	add_overlay(image("icon"='icons/misc/beach.dmi',"icon_state"="water2","layer"=MOB_LAYER+0.1))
+	add_overlay(image("icon"='icons/turf/moons.dmi',"icon_state"="overlay","layer"=MOB_LAYER+0.1))

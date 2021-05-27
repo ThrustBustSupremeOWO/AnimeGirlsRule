@@ -373,6 +373,7 @@
 #define PROSTHETIC_IND "Hephaestus Industrial Limb"
 #define PROSTHETIC_SYNTHSKIN "Human Synthskin"
 #define PROSTHETIC_BC "Bishop Cybernetics"
+#define PROSTHETIC_ASS "Associate Core"
 #define PROSTHETIC_ZH "Zeng-Hu Pharmaceuticals"
 #define PROSTHETIC_HI "Hephaestus Industries"
 #define PROSTHETIC_XMG "Xion Manufacturing Group"

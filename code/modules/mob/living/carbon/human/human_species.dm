@@ -113,6 +113,9 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy/mannequin)
 /mob/living/carbon/human/industrial_xion/Initialize(mapload)
 	. = ..(mapload, SPECIES_IPC_XION)
 
+/mob/living/carbon/human/asscore/Initialize(mapload)
+	. = ..(mapload, SPECIES_IPC_ASS)
+
 /mob/living/carbon/human/industrial_xion_remote/Initialize(mapload)
 	. = ..(mapload, SPECIES_IPC_XION_REMOTE)
 

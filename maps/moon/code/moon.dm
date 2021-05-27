@@ -7,7 +7,7 @@
 	lobby_transitions = 10 SECONDS
 
 	station_levels = list(1, 2, 3, 4, 5)
-	admin_levels = list()
+	admin_levels = list(2, 3, 4, 5, 6, 7)
 	contact_levels = list(1, 2, 3, 4, 5)
 	player_levels = list(1, 2, 3, 4, 5)
 	restricted_levels = list()
@@ -18,7 +18,8 @@
 		"3" = /turf/simulated/floor,
 		"4" = /turf/unsimulated/floor/dirt,
 		"5" = /turf/simulated/floor,
-		"6" = /turf/simulated/floor
+		"6" = /turf/simulated/floor,
+		"7" = /turf/simulated/floor
 	)
 
 	station_name = "CSV Spire"

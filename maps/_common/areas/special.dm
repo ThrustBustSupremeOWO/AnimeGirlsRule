@@ -356,3 +356,11 @@
 /area/moon/ice/dark
 	name = "Tundra Interior"
 	icon_state = "purple"
+
+/area/moon/sunlight
+	name = "Sunlight"
+	icon_state = "yellow"
+	luminosity = 1
+	dynamic_lighting = 0
+	requires_power = 0
+	no_light_control = 1
