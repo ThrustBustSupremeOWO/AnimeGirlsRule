@@ -364,3 +364,7 @@
 	dynamic_lighting = 0
 	requires_power = 0
 	no_light_control = 1
+
+/area/moon/sunlight/landing
+	luminosity = 0
+	dynamic_lighting = TRUE
