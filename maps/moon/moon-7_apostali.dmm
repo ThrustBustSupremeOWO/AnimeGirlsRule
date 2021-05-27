@@ -8,6 +8,7 @@
 "de" = (/obj/effect/decal/fake_object{desc = "It's used to monitor rooms."; icon = 'icons/obj/monitors.dmi'; icon_state = "camera"; layer = 3.02; name = "surveillance camera"},/turf/unsimulated/floor/dirt/apostali,/area/moon/sunlight)
 "du" = (/obj/item/storage/box/syndie_kit/chameleon,/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
 "dz" = (/obj/machinery/acting/changer,/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
+"eb" = (/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/decal/cleanable/dirt,/obj/machinery/power/radial_floodlight/admin,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "ec" = (/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/wood,/area/moon/sunlight)
 "fC" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/turf/simulated/floor/wood,/area/moon/sunlight)
 "fZ" = (/turf/simulated/floor/tiled/ramp{dir = 1},/area/moon/sunlight)
@@ -19,7 +20,7 @@
 "iw" = (/obj/effect/decal/fake_object{name = "service ladder"; pixel_y = 24},/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
 "iA" = (/obj/structure/flora/moons/bush/geist,/turf/unsimulated/floor/dirt/apostali,/area/moon/sunlight)
 "jk" = (/obj/effect/floor_decal/industrial/outline/blue,/obj/effect/decal/fake_object{density = 1; desc = "A wooden crate containing spare parts."; icon = 'icons/obj/storage.dmi'; icon_state = "densecrate"; name = "mechanical supply crate"; pixel_x = 1},/turf/simulated/floor/tiled,/area/moon/sunlight)
-"jo" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
+"jo" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "jQ" = (/turf/simulated/floor/tiled/ramp{dir = 4},/area/moon/sunlight)
 "ka" = (/obj/item/stool/bar/padded,/turf/simulated/floor/wood,/area/moon/sunlight)
 "kk" = (/obj/item/stool/padded,/turf/simulated/floor/wood,/area/moon/sunlight)
@@ -34,6 +35,7 @@
 "mY" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/tiled,/area/moon/sunlight)
 "nc" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
 "nE" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/wood,/area/moon/sunlight)
+"oc" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/decal/cleanable/dirt,/obj/machinery/power/radial_floodlight/admin,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "qk" = (/obj/effect/decal/warning_stripes,/obj/effect/decal/fake_object{desc = "An automated turret."; icon = 'icons/obj/turrets.dmi'; icon_state = "cover_1"; layer = 3.02; name = "turret"},/turf/simulated/floor/plating,/area/moon/sunlight)
 "qL" = (/obj/structure/bed/chair/comfy/black,/turf/simulated/floor/wood,/area/moon/sunlight)
 "qO" = (/obj/structure/window/reinforced,/obj/structure/bed/chair/comfy/black{dir = 4},/turf/simulated/floor/tiled,/area/moon/sunlight)
@@ -41,7 +43,7 @@
 "qY" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/tiled,/area/moon/sunlight)
 "rc" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped,/turf/simulated/floor/wood,/area/moon/sunlight)
 "rR" = (/obj/effect/floor_decal/industrial/outline/blue,/obj/structure/window/reinforced{dir = 8},/obj/effect/decal/fake_object{desc = "A crate of military supplies."; icon = 'icons/obj/storage.dmi'; icon_state = "dropcrate"; layer = 3.02; name = "metal crate"; pixel_x = 1; pixel_y = 4},/turf/simulated/floor/tiled,/area/moon/sunlight)
-"sm" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 5},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
+"sm" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 5},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 8},/obj/effect/decal/cleanable/dirt,/obj/machinery/power/radial_floodlight/admin,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "su" = (/obj/effect/floor_decal/industrial/outline/blue,/obj/effect/decal/fake_object{desc = "A crate of military supplies."; icon = 'icons/obj/storage.dmi'; icon_state = "dropcrate"; layer = 3.02; name = "metal crate"; pixel_x = 1; pixel_y = 4},/turf/simulated/floor/tiled,/area/moon/sunlight)
 "tm" = (/obj/structure/table/wood,/obj/item/device/flashlight/lamp/green{layer = 4.1; pixel_x = -2; pixel_y = 6},/obj/item/stamp/coc,/turf/simulated/floor/wood,/area/moon/sunlight)
 "to" = (/obj/effect/decal/fake_object{density = 1; desc = "This microwave has been through a lot of abuse."; icon = 'icons/obj/kitchen.dmi'; icon_state = "mwb"; name = "Trashed microwave"; pixel_y = 3},/obj/structure/table/wood,/turf/simulated/floor/wood,/area/moon/sunlight)
@@ -67,8 +69,8 @@
 "BS" = (/obj/structure/filingcabinet,/turf/simulated/floor/wood,/area/moon/sunlight)
 "Cn" = (/turf/unsimulated/beach/water/pink,/area/moon/sunlight)
 "Cz" = (/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
-"Dh" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
-"Dj" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 6},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
+"Dh" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
+"Dj" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 6},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 1},/obj/effect/decal/cleanable/dirt,/obj/machinery/power/radial_floodlight/admin,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "Dt" = (/obj/structure/table/reinforced/wood,/obj/item/device/flashlight/lamp/green{layer = 4.1; pixel_x = -2; pixel_y = 6},/obj/item/storage/slide_projector,/obj/item/folder/coc,/turf/simulated/floor/wood,/area/moon/sunlight)
 "DF" = (/obj/structure/flora/moons/bush/geist,/turf/unsimulated/floor/jungle_grass/apostali/saturated,/area/moon/sunlight)
 "DJ" = (/obj/machinery/photocopier,/turf/simulated/floor/wood,/area/moon/sunlight)
@@ -76,7 +78,7 @@
 "DW" = (/obj/structure/bed/chair/wood,/turf/simulated/floor/wood,/area/moon/sunlight)
 "Ev" = (/obj/structure/noticeboard{pixel_y = 31},/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
 "EJ" = (/obj/structure/flora/moons/grass/geist,/turf/unsimulated/floor/jungle_grass/apostali,/area/moon/sunlight)
-"Gj" = (/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
+"Gj" = (/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "GF" = (/obj/structure/bed/chair/comfy/teal{dir = 4},/turf/simulated/floor/wood,/area/moon/sunlight)
 "GT" = (/obj/machinery/power/smes/batteryrack,/turf/simulated/floor/tiled,/area/moon/sunlight)
 "HG" = (/obj/structure/table/wood,/obj/item/flame/lighter/zippo/coalition,/turf/simulated/floor/wood,/area/moon/sunlight)
@@ -93,20 +95,23 @@
 "No" = (/turf/simulated/floor/tiled/ramp,/area/moon/sunlight)
 "Np" = (/obj/effect/debugging/marker{density = 1; desc = "A massive globe which provides a detailed scan of things in your vicinity. It's hopelessly complex and probably does something."; icon = 'icons/effects/96x96.dmi'; icon_state = "globe"; name = "central intelligence command input"},/obj/structure/lattice/catwalk/indoor/grate,/turf/simulated/floor,/area/moon/sunlight)
 "Nq" = (/obj/structure/bed/chair/comfy/sofa/right,/turf/simulated/floor/wood,/area/moon/sunlight)
+"Ob" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/power/radial_floodlight/admin,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "Or" = (/obj/structure/table/wood,/obj/item/folder/blue,/turf/simulated/floor/wood,/area/moon/sunlight)
 "OI" = (/obj/effect/decal/fake_object{density = 1; desc = "An impenetrable door, something tells you this leads to an out of character area."; icon = 'icons/obj/doors/Doorglass.dmi'; icon_state = "door_locked"; name = "To : Underground Facilities"},/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/doors/rapid_pdoor.dmi'; icon_state = "shutterhalf"; name = "shutter"},/turf/simulated/floor/tiled,/area/moon/sunlight)
-"Pg" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
+"Pg" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "Pm" = (/obj/structure/table/wood,/obj/structure/window/reinforced{dir = 1},/obj/item/storage/box/fancy/candle_box,/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
 "Pr" = (/obj/effect/decal/fake_object{dir = 4; icon = 'icons/obj/recycling.dmi'; icon_state = "conveyor-broken"; layer = 2.4; name = "conveyor"},/turf/simulated/floor/plating,/area/moon/sunlight)
-"Qi" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 10},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
+"Qi" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 10},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/power/radial_floodlight/admin,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
+"Qx" = (/obj/machinery/power/radial_floodlight/admin,/turf/unsimulated/floor/dirt/apostali,/area/moon/sunlight)
 "QG" = (/obj/structure/table/wood,/obj/random/booze,/obj/machinery/recharger/wallcharger{pixel_x = 4; pixel_y = 21},/turf/simulated/floor/wood,/area/moon/sunlight)
 "Rb" = (/obj/structure/flora/moons/grass/geist,/turf/unsimulated/floor/jungle_grass/apostali/saturated,/area/moon/sunlight)
 "Rk" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
 "Ro" = (/obj/structure/flora/pottedplant/random,/turf/simulated/floor/wood,/area/moon/sunlight)
 "RA" = (/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/wood,/area/moon/sunlight)
 "RI" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/lattice/catwalk/indoor/grate,/obj/effect/debugging/marker{density = 1; icon_state = null},/turf/simulated/floor,/area/moon/sunlight)
-"RO" = (/obj/effect/shuttle_landmark/barge/six,/turf/unsimulated/floor/dirt/apostali,/area/moon/sunlight)
+"RO" = (/obj/effect/shuttle_landmark/barge/six,/turf/unsimulated/floor/dirt/apostali,/area/moon/sunlight/landing)
 "RR" = (/obj/structure/lattice/catwalk/indoor/grate,/obj/effect/debugging/marker{density = 1; icon_state = null},/turf/simulated/floor,/area/moon/sunlight)
+"Sg" = (/turf/unsimulated/floor/dirt/apostali,/area/moon/sunlight/landing)
 "Sk" = (/obj/structure/table/wood,/obj/structure/window/reinforced,/turf/simulated/floor/holofloor/tiled/dark,/area/moon/sunlight)
 "SH" = (/obj/structure/table/wood,/turf/simulated/floor/wood,/area/moon/sunlight)
 "SJ" = (/obj/structure/table/reinforced/wood,/obj/item/paper_bin{pixel_x = 3; pixel_y = 6},/obj/item/pen,/obj/item/paper_scanner{pixel_x = 12},/turf/simulated/floor/wood,/area/moon/sunlight)
@@ -123,7 +128,7 @@
 "We" = (/obj/structure/curtain/black{icon_state = "open"; opacity = 0},/turf/simulated/floor/wood,/area/moon/sunlight)
 "Wm" = (/obj/machinery/vending/boozeomat{req_access = null},/turf/simulated/floor/wood,/area/moon/sunlight)
 "Wt" = (/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/wood,/area/moon/sunlight)
-"WD" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 9},/obj/effect/floor_decal/industrial/warning/dust/corner,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/sunlight)
+"WD" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 9},/obj/effect/floor_decal/industrial/warning/dust/corner,/obj/effect/decal/cleanable/dirt,/obj/machinery/power/radial_floodlight/admin,/turf/simulated/floor/plating,/area/moon/sunlight/landing)
 "WR" = (/obj/effect/decal/fake_object{color = "#545c68"; density = 1; icon_state = "barricade"; name = "barricade"},/turf/unsimulated/floor/marble/apostali,/area/moon/sunlight)
 "Xd" = (/turf/simulated/floor/wood,/area/moon/sunlight)
 "Xn" = (/turf/simulated/floor/plating,/area/moon/sunlight)
@@ -178,36 +183,36 @@ ACCnCnCnCnCnCnCnCnhkCzCzAsAsCzRkCzCzCzEvRkRkRkTHNpRRRITHCzMNXdXdXdXdAsCnCnCnCnCn
 ACCnCnCnCnCnCnCnCnAsAsAsAsCzCzRkCzCzCzCzRkRkRkTHTHTHTHTHCzAsAsAsAsAsAsCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
 ACCnCnCnCnCnCnCnRAhkqLRoAsMNAsAsAsAsAsAshkfZAsuhCzCzRkRkCzCzuXPrPrAzAzCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
 ACCnCnCnCnCnCnCnTVMNXdXdZcXdAsJttoLBknNqYkXsAsAsZICzRkRkCzCzhkCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnltltiAltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnrchkXdXdXdXdAsXdXdXdXdXdXdXdQGtGqOCzRkRkCzCzhkqkCnCnCnCnCnCnCnCnCnCnCnCnltltltltltltbeltltltltltltltbeltltltltltltltltiAltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnrchkXdXdXdXdAsXdXdXdXdXdXdXdQGtGqOCzRkRkCzCzhkqkCnCnCnCnCnCnCnCnCnCnCnCnltltltltltltbeQxltltltltltltbeQxltltltltltltltiAltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
 ACCnCnCnCnCnCnCnCnhkDJXdSJDtAsTLXdXdkaXdXdXdkkhkTjCzCzCzCzCzhkhkhkhkAsCnCnCnCnCnCnCnCnltWDPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgPgsmltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnhkVWXdgsBSAsqRXdXdwBkaXdXdfCjQCzCzRkCzCzCzySwvcFcUAsCnCnCnCnCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltbeltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnhkhkhkhkhkAsGFXdXdtmkaXdXdfCjQCzCzRkCzCzCzTHTHTHTHAsCnCnCnCnCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnAsGFXdWmAsUWXdXdBfhkuhCzCzCzCzCzrRjkjksuAsCnCnCnACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnAsAsAsAsAsAsWeWeAsAshkAslKlKAsAsAsAsAsAsAsCnCnCnACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZDFkZhkOrkaXdMCAsdebXqYbwbXltltltltcscsCnCnCnACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltiAltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZhkHGXdXdgYAskZkZmYMwkZkZkZltltEJcsCnCnACACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAsAshkhkAsAskZkZmYXnkZkZltltcscsCnCnCnACACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltbeCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZlecscsltltkZkZmYbwkZkZltltEJcsCnCnCnACACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZkZcscsltltltkZkZmYbwkZltltltcscsCnCnCnACACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZEJcsEJltltltltkZncbwkZltltltcscsCnCnCnACACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltiAltbeltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZlecsltltltltltkZmYbwltltltltltEJcsCnCnACACCnCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZcscsltltltltltkZmYbwltltltltltltcsCnCnACACACCnCnCnltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZcsACltltltltltltIkIkltltltltltltACACACACACACCnCnCnltjoltltltltltltltltltltROltltltltltltltltltltltDhltltltltltiACnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZACACygygygygygygXQylygygygygygygACACACACACACCnCnltltjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACzazazazazazaIkIkzazazazazazaACACACACACACCnCnltltjoltltltltltltltltltltltltltltltltltltltltltltDhltbeltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACltbXltltltbXtGNoNotGbXltltltbXltACACACACACCnCnltACjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACltltltltltltltkZkZltltltiAltltltACACACACACACCnCnACjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltbeltltltltkZkZltbeltltltltltACACACACACACACACACjoltltltltltltltltltltltltltltltltltltltltltltDhltltltiAltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltltltltiAltkZkZkZltltbeltltltACACACACACACACACkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltltltltltltltkZkZkZltltltiAltltltUxYvltltltltkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltiAltbeltltltkZkZkZkZltltltltltltltltltltltltkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnCnACACACACltltltltltltltltltltkZkZkZkZkZkZkZkZltltlttGltltkZkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnACACACACACltltltltltltltltltltltltkZkZkZkZkZkZkZkZkZkZkZkZkZkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnCnACACACACACltbeltltltltltltiAltltltkZkZkZkZkZkZkZkZkZkZkZkZkZkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnCnACACACACACACltltltltltltltltltltltltltltkZkZkZkZkZkZkZkZkZkZkZkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnACACACACACACACACltltltltiAltbeltltltltltltltltltltltltlttGltkZidkZjoltltltltltltltltltltltltltltltltltltltltltltDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnCnACACACACACACACACACltltltltltltltiAltltltltltltltltltltltltltltltkZjoltltltltltltltltltltltltltltltltltltltltltltDhbeltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
-ACCnCnCnCnCnCnCnCnCnACACACACACACACACACACACACltltltltltltltltltltltACACACltltltltltltltltQiGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjGjDjltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnhkVWXdgsBSAsqRXdXdwBkaXdXdfCjQCzCzRkCzCzCzySwvcFcUAsCnCnCnCnCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltbeltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnhkhkhkhkhkAsGFXdXdtmkaXdXdfCjQCzCzRkCzCzCzTHTHTHTHAsCnCnCnCnCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnAsGFXdWmAsUWXdXdBfhkuhCzCzCzCzCzrRjkjksuAsCnCnCnACCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnAsAsAsAsAsAsWeWeAsAshkAslKlKAsAsAsAsAsAsAsCnCnCnACCnCnCnCnltObSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgocltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZDFkZhkOrkaXdMCAsdebXqYbwbXltltltltcscsCnCnCnACCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltiAltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZhkHGXdXdgYAskZkZmYMwkZkZkZltltEJcsCnCnACACCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAsAshkhkAsAskZkZmYXnkZkZltltcscsCnCnCnACACCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltbeCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZlecscsltltkZkZmYbwkZkZltltEJcsCnCnCnACACCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZkZcscsltltltkZkZmYbwkZltltltcscsCnCnCnACACCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZEJcsEJltltltltkZncbwkZltltltcscsCnCnCnACACCnCnCnCnltObSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgocltiAltbeltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZlecsltltltltltkZmYbwltltltltltEJcsCnCnACACCnCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZcscsltltltltltkZmYbwltltltltltltcsCnCnACACACCnCnCnltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZcsACltltltltltltIkIkltltltltltltACACACACACACCnCnCnltjoSgSgSgSgSgSgSgSgSgSgROSgSgSgSgSgSgSgSgSgSgSgDhltltltltltiACnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnkZACACygygygygygygXQylygygygygygygACACACACACACCnCnltltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACzazazazazazaIkIkzazazazazazaACACACACACACCnCnltltjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltbeltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACltbXltltltbXtGNoNotGbXltltltbXltACACACACACCnCnltACObSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgocltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACltltltltltltltkZkZltltltiAltltltACACACACACACCnCnACjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltbeltltltltkZkZltbeltltltltltACACACACACACACACACjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltiAltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltltltltiAltkZkZkZltltbeltltltACACACACACACACACkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltltltltltltltkZkZkZltltltiAltltltUxYvltltltltkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnCnACACACltltltiAltbeltltltkZkZkZkZltltltltltltltltltltltltkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnCnACACACACltltltltltltltltltltkZkZkZkZkZkZkZkZltltlttGltltkZkZObSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgocltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnACACACACACltltltltltltltltltltltltkZkZkZkZkZkZkZkZkZkZkZkZkZkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnCnACACACACACltbeltltltltltltiAltltltkZkZkZkZkZkZkZkZkZkZkZkZkZkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnCnACACACACACACltltltltltltltltltltltltltltkZkZkZkZkZkZkZkZkZkZkZkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnACACACACACACACACltltltltiAltbeltltltltltltltltltltltltlttGltkZidkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnCnACACACACACACACACACltltltltltltltiAltltltltltltltltltltltltltltltkZjoSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgSgDhbeltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
+ACCnCnCnCnCnCnCnCnCnACACACACACACACACACACACACltltltltltltltltltltltACACACltltltltltltltltQiGjGjebGjGjGjebGjGjGjGjGjGjGjGjebGjGjGjebGjGjDjltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
 ACCnCnCnCnCnCnCnCnACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACltltltltbeltltltltltltltltltltltltltltltltltltltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
 ACCnCnCnCnCnCnCnCnACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACltltltltltiAltbeltltltltltiAltltbeltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC
 ACCnCnCnCnCnCnCnCnCnACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACCnCnCnltltltltltltltltltltltltltltCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnCnAC

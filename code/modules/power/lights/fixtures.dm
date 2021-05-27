@@ -79,7 +79,7 @@
 /obj/machinery/light/small/Initialize(mapload)
 	. = ..()
 	if(dir == 1)
-		layer = BELOW_MOB_LAYER
+		layer = OBJ_LAYER + 0.01
 
 /obj/machinery/light/small/emergency
 	brightness_range = 6

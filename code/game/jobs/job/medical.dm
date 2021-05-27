@@ -97,7 +97,7 @@
 	tab_pda = /obj/item/modular_computer/handheld/pda/medical
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/medical
 	tablet = /obj/item/modular_computer/handheld/preset/medical
-	id = /obj/item/card/id/white
+	id = /obj/item/card/id/coc
 	suit_store = /obj/item/device/flashlight/pen
 	headset = null
 	bowman = null
