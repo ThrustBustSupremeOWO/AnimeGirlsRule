@@ -61,3 +61,31 @@
 	cut_overlays()
 	if(on)
 		add_overlay(image(icon, src, "[icon_state]-light", EFFECTS_ABOVE_LIGHTING_LAYER))
+
+//Perma-light. Doesn't process. Just provides the set light.
+/obj/machinery/power/radial_floodlight/admin
+	name = "affixed radial floodlight"
+	desc = "This one is constructed into the ground, making it a permanent fixture."
+	anchored = TRUE
+	on = TRUE
+
+/obj/machinery/power/radial_floodlight/admin/attackby(obj/item/W, mob/user)
+	return
+
+/obj/machinery/power/radial_floodlight/admin/machinery_process()
+	return
+
+/obj/machinery/power/radial_floodlight/admin/Initialize()
+	. = ..()
+	set_light(brightness_on, 1)
+	update_icon()
+
+/obj/machinery/power/radial_floodlight/admin/Destroy()
+	set_light(0)
+	return ..()
+
+/obj/machinery/power/radial_floodlight/admin/powered(var/channel)
+	return TRUE
+
+/obj/machinery/power/radial_floodlight/admin/attack_hand(mob/user)
+	return

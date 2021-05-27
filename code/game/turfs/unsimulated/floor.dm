@@ -90,6 +90,7 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "shimmer"
 	footstep_sound = /decl/sound_category/asteroid_footstep
+	
 //Apostali
 /turf/unsimulated/floor/marble/apostali
 	name = "carved alien marble"

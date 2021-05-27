@@ -10,7 +10,7 @@
 	admin_levels = list(2, 3, 4, 5, 6, 7)
 	contact_levels = list(1, 2, 3, 4, 5)
 	player_levels = list(1, 2, 3, 4, 5)
-	restricted_levels = list()
+	restricted_levels = list(2, 3, 4, 5, 6, 7)
 	accessible_z_levels = list("8" = 10, "7" = 15, "2" = 60)
 	base_turf_by_z = list(
 		"1" = /turf/space,
@@ -19,7 +19,7 @@
 		"4" = /turf/unsimulated/floor/dirt,
 		"5" = /turf/simulated/floor,
 		"6" = /turf/simulated/floor,
-		"7" = /turf/simulated/floor
+		"7" = /turf/unsimulated/floor/dirt/apostali
 	)
 
 	station_name = "CSV Spire"
