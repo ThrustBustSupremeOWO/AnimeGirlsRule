@@ -199,6 +199,7 @@
 	alt_titles = list("Drill Technician")
 	alt_outfits = list("Drill Technician" = /datum/outfit/job/mining/drill)
 	outfit = /datum/outfit/job/mining
+	no_pick = FALSE
 
 /datum/outfit/job/mining
 	name = "Shaft Miner"

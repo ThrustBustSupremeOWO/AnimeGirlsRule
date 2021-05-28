@@ -71,6 +71,7 @@
 	minimal_player_age = 14
 	outfit = /datum/outfit/job/scientist
 	alt_outfits = list("Xenoarcheologist"=/datum/outfit/job/scientist/xenoarcheologist)
+	no_pick = FALSE
 
 /datum/outfit/job/scientist
 	name = "Scientist"

@@ -171,6 +171,9 @@
 		var/list/available = pref.GetValidTitles(job)
 		var/dispRank = LAZYLEN(available) ? LAZYACCESS(available, 1) : rank
 		var/ban_reason = jobban_isbanned(user, rank)
+		if(job.no_pick)
+			dat += "<del>[dispRank]</del></td><td><b> \[NOT AVAILABLE]</b></td></tr>"
+			continue
 		if(ban_reason == "WHITELISTED")
 			dat += "<del>[dispRank]</del></td><td><b> \[WHITELISTED]</b></td></tr>"
 			continue

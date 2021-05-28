@@ -62,6 +62,7 @@
 	economic_modifier = 7
 
 	minimum_character_age = 25
+	no_pick = FALSE
 
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva, access_expedition)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_genetics, access_eva, access_expedition)
@@ -82,8 +83,8 @@
 
 	minimum_character_age = 30
 
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_genetics, access_eva)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_pharmacy, access_virology, access_genetics, access_eva, access_expedition)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_genetics, access_eva, access_expedition)
 	outfit = /datum/outfit/job/doctor/surgeon
 
 /datum/outfit/job/doctor
