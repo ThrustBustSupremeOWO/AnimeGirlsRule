@@ -73,9 +73,10 @@
 
 	minimum_character_age = 25
 
-	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics)
-	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction)
+	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_expedition)
+	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_expedition)
 	outfit = /datum/outfit/job/engineer
+	no_pick = FALSE
 
 /datum/outfit/job/engineer
 	name = "Engineer"
@@ -87,7 +88,7 @@
 	tab_pda = /obj/item/modular_computer/handheld/pda/engineering
 	wristbound = /obj/item/modular_computer/handheld/wristbound/preset/pda/engineering
 	tablet = /obj/item/modular_computer/handheld/preset/engineering
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/coc
 	shoes = /obj/item/clothing/shoes/workboots
 	headset = null
 	bowman = null

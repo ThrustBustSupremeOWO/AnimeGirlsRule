@@ -35,6 +35,8 @@
 	var/list/alt_outfits = null           // A list of special outfits for the alt titles list("alttitle" = /datum/outfit)
 	var/list/blacklisted_species = null   // A blacklist of species that can't be this job
 
+	var/no_pick = TRUE                    // We can't pick this job bc it'll cause problems, isn't expedition, etc.
+
 //Only override this proc
 /datum/job/proc/after_spawn(mob/living/carbon/human/H)
 

@@ -178,6 +178,7 @@
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_external_airlocks, access_weapons, access_expedition)
 	minimal_player_age = 7
 	outfit = /datum/outfit/job/officer
+	no_pick = FALSE
 
 /datum/outfit/job/officer
 	name = "Security Officer"

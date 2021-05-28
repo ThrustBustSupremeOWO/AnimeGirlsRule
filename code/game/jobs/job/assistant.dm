@@ -13,6 +13,7 @@
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	outfit = /datum/outfit/job/assistant
+	no_pick = FALSE
 
 /datum/job/assistant/get_access(selected_title)
 	if(config.assistant_maint && selected_title == "Assistant")
