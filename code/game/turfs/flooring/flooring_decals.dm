@@ -367,7 +367,25 @@
 /obj/effect/floor_decal/corner_wide/grey/full
 	icon_state = "wide_corner_full"
 
+//Roads
+/obj/effect/floor_decal/road_marker
+	name = "road marker"
+	icon_state = "road_marker"
 
+/obj/effect/floor_decal/road_marker/corner
+	icon_state = "road_marker_corner"
+
+/obj/effect/floor_decal/road_crosswalk
+	name = "road crosswalk"
+	icon_state = "road_crosswalk"
+
+/obj/effect/floor_decal/curb
+	name = "curb"
+	icon_state = "curb"
+
+/obj/effect/floor_decal/curb/corner
+	icon_state = "curb_corner"
+//wood
 /obj/effect/floor_decal/spline/plain
 	name = "spline - plain"
 	icon_state = "spline_plain"

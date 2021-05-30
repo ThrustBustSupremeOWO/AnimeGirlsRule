@@ -84,13 +84,29 @@
 				gets_dug()
 	return
 
+/turf/unsimulated/floor/jungle_grass/road
+	name = "overgrown asphalt"
+	desc = "Ugly overgrown asphalt, mother nature seems to want their land back."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "groad1"
+	footstep_sound = /decl/sound_category/tiles_footstep
+	baseturf = /turf/unsimulated/floor/dirt
+	has_resources = FALSE
+	can_dig = FALSE
+
+/turf/unsimulated/floor/jungle_grass/road/Initialize(mapload)
+	if(prob(20))
+		var/variant = rand(1,4)
+		icon_state = "groad[variant]"
+	. = ..()
+
 /turf/unsimulated/floor/shimmer
 	name = "shimmering red substance"
 	desc = "An unnerving, pulsating substance. It seems to advance ever so slowly toward you..."
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "shimmer"
 	footstep_sound = /decl/sound_category/asteroid_footstep
-	
+
 //Apostali
 /turf/unsimulated/floor/marble/apostali
 	name = "carved alien marble"
@@ -132,6 +148,96 @@
 	footstep_sound = /decl/sound_category/asteroid_footstep
 	has_resources = TRUE
 	can_dig = TRUE
+
+//Metrothol
+/turf/unsimulated/floor/city
+	name = "dull pavement"
+	desc = "Paved concrete, weathered and rough."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "concrete1"
+	footstep_sound = /decl/sound_category/tiles_footstep
+	baseturf = /turf/unsimulated/floor/dirt
+	has_resources = FALSE
+	can_dig = FALSE
+
+/turf/unsimulated/floor/city/Initialize(mapload)
+	if(prob(20))
+		var/variant = rand(1,3)
+		icon_state = "concrete[variant]"
+	. = ..()
+
+/turf/unsimulated/floor/city/advanced
+	name = "advanced plating"
+	desc = "Metallic plating with running circuitry beneath it."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "adv1"
+
+/turf/unsimulated/floor/city/Initialize(mapload)
+	if(prob(20))
+		var/variant = rand(1,6)
+		icon_state = "adv[variant]"
+	. = ..()
+
+/turf/unsimulated/floor/city/road
+	name = "aged asphalt"
+	desc = "Rocky asphalt."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "road1"
+
+/turf/unsimulated/floor/city/Initialize(mapload)
+	if(prob(20))
+		var/variant = rand(1,4)
+		icon_state = "road[variant]"
+	. = ..()
+
+/turf/unsimulated/floor/building
+	name = "decrepit flooring"
+	desc = "Aged and long-forgotten."
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "hex"
+	footstep_sound = /decl/sound_category/tiles_footstep
+	baseturf = /turf/unsimulated/floor/dirt
+	has_resources = FALSE
+	can_dig = FALSE
+
+/turf/unsimulated/floor/building/alt1
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "hex_decor"
+
+/turf/unsimulated/floor/building/alt2
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "hexdark"
+
+/turf/unsimulated/floor/building/alt3
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "hexdark_decor"
+
+/turf/unsimulated/floor/building/alt4
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "plating_warn"
+
+/turf/unsimulated/floor/building/alt5
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "plating"
+
+/turf/unsimulated/floor/building/alt6
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "tile_small"
+
+/turf/simulated/floor/building/wood
+	name = "wooden floor"
+	icon = 'icons/turf/moons.dmi'
+	icon_state = "birchwood"
+	footstep_sound = /decl/sound_category/wood_footstep
+
+/turf/simulated/floor/building/wood/alt
+	icon_state = "cherrywood"
+
+/turf/simulated/floor/building/wood/alt1
+	icon_state = "willowwood"
+
+/turf/simulated/floor/building/wood/alt2
+	icon_state = "darkwood"
 
 /turf/unsimulated/mask
 	name = "mask"

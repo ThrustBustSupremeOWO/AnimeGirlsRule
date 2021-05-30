@@ -2,7 +2,7 @@
 /turf/unsimulated/mineral
 	name = "impassable rock"
 	icon = 'icons/turf/smooth/rock_impass.dmi'
-	icon_state = "rock-dark"
+	icon_state = "turf"
 	smooth = SMOOTH_MORE | SMOOTH_BORDER | SMOOTH_NO_CLEAR_ICON
 	smoothing_hints = SMOOTHHINT_CUT_F | SMOOTHHINT_ONLY_MATCH_TURF | SMOOTHHINT_TARGETS_NOT_UNIQUE
 	blocks_air = TRUE

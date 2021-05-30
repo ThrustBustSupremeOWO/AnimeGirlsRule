@@ -1,7 +1,9 @@
 "ab" = (/obj/machinery/cryopod{dir = 2},/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "ag" = (/obj/structure/flora/grass/jungle/b,/mob/living/simple_animal/firefly,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "aH" = (/turf/simulated/wall/wood,/area/moon/jungle)
-"bb" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/obj/machinery/floodlight/old,/turf/simulated/floor/plating,/area/moon/jungle)
+"bb" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/plating,/area/moon/jungle)
+"bl" = (/obj/effect/floor_decal/curb/corner,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"bs" = (/obj/effect/floor_decal/road_crosswalk,/obj/effect/floor_decal/curb{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "bL" = (/obj/effect/decal/cleanable/dirt,/obj/item/stock_parts/console_screen,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "bT" = (/obj/structure/flora/ausbushes/ppflowers,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
 "bW" = (/mob/living/carbon/human,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
@@ -9,48 +11,65 @@
 "cw" = (/obj/structure/table/wood/gamblingtable,/obj/item/woodcirclet,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "cE" = (/obj/structure/flora/moons/thickbrush,/obj/machinery/floodlight/old,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "dc" = (/obj/effect/decal/cleanable/dirt,/obj/item/gun/custom_ka/frameB/prebuilt,/turf/simulated/floor/wood,/area/moon/jungle)
+"dl" = (/mob/living/simple_animal/firefly,/obj/structure/flora/moons/bush/cosmolily,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "dq" = (/obj/machinery/porta_turret_construct/dark,/turf/simulated/floor/plating,/area/moon/jungle)
+"dI" = (/obj/effect/floor_decal/curb,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "dN" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped,/obj/item/crossbowframe,/turf/simulated/floor/plating,/area/moon/jungle)
 "et" = (/obj/structure/railing/mapped,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
-"eu" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped,/obj/effect/decal/cleanable/spiderling_remains,/turf/simulated/floor/plating,/area/moon/jungle)
+"eu" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped,/turf/simulated/floor/plating,/area/moon/jungle)
 "eH" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/obj/machinery/button/remote/blast_door{id = "cryopod"; pixel_y = 30},/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "eM" = (/turf/simulated/floor/grass/alt{desc = "Compacted and thick dirt."; icon = 'icons/turf/floors.dmi'; icon_state = "redplanet"; name = "compacted dirt"},/area/moon/jungle)
 "eP" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
+"fq" = (/obj/effect/decal/cleanable/dirt,/obj/structure/dispenser/oxygen,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"fL" = (/obj/structure/bed/chair/office/bridge/pilot,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"fP" = (/obj/effect/floor_decal/road_crosswalk{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "gc" = (/obj/machinery/button/remote/blast_door{id = "cryo_outer"; pixel_x = 24; pixel_y = -22},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "gd" = (/obj/effect/decal/cleanable/blood/gibs,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "go" = (/obj/structure/flora/ausbushes/stalkybush,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
 "gp" = (/obj/item/material/shard,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "gJ" = (/obj/structure/flora/rock,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "ht" = (/obj/structure/signpost{desc = "A warning sign scribbled in old Solarian common. This seems to indicate there are automated defenses ahead."; name = "warning sign"},/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
-"hG" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/closet/crate/drop,/obj/item/device/flashlight/flare,/obj/item/device/flashlight/flare,/obj/item/device/flashlight/flare,/obj/item/device/flashlight/flare,/turf/simulated/floor/plating,/area/moon/jungle)
+"hG" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "hJ" = (/obj/effect/decal/remains/rat,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
+"hQ" = (/obj/effect/floor_decal/road_crosswalk{dir = 4},/obj/effect/floor_decal/curb{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "hZ" = (/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "il" = (/obj/machinery/door/blast/regular/open{id = "cryo_outer"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "iq" = (/obj/machinery/light/small/emergency{dir = 4},/turf/simulated/floor/plating,/area/moon/jungle/dark)
+"iD" = (/obj/structure/flora/ausbushes/leafybush,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "iF" = (/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
+"ja" = (/obj/effect/floor_decal/road_crosswalk{dir = 4},/obj/effect/floor_decal/curb{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "jn" = (/obj/machinery/light/small/emergency,/obj/structure/cryofeed,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"ka" = (/obj/effect/floor_decal/road_marker{dir = 4},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "kg" = (/mob/living/simple_animal/hostile/wretch,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "kj" = (/obj/machinery/light/small/emergency,/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "kn" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/moon/jungle)
 "kP" = (/obj/effect/decal/cleanable/dirt,/obj/item/material/shard,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/moon/jungle)
+"kU" = (/obj/structure/flora/ausbushes/ywflowers,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "lj" = (/mob/living/simple_animal/hostile/giant_spider,/turf/simulated/floor/wood,/area/moon/jungle)
 "ln" = (/obj/structure/sign/securearea{pixel_x = 30},/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "lr" = (/obj/effect/decal/cleanable/dirt,/obj/structure/computerframe,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"lv" = (/obj/effect/floor_decal/road_marker,/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "lw" = (/obj/structure/flora/grass/jungle/b,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "ly" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/wretch,/turf/simulated/floor/wood,/area/moon/jungle)
 "lG" = (/obj/structure/sign/securearea{pixel_y = 29},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "lT" = (/obj/machinery/floodlight/old,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "mu" = (/obj/item/stack/material/wood/full,/obj/structure/bed/chair/wood/wings,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "mB" = (/obj/structure/flora/ausbushes/fullgrass,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"nK" = (/obj/effect/floor_decal/curb{dir = 9},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "oe" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "ot" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "ou" = (/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "oI" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"oO" = (/obj/effect/floor_decal/road_marker,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "oW" = (/obj/structure/flora/grass/jungle/b,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"pa" = (/obj/structure/flora/moons/bush/wormroot,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "pi" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/lattice/catwalk/indoor/grate/light/old,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "po" = (/obj/effect/decal/cleanable/blood/oil,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "pt" = (/mob/living/simple_animal/tindalos,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
+"pR" = (/obj/structure/flora/ausbushes/ppflowers,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "pZ" = (/obj/structure/flora/moons/thickbrush,/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"qk" = (/obj/effect/floor_decal/road_marker/corner,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"qq" = (/obj/structure/flora/moons/bush/novabloom,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "qz" = (/turf/simulated/floor/tiled/ramp,/area/moon/jungle)
 "qF" = (/obj/machinery/light/small/emergency{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "qO" = (/obj/item/material/shard,/turf/unsimulated/floor/dirt,/area/moon/jungle)
@@ -61,9 +80,11 @@
 "si" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "st" = (/obj/structure/signpost{desc = "A warning sign scribbled in old Solarian common. This seems to indicate there are automated defenses ahead."; name = "warning sign"},/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "sN" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"sZ" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "tm" = (/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/wood,/area/moon/jungle)
 "ty" = (/mob/living/simple_animal/hostile/boar,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "tz" = (/obj/machinery/door/blast/regular{dir = 4; id = "cryopod"; name = "Secure Blast Doors"},/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"tB" = (/obj/effect/floor_decal/road_crosswalk,/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "tS" = (/obj/structure/flora/moons/thickbrush,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "ud" = (/mob/living/simple_animal/hostile/mantalisk,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "uv" = (/obj/machinery/door/airlock/vault/bolted{name = "Bunker Doors"},/turf/simulated/floor/plating,/area/moon/jungle/dark)
@@ -72,8 +93,9 @@
 "vE" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/constructable_frame/temp_deco,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "vL" = (/obj/item/stack/rods,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "vS" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/remains,/turf/simulated/floor/wood,/area/moon/jungle)
-"vT" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/giant_spider/nurse,/turf/simulated/floor/wood,/area/moon/jungle)
+"vT" = (/obj/structure/gore/tendrils/node,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "vW" = (/obj/structure/flora/moons/thickbrush,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
+"vX" = (/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/mining.dmi'; icon_state = "boulder1"; name = "rubble"; opacity = 1},/obj/effect/floor_decal/curb{dir = 8},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "wa" = (/turf/simulated/floor/beach/water/ocean{name = "water"},/area/moon/jungle)
 "wG" = (/obj/item/material/shard,/turf/simulated/floor/wood,/area/moon/jungle)
 "xi" = (/obj/item/stack/rods,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
@@ -82,7 +104,7 @@
 "xW" = (/obj/machinery/door/blast/regular{id = "cryo_outer"},/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "yB" = (/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/plating,/area/moon/jungle)
 "yL" = (/obj/machinery/light/small/emergency,/obj/item/clothing/under/tactical,/obj/item/gun/projectile/contender,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/clothing/accessory/holster/armpit,/obj/item/clothing/suit/armor/carrier/military,/obj/item/clothing/head/helmet/military,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
-"yZ" = (/obj/structure/barricade/steel,/turf/unsimulated/floor/dirt,/area/moon/jungle)
+"yZ" = (/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/mining.dmi'; icon_state = "boulder1"; name = "rubble"; opacity = 1},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "zd" = (/mob/living/simple_animal/yithian,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "zs" = (/obj/structure/table/wood,/turf/simulated/floor/wood,/area/moon/jungle)
 "zA" = (/obj/effect/decal/cleanable/dirt,/obj/item/material/shard,/turf/simulated/floor/wood,/area/moon/jungle)
@@ -97,9 +119,11 @@
 "BZ" = (/obj/effect/decal/cleanable/dirt,/obj/item/stack/rods,/turf/simulated/floor/wood,/area/moon/jungle)
 "Ch" = (/obj/item/stool/wood,/turf/simulated/floor/wood,/area/moon/jungle)
 "Cn" = (/obj/structure/railing/mapped{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
+"Co" = (/obj/effect/floor_decal/road_marker{dir = 4},/obj/effect/floor_decal/road_crosswalk,/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "DJ" = (/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "DQ" = (/obj/structure/grille/broken,/turf/simulated/floor/plating,/area/moon/jungle)
 "Ee" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 5},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
+"El" = (/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/mining.dmi'; icon_state = "boulder1"; name = "rubble"; opacity = 1},/obj/effect/floor_decal/curb{dir = 4},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "EA" = (/obj/machinery/light/small/emergency,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "EJ" = (/turf/simulated/floor/wood,/area/moon/jungle)
 "EU" = (/obj/machinery/light/small/emergency{dir = 1},/obj/item/contraband/poster,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
@@ -107,6 +131,7 @@
 "FH" = (/obj/item/material/shard,/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "FP" = (/obj/machinery/cryopod/robot,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Gl" = (/obj/item/stack/material/wood/full,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
+"GI" = (/obj/structure/flora/rock/pile,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "GL" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/plating,/area/moon/jungle)
 "GN" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "GZ" = (/obj/structure/flora/grass/jungle,/obj/structure/flora/grass/jungle/b,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
@@ -115,13 +140,17 @@
 "Ht" = (/mob/living/simple_animal/tindalos,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "Ia" = (/mob/living/simple_animal/firefly,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "IA" = (/obj/machinery/light/small/emergency,/obj/effect/decal/cleanable/dirt,/obj/structure/computerframe,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"IJ" = (/obj/effect/floor_decal/road_marker/corner{dir = 8},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "IX" = (/obj/structure/table/wood,/obj/item/device/flashlight/flare/torch,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "IZ" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 9},/obj/effect/floor_decal/industrial/warning/dust/corner,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "Kk" = (/obj/structure/bed/chair/wood/wings,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "Kp" = (/obj/structure/lattice/catwalk/indoor/grate/light/old,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
+"KK" = (/obj/effect/decal/cleanable/dirt,/obj/item/grenade/frag,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "KL" = (/turf/simulated/floor/plating,/area/moon/jungle)
+"KR" = (/obj/effect/floor_decal/curb{dir = 1},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "Lc" = (/turf/unsimulated/mineral,/area/moon/jungle)
 "Lm" = (/obj/effect/map_effect/wingrille_spawn/reinforced,/turf/simulated/floor/wood,/area/moon/jungle)
+"Ly" = (/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "LC" = (/obj/effect/decal/cleanable/dirt,/obj/item/stack/rods,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/moon/jungle)
 "LE" = (/obj/structure/flora/moons/thickbrush,/obj/structure/flora/moons/thickbrush,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "LO" = (/obj/structure/railing/mapped{dir = 1},/obj/structure/railing/mapped{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
@@ -129,7 +158,7 @@
 "Mj" = (/obj/effect/decal/remains,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/moon/jungle)
 "Mm" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/giant_spider,/turf/simulated/floor/wood,/area/moon/jungle)
 "Mr" = (/obj/machinery/light/small/emergency,/obj/effect/decal/cleanable/dirt,/obj/machinery/constructable_frame/temp_deco,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
-"ML" = (/turf/unsimulated/floor/jungle_grass,/area/moon/jungle/dark)
+"ML" = (/obj/structure/flora/rock/pile,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "MN" = (/obj/effect/shuttle_landmark/barge/three,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "Ne" = (/obj/structure/barricade/steel,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "Nh" = (/obj/item/stack/tile/wood,/turf/unsimulated/floor/dirt,/area/moon/jungle)
@@ -138,41 +167,50 @@
 "OE" = (/obj/structure/girder,/turf/simulated/floor/plating,/area/moon/jungle)
 "ON" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 6},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "OO" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 10},/obj/effect/floor_decal/industrial/warning/dust/corner{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
+"OR" = (/obj/effect/floor_decal/road_marker{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"OU" = (/obj/effect/floor_decal/curb/corner{dir = 1},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "OY" = (/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/obj/machinery/turretid/stun{name = "Perimeter Defense Control"; pixel_y = 26; req_access = null},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "OZ" = (/obj/effect/decal/cleanable/blood/gibs,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "Pv" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/moon/jungle)
 "PH" = (/obj/structure/table/wood,/obj/item/device/flashlight/flare/torch,/turf/simulated/floor/wood,/area/moon/jungle)
 "PT" = (/obj/machinery/acting/changer,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
 "PW" = (/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"QA" = (/obj/effect/floor_decal/curb{dir = 4},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "QH" = (/obj/structure/gore/tendrils/node,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "QV" = (/obj/machinery/door/window/brigdoor/southright,/obj/effect/decal/warning_stripes,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Ra" = (/obj/structure/lattice/catwalk/indoor/grate/light/old,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "Re" = (/obj/structure/railing/mapped{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "Rl" = (/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "Rp" = (/mob/living/simple_animal/yithian,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
+"Rq" = (/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/mining.dmi'; icon_state = "boulder1"; name = "rubble"; opacity = 1},/obj/effect/floor_decal/road_marker,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"RY" = (/obj/structure/flora/ausbushes/brflowers,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "Sg" = (/obj/machinery/light/small/emergency,/obj/structure/cryofeed{dir = 4},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Sh" = (/obj/structure/flora/rock/pile,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"Sj" = (/obj/effect/floor_decal/curb{dir = 8},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "Su" = (/obj/structure/flora/ausbushes/sunnybush,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"Sv" = (/obj/structure/warp_drive,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Sx" = (/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "SH" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/cryofeed{dir = 4},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/obj/effect/decal/warning_stripes,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"Tj" = (/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"TU" = (/obj/item/clothing/head/helmet/pilot,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "TV" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "TX" = (/obj/effect/rune,/turf/simulated/floor/wood,/area/moon/jungle)
 "Ub" = (/obj/machinery/porta_turret/stationary,/obj/effect/decal/warning_stripes,/turf/simulated/floor/plating,/area/moon/jungle/dark)
-"Ue" = (/obj/structure/closet/crate/oracle,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
-"Ui" = (/obj/effect/decal/cleanable/dirt,/obj/structure/closet/crate/drop,/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4},/obj/effect/decal/cleanable/spiderling_remains,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/turf/simulated/floor/plating,/area/moon/jungle)
+"Ue" = (/obj/structure/computerframe,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "UM" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "UU" = (/obj/structure/girder,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "Vu" = (/obj/structure/simple_door/wood,/turf/simulated/floor/wood,/area/moon/jungle)
 "Vv" = (/obj/item/clothing/gloves/swat/tactical,/obj/item/storage/belt/security/tactical,/obj/item/clothing/shoes/jackboots,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
 "Vx" = (/turf/unsimulated/floor/dirt,/area/moon/jungle)
+"VA" = (/obj/effect/floor_decal/road_crosswalk,/obj/effect/floor_decal/curb,/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "VL" = (/mob/living/simple_animal/hostile/boar,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
-"Wq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/closet/crate/drop,/obj/structure/railing/mapped{dir = 1},/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/obj/item/storage/field_ration/coalition,/turf/simulated/floor/plating,/area/moon/jungle)
+"Wb" = (/obj/structure/flora/moons/bush/cosmolily,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"Wq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "Wv" = (/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "WJ" = (/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "WK" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/plating,/area/moon/jungle)
 "WO" = (/turf/simulated/floor/tiled/ramp{dir = 8},/area/moon/jungle)
 "WU" = (/obj/item/gun/custom_ka/frameD/prebuilt,/turf/unsimulated/floor/dirt,/area/moon/jungle)
-"WW" = (/obj/structure/simple_door/wood,/obj/structure/barricade/steel,/turf/simulated/floor/wood,/area/moon/jungle)
 "WX" = (/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/plating,/area/moon/jungle)
 "Xd" = (/obj/structure/flora/moons/thickbrush,/obj/structure/flora/moons/thickbrush,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "Xj" = (/mob/living/simple_animal/firefly,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
@@ -186,123 +224,123 @@
 
 (1,1,1) = {"
 LcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLc
-LctStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStSWJlnHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrLcbWPTLcLctStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLc
-LctStStStStStStStStStStStStStStStStStStStStStSWJWJWJWJWJWJWJWJVxWJWJtStStStStStStStStStStStStStStStStStStStSWJVxzNzNZbxQUbHrouuvTVououHrpiRaHrqFsNsNqFouFBZLZLRaHrsNsNlrHrLcyLVvLcLctStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLc
-LctStStStStStStStStStStStStStStStStStSWJWJtSWJVxUUaHaHaHaHaHaHUUVxVxaHtStStStStStStSWJtStStStStStStStStStStSWJVxiFouRaKpZLZLkjHrHrHrkjFBouRaFBZLZLKpKpouHrsNsNRaotsNsNvEHrLcLcLcLcLctSWJWJWJWJWJWJWJWJtStStStStStStStStStStStStStStStStStStStSLc
-LctStStStStStStStSWJWJtStStStStStStSWJWJWJWJWJVxNhePePljEJPHePVxVxePaHtSWJtStSWJtStStSWJtSWJWJtStStStSWJWJtSWJVxzNZbzNEAYLZbHrHrabHrHrHrHrotHrcfhZZbcfHrHrHrHrHrHrsNsNsNHrLcLcLcLcLcWJtSWJtSWJtStStStSWJtStSWJWJWJWJWJWJWJWJWJWJWJtStStStStStSLc
-LctStStSWJtSWJWJWJWJtStStStStStStStSWJWJWJWJWJUUePePAkePePEJePePVxYVaHWJtStStStSWJWJWJWJWJtSWJWJWJWJtSWJWJtSWJlnHrHrHrHrHrHrHrSHQVAsHrEUvEsNHrHrHruvHrHrUesNvEvElrBisNsNHrtStStStSqYVxVxVxVxVxVxVxVxWJtStStStStSWJWJWJWJWJWJWJWJWJtStStStStStSLc
-LctStStSWJWJWJPWWJWJWJWJtSWJtSWJtStStSWJWJWJWJaHrqPHaHvTEJePNhePChcwaHWJWJWJWJWJWJtStSWJWJWJWJWJWJtStSWJtStShtVxVxLcHrouHrOYHrtztztzHrsNhZsNNRHrUbouUbHrsNlrbLsNvpsNsNlrHrqYVxVxWJVxVxqYqYVxqYqYqYqYVxVxVxqYVxqYqYWJtStSWJWJWJWJWJWJtStStStStSLc
-LctStStSWJWJWJWJPWWJWJWJWJWJWJtSWJtStStStSWJWJaHaHaHaHVxWUePePaHaHaHaHWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJtSWJWJWJVxLcHrUbeHouxWsNhZsNiloIoIoIsNHrBORaiqHrHrHrHrHrHrHrHrHrHrqYVxqYqYqYqYqYqYqYVxVxqYqYqYVxVxVxVxqYqYVxqYVxqYtSWJWJWJWJtStStStStSLc
-LctSWJtSWJWJWJWJWJPWPWPWPWWJWJtSWJWJWJWJWJWJtSWJaHrqrqePNhVxePaHWJWJWJWJtSWJWJWJWJWJtStSWJtStStSWJtSWJWJtSWJtSWJVxLcHrUbououxWhZsNgciloIoIoIhZHrZbRazNHrVxWJqYVxVxVxVxqYVxVxVxVxVxVxVxVxVxVxVxqYVxVxVxqYVxVxVxVxVxqYqYqYqYWJtSWJWJWJtStStStStSLc
-LctSWJWJWJWJWJPWWJWJWJWJPWPWWJWJWJWJWJWJWJWJtSWJaHePGlePVxMmvTaHWJWJWJtStStStStStStStStStStStStStStStSWJtSWJtStSVxdqHrHrHrHrHrSgFPjnHrMrsNlrIAHrzNiFZbHrVxvWHmHmHmHmHmHmvWqYVxVxstxsVxVxVxVxVxVxVxVxVxVxqYqYVxVxVxVxVxqYqYqYVxtSWJWJtStStStStSLc
-LctStSWJWJWJPWPWWJWJPWWJWJWJWJWJPWPWWJWJWJWJWJWJaHYVrqePePePVxaHWJWJWJtStStStStStStStStStStStStStStStSWJtSWJtStSVxVxOELcLcLcHrHrHrHrHrHrHrHrHrHrMLiFXDlGVxvWHmwawazCwawawaHmvWqYqYqYVxVxqYqYVxVxxsVxVxVxVxVxqYVxVxVxVxVxqYVxVxtStSWJtStStStStSLc
-LctStStStSWJWJWJPWPWWJPWWJWJtSWJWJWJPWWJPWWJWJWJaHYVIXePePVxVxaHWJWJWJWJtStStStSWJtSWJtStStStStStStStSWJtSWJWJtSWJWJVxVxLcLcLcLcLcLcLcLcLcLcLcLcoeoemBoeWJtSqYHmwawawawawawawaHmHmqYeMVxqYqYqYqYVxVxVxVxVxVxVxqYqYVxVxVxqYVxVxWJtSWJtStStStStSLc
-LctStStStSWJWJWJWJWJWJWJPWWJWJWJWJWJWJWJWJPWWJWJaHaHaHVuaHaHaHaHWJWJWJWJtStStSqYWJWJWJWJtStStStStStSWJWJWJWJtStStSVxWJVxVxVxVxVxVxVxVxVxVxwaLcLcLcWJmBWJWJWJqYVxgowawawazCwawawagoHmVxqYVxVxVxqYqYvWvWqYVxVxVxVxVxVxVxVxqYVxVxWJWJWJWJWJWJtStSLc
-LctStStSWJtStSWJWJWJtSWJWJWJtStSWJWJtStStStStSWJWJtmePePKkmuReWJWJWJWJtSqYtStStSWJWJWJtStStStStStSWJWJWJWJtStStStSWJgJWJWJWJhtWJWJWJWJWJVxwawaLcLcWJWJWJWJWJqYqYVxHmHmHmwawawawawaHmVxqYqYVxHmHmHmHmHmVxqYVxVxVxVxVxqYqYqYVxVxVxVxWJWJWJWJtStSLc
-LctStStStSWJtSWJtStSWJWJtSWJtStStStStStStStSWJWJWJVxetePetetByWJWJWJWJtStStStStSWJWJWJtStStStStStSWJWJWJWJWJtStStStStStStStStStStStSWJPWVxwawaLcLcWJWJmBWJWJtStSqYVxVxgowazCwawawaHmqYqYVxHmbTHmHmHmHmHmqYVxVxVxVxqYqYVxqYqYqYqYqYWJWJWJWJtStSLc
-LctStStStStStStSWJtSWJWJtSWJWJWJtStStStStStSWJgJWJWJWJVxWJWJWJWJWJVxWJWJWJWJWJWJWJWJtSWJWJtStStSWJWJWJWJtStSWJtStStStStStStStStStStSPWPWVxwawaWJLcLcWJWJmBWJWJWJVxqYVxVxHmHmwawaHmVxqYVxptHmHmwaHmHmRpHmVxqYVxVxVxqYVxVxqYqYVxVxqYWJWJWJWJtStSLc
-LctStStStStStSWJWJtStSWJWJtSWJWJWJtStStStStSWJWJWJWJVxVxWJWJWJWJShWJWJWJWJWJWJWJWJWJWJWJtStStStSWJtSWJWJWJWJtStStStStStStStStStStSWJPWWJVxwawaWJLcLcWJWJmBmBWJWJWJqYqYqYVxHmHmHmgoVxqYVxHmHmwawawawaHmHmHmvWVxVxVxVxqYVxVxqYVxVxVxWJWJWJWJtStSLc
-LctStStStStStStStStSWJWJWJWJPWWJWJtStStStStStSWJWJWJVxShWJWJgJWJWJWJtStSWJWJWJVxVxVxWJWJWJtStStStSWJtStSWJWJtStStStStStStStStStStSWJPWWJVxwawaWJWJLcLcWJWJmBWJWJHtWJVxVxVxqYVxVxVxVxqYVxbTwawawazCwaHmHmHmvWvWzdVxVxVxVxVxVxqYVxVxtSWJWJWJtStSLc
-LctStStStStStStStStSWJWJtStSPWWJWJtStStStStStStStSWJVxWJWJWJWJWJtStStSWJWJWJVxwawaVxVxWJWJWJqYtStStSWJVxVxVxWJtStStStStStStStStStSWJPWWJWJwawaWJWJLcLcLcWJWJWJWJmBWJWJhtWJHmVxVxVxVxqYVxHmwawawawawaHmHmHmHmvWqYVxVxqYVxVxVxVxqYqYWJtSWJWJtStSLc
-LctStStStStStSWJtSWJWJWJWJWJWJPWWJtStStStStStStStStSVxtStStStStStSWJVxWJWJWJVxzCwawaVxWJWJWJtStSqYWJtSWJWJVxWJtStScEtStStStStStStSWJPWWJWJwawawaWJWJLcLcLcWJWJWJWJmBmBWJWJWJVxqYVxqYqYVxHmwazCwawaHmHmHmwaHmHmVxqYVxVxqYVxVxVxqYtSWJtSWJWJtStSLc
-LctStStStStStStStSWJWJWJtSWJWJPWWJtStSWJWJWJWJWJtStSVxtStStStStStStSWJWJWJWJVxVxzCwaVxWJWJWJtStStStStSWJWJVxtStStStStStStStStStStStSPWWJWJWJwawaVxWJWJWJLcLcLcLcWJWJmBmBWJWJVxVxqYVxVxVxHmHmwawawawaHmzCwaHmHmVxqYVxVxVxVxVxVxqYtStStSWJWJtStSLc
-LctStStStStStStSWJWJWJtSWJtSWJPWWJWJtSPWPWPWPWWJWJWJVxVxWJtStStStStStSWJWJWJWJVxVxVxWJWJVxWJtStStStStStSWJWJWJtStSqYtStStStStStStStSWJPWWJwawazCVxWJWJWJWJLcLcLcLcLcLcWJmBmBmBWJWJHtVxVxVxHmHmwawawawawaHmzdVxVxqYVxVxqYVxVxVxqYtStStSWJWJtStSLc
-LctStStStStSWJtStSWJtSWJtSWJWJPWPWWJWJPWPWWJPWPWPWWJWJVxWJWJtStStStStStSWJWJWJWJWJWJWJWJWJqYtStStSWJtSWJtSWJWJtStStStStStSqYtStStStSWJPWWJwawawaVxWJWJWJWJWJWJWJLcLcLcLcWJWJWJWJmBWJWJqYqYqYHmHmHmHmHmHmVxVxVxVxqYVxVxqYVxqYVxWJtStStSWJWJtStSLc
-LctStStStStSWJWJWJWJtStStSWJWJWJPWWJPWWJWJWJWJWJWJWJWJVxWJtSWJtStStStStStSWJWJWJWJWJWJWJWJtStStStStStStSWJWJWJWJtStStStStStStStStSWJWJPWWJwawawaVxWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJmBmBWJVxqYvWHmvWHmHmvWVxVxVxVxqYVxqYVxVxqYqYtSWJWJtSWJWJtStSLc
-LctStStStSWJWJWJtSWJtStStSWJWJPWPWWJPWWJWJWJWJWJWJWJWJVxWJtSWJtStStStStStStStSWJWJWJVxtStStStStStStStSqYWJWJWJtStStStSWJtStStStStStSWJPWWJwawawaVxWJWJWJWJWJWJWJWJWJWJWJWJWJLcLcWJWJmBWJVxVxqYqYqYVxVxVxVxqYqYVxqYVxzdVxVxVxqYWJtSWJWJWJtStStSLc
-LctStStStStSWJWJtStStStStSWJWJPWPWPWPWWJWJoWoWLcWJLcLcVxWJtSWJtStStStSqYtStStStSWJtStStStStStStStStStSWJtSWJWJtStStSqYWJWJVxWJtStStSWJPWWJwawawaVxWJWJWJWJWJWJWJWJWJWJWJWJWJWJLcLcWJWJtStSVxVxVxVxqYXdXdXdXdXdqYqYVxVxVxVxVxqYtSWJWJtStStStStSLc
-LctStStStSWJWJWJtStStStStSWJPWPWWJWJWJWJWJoWoWLcWJLcLcVxWJtSWJtStStStStStStStStStStStStStStStStStStStSWJWJWJtStStStStStSVxwawaWJtStSVxPWWJwawawaWJtStStSWJoWWJoWWJLEWJWJPWtStStSLctSWJtStSVxVxVxqYqYVxVxVxqYqYVxqYqYVxqYVxqYVxWJtSWJtStStStStSLc
-LctStStStStSWJtStStSWJWJtSWJWJWJWJoWoWoWLcLcoWoWWJVxVxVxWJtSWJtStStStStStStStSqYtStStStSqYtStStStStStSWJWJWJtStStSWJWJVxwazCwatStStSWJWJWJzCzCwaVxtStStStSoWPWoWWJWJtSWJPWWJWJtSLctStStStSVxVxVxqYqYVxzdVxqYqYVxVxVxqYqYVxqYVxtSWJtSWJWJtStStSLc
-LctStStStSWJWJtStStSWJWJtSWJWJWJoWWJWJLcLcLcLcLcVxVxLcLcWJtStStStStStStStStStSWJVxWJWJWJWJtStStStStStStSWJWJWJWJtSWJWJVxwawazCtStStSWJPWWJwawawawatStStStSoWPWoWtStSWJWJPWWJtStSLctStStStSVxtSqYqYqYHmHmVxVxVxVxVxVxqYqYqYVxqYWJWJtSWJWJtStStSLc
-LctStStSWJtSWJtStStStStStSWJWJWJLcLcWJLcLcLcLcVxVxWJLcLcLcWJtSWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJtStSWJWJtStStStStStStSVxwawawatStSWJPWWJwawawawatStStStSWJPWoWtStSWJWJPWWJtStSLctStStStSWJtSqYVxHmwaHmqYqYqYHmHmHmvWVxqYqYVxWJWJWJtSWJtStStSLc
-LctStStStSWJWJWJtStStStStSWJWJLcLcLcVxVxLcLcLcVxoWLcLcLcLcWJtSWJWJWJWJWJWJWJVxtStStSWJWJWJWJVxWJWJWJWJWJWJWJtStStStStStSWJVxVxWJtStSWJPWWJwawazCwatStStSWJoWPWoWWJLEtSPWWJtStStSLctStStStStStSWJqYHmwawaqYqYqYHmHmHmvWVxVxqYqYWJtSWJWJtStStStSLc
-LctStStStStSWJWJtStStStSWJPWWJLcLcLcVxVxLcVxVxVxoWLcLcLcLcWJWJWJWJWJWJWJtStStSqYtStStStStSWJWJWJWJWJWJPWWJWJWJWJtStSqYtSWJWJWJWJtSWJWJWJWJwawawawatStStStSoWPWoWWJtStSWJWJtStStSLctSWJtStStStSqYqYHmHmwaqYqYqYVxvWvWvWVxVxqYqYtStSWJWJtStStStSLc
-LctStStStSWJWJtStStStStSWJPWWJLcwaVxVxVxLcVxoWoWoWLcLcLcLcWJWJWJWJWJtStStStStStSqYtStStStSWJWJWJWJWJWJWJPWWJWJWJtStStStStStSWJWJtStSWJWJVxwawawaVxtStStStSWJPWWJoWLEtSPWWJtStStSLctSWJtStStSWJtSqYHmwawaHmVxVxVxqYVxzdVxVxqYVxVxVxVxtSWJtStStSLc
-LctStStStSWJWJWJtStStStSWJPWWJLcwazCVxVxVxVxVxVxVxSuWJWJLcWJWJWJWJWJWJWJtSWJWJVxqYWJtSWJWJWJWJWJWJWJWJWJVxPWWJWJWJWJWJWJWJtStStStSWJWJWJPWwawawaVxtStStStSWJPWPWoWWJWJPWWJtStStSLcWJWJtStStStStSqYHmwawaHmzdVxqYVxVxVxVxVxVxVxVxqYVxWJWJtStStSLc
-LctStStStSWJWJtStStStStSWJWJPWLcLcwaVxVxVxudVxVxVxLcLcoWoWWJtStStSWJWJWJtStStStStStStSqYWJtStStStStStSWJWJWJWvPWPWPWPWPWWJWJWJWJPWPWWJPWPWwawawatStStStStSWJWJPWoWoWWJPWWJtSWJtSLctSWJWJtSWJtSWJqYVxHmHmHmVxVxVxqYqYqYqYqYVxVxVxqYVxWJWJtStStSLc
-LctStStStStSWJWJtStStStSWJWJPWWJLcLcLcLcLcVxVxVxVxLcWJoWoWWJWJtStSWJWJWJWJtStStStStSWJtStStStStSWJWJWJVxWJWJWJWJWJWJVxWJWJPWPWWJPWWJWJWJVxwawawatStStStStSWJWJPWPWWJWJPWWJtStStSLctSWJWJtSWJtSWJVxVxHmHmHmVxVxVxqYqYqYqYqYVxxsVxVxVxqYWJtStStSLc
-LctStStStStSWJWJtStStStStSWJPWWJLcLcLcLcLcLcVxLcLcWJWJoWoWWJWJtStSWJWJWJtStSWJtStSWJWJtSqYtStStStStStStStStStStStStSqYtStStSWJWJPWPWPWWJPWwawawaVxVxtStStStStSWJPWWJWJPWWJtSWJtSLctStSWJtStStSWJqYqYVxVxHmVxVxVxqYqYqYqYqYVxVxVxVxVxqYWJtStStSLc
-LctStStStStSWJWJtStStSWJWJWJPWWJWJWJoWoWWJoWVxLcLcWJWJoWoWWJWJtStStStStSWJtStStSWJtStSWJtStStStStStStSWJtSWJtSVxtStStStStStSWJPWPWPWPWVxPWwawawaVxWJqYtStStStSWJoWPWPWPWWJWJWJWJWJWJWJWJtStSWJWJqYqYVxVxHmVxVxVxqYqYqYqYqYVxVxVxVxqYVxWJtStStSLc
-LctStStStStSWJWJtStStSWJWJPWWJWJWJSuWJPWWJVxVxLcLcWJWJoWWJWJWJtStStStStStStStSWJWJtSWJtStSWJtStStSWJtSqYtSWJtStStStSqYtStStSVxWJPWPWWJWJPWwawawaVxWJXjIaXjWJtSWJoWGZPWWJWJtStStSLctStSWJWJtStSVxqYqYVxVxVxVxVxVxqYqYqYqYqYVxVxVxVxqYVxWJtStStSLc
-LctStStStStSWJWJtStStStSpZWJWJWJLcWJPWWJVxPWPWPWPWWJWJWJWJWJWJtSWJWJtStStStStSWJtSWJtSqYWJtStSWJtStStStSWJtStStSWJWJtStSqYqYtSqYqYqYtStSVxwawawaPWWJXjXjXjVxtStSWJoWWJWJWJtSWJLcLcWJtSWJWJtSVxVxVxVxVxVxVxVxVxVxqYqYqYqYqYVxVxVxVxqYVxWJtStStSLc
-LctStStStStSWJtStStSWJtSPWWJWJWJLcWJPWVxVxLcLcWJWJPWWJWJWJtStStSWJWJWJtSWJWJtSWJWJtSWJWJWJWJtSWJVxWJWJtSVxtSWJtStSWJWJWJtStSWJtStStStStSVxwazCwaVxPWWJWJWJWJtSqYWJoWWJWJWJtSWJLcLcLcWJWJtStSWJVxtStSWJVxVxqYqYqYVxVxVxVxVxVxVxVxVxqYVxWJtStStSLc
-LctStStStStSWJWJtStStStSPWWJWJWJLcPWPWVxLcLcLcLcWJPWPWWJWJWJWJtSWJWJtStSWJtStStSWJWJtStSWJWJtSWJtStSWJWJWJWJVxtSWJWJWJWJWJWJtStStStStStSWJVxwawaVxWJWJPWWJWJWJoWlwoWWJWJWJtSWJtSLcLctSWJtSWJVxVxtStSWJxsVxqYqYqYVxVxVxVxVxVxVxVxVxqYVxWJtStStSLc
-LcWJWJWJWJWJWJtStStSWJWJPWWJWJWJLcPWVxVxLcLcLcLcLcWJPWPWWJWJWJtStStStStStStStSWJtStStStSWJtStStStStStStStSWJWJWJVxtStStSVxVxtStStStStStStSVxwawaVxWJWJXjXjXjoWWJqYqYtStStStStStSLcLctSWJWJWJWJVxtStSWJtSVxqYqYqYVxVxVxVxVxVxxsVxVxqYVxWJtStStSLc
-LcWJLcLcLcVxWJtStStSWJWJPWWJWJWJWJPWVxLcLcLcLcLcLcWJWJPWWJWJWJWJWJWJtSVxtStStStSWJWJtSWJtStSqYWJtStSWJWJtStSVxVxWJtStStStSWJtSWJtStStStStSVxwawaVxPWWJXjXjagoWWJWJVxVxtStStStStSLctStStSWJtSqYqYVxWJtStSVxVxqYVxVxVxVxqYqYVxVxVxVxqYVxWJtStStSLc
-LcLcLcwawaVxVxtStStStStSPWWJWJWJWJPWWJLcLcWJWJWJWJWJWJPWWJtSWJWJWJVxtStStStStStSWJWJWJWJWJWJWJtStStStSWJWJWJtStSWJWJtSWJWJWJtStSWJtStStStStSwawawaPWWJXjXjXjPWPWWJWJVxtStStStStSLcLcWJtSWJtSVxqYVxWJtStSqYVxVxVxqYqYqYqYVxVxqYVxVxqYVxWJtStStSLc
-LcLcLczCwawawatStStStStSPWWJWJWJWJPWWJLcLcLcWJWJWJWJWJPWWJtSWJWJWJWJtStStStSWJtStStStStStStSWJtStSWJtStSWJWJtSWJtSWJtStSWJtStStStStStStStStSVxwawaPWPWWJtSWJWJPWWJWJVxtStStStStSLcLcWJtStStSWJtSVxVxVxqYVxVxVxVxqYqYqYqYVxVxVxVxqYVxVxWJtStStSLc
-LcLcLcwawawawatStStStSWJWJPWWJWJPWPWPWWJWJWJWJWJWJPWPWWJWJtSWJWJVxtStStStStStStStStStStStStStStSqYtStStStStStStStSWJWJVxVxLcLctStStStStStStSVxwawazCwaVxtSWJWJPWWJWJVxtStStStStSLcLcWJtStStSWJtSVxVxVxqYqYVxVxVxqYqYqYqYVxVxVxqYqYVxVxWJtStStSLc
-LcLcLcwawawazCVxtStStSWJWJWJWJPWPWPWWJNMWJPWWJWJPWPWPWPWWJWJWJWJtSqYtStStSqYtStStStStStSWJWJqYtSqYtStStStStStStStSWJVxVxtStSWJWJtStStStStStStStSwawawaVxtSWJPWPWPWPWVxtStStStStSLcLcWJtStStSWJtSVxVxVxVxVxVxqYqYqYqYqYqYVxVxVxVxVxVxVxWJtStStSLc
-LctSwawawazCVxWJtStStSWJWJWJWJPWWJWJWJWJWJPWNMPWWJPWWJWJWJWJWJtStStStStSWJtStStStStSVxoWoWoWoWoWtStSWJWJWJWJtSWJWJWJVxVxtStSWJWJWJWJWJWJtStStStSwawawawatSVxWJPWPWWJVxtStStStStSLcLcWJtStSWJWJWJWJqYVxVxqYVxVxqYqYVxqYqYVxVxVxVxVxVxVxWJtStStSLc
-LctSVxwawawaVxWJtStStSWJWJWJPWWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJtStStSWJWJWJtStStSoWtSwatStSoWWJtStSPWPWWJtStStSVxVxWJtStSWJPWPWPWWJWJtStStStSVxVxwawawawaVxWJWJPWVxtStStStStSWJLcLcWJWJtSWJVxWJWJqYVxVxqYqYqYVxVxVxqYVxVxVxVxVxVxVxWJtStStSLc
-LctStStStSVxWJWJtStStSWJWJPWWJWJWJWJWJWJWJtStStStStStSWJWJWJWJWJWJtStStSWJWJWJtStStSoWwawawazCwaoWPWPWPWPWPWPWWJWJPWPWPWPWPWWJPWPWPWWJWJWJWJWJtSVxVxVxwawawaVxWJPWPWWJqYtStStStSWJLcLcLcWJWJWJVxVxWJVxqYqYVxVxqYVxVxVxVxqYVxVxVxVxVxVxWJtStStSLc
-LctStStStStSWJtStStStSWJWJWJPWWJtStStStStStStStStStSWJWJWJWJWJWJWJWJtStSWJWJWJWJWJtStStSwazCwaPWPWPWPWPWPWPWPWPWWJoWWJoWWJoWoWoWWJWJWJWJPWPWWJwawaWJVxwawawaIaXjXjXjWJqYqYtStStSWJWJLcLcWJtSWJWJWJWJWJWJtSVxVxVxVxVxVxqYVxqYVxVxVxVxVxWJtStStSLc
-LctStStStStStStStStStStStStSWJPWtStStStStStStStStStStSWJWJWJWJWJWJWJtStSWJWJtSWJLctStSoWtSwaIZGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNEewazCWJtSWJwazCwaIaXjXjXjWJWJqYtStStSWJWJWJLcLctStStSWJtStSWJtSVxVxqYVxVxqYVxVxVxVxVxVxWJVxWJtStStSLc
-LctStStStStStStStStStStStStSPWPWtStStStStStStStSWJWJtSWJWJWJtStStSWJtStSWJWJtSLcLctStSoWtSwaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWtStStSWJwawawawaWJtStSWJWJVxWJtStSWJWJWJWJLcWJWJWJtStStSWJWJqYVxqYVxqYVxVxVxqYVxVxWJWJWJWJtStStSLc
-LctStStStStStStStStStStStStSPWWJtStStStStStStStSWJWJtStStSWJtStStStStStStStStSLcLctStSWJtSWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStSWJVxVxwawaWJtSWJWJWJVxVxtStSWJWJWJWJLcLctStStStStSWJWJtSqYVxVxVxqYqYqYqYVxWJWJWJWJWJtStStSLc
-LctStStStStStStStStStStStStSPWPWtStStStStStStStSWJWJtStStSWJtStStStStStStStStSLcLctStSWJtSoWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStSWJVxVxwawaWJWJtSoWPWPWVxtStStStStSWJWJLctStSWJtStSWJLctSqYWJWJVxVxVxtSWJWJVxWJVxWJWJtStStSLc
-LctStStStStStStStStStStStSWJWJWJtStStSWJWJWJWJtStStStStStStStStStStStStStStStSLcLctStSWJtSoWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStSXjIaIawawaWJWJWJWJWJPWVxWJWJtSWJWJWJWJWJWJWJtStSWJWJLcWJWJWJWJWJWJWJWJWJWJWJLcWJWJWJtStStSLc
-LctStStStStStStStStSWJWJWJWJWJWJtStStSWJWJWJWJtStStStSWJtStStStStSWJtStStStSWJLcLctStSWJoWoWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStSXjXjIawazCwawaWJWJWJWJVxWJWJtStStStStStStStSWJWJWJWJLcLcWJWJVxWJWJWJWJWJLcLcLcLcWJWJtStStSLc
-LctStStStStStStStSWJWJWJWJtStStStStSWJWJWJWJWJtStSWJWJtStStStSWJWJWJWJtStStStSLcWJtStStStSWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJWJtSXjXjIaVxwawawaWJWJoWPWVxWJWJtStStStStStStStSWJWJVxWJWJLcWJWJVxWJWJWJWJLcLcWJWJLcWJWJtStStSLc
-LctStStStStStSWJWJtStSWJPWtStStStStSWJWJtStStSWJtSWJtStStSWJtSWJWJWJtStStStStSLcWJtStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJtSWJtSWJWJWJVxwawawawaWJoWWJVxWJWJtStStStStStStStSWJWJVxWJLcLcWJWJVxWJWJLcLcLcWJWJLcLcWJWJtStStSLc
-LctStStStStStSWJWJtStSPWWJtStStStStSWJWJtStStStStStStStSWJWJtSWJWJWJtStStSWJtSLcWJtStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWtSWJtStSWJtSVxwawawawaWJoWWJVxVxWJWJtStStSWJtStStSWJWJVxWJLcLcWJWJVxWJWJLcLcWJWJLcLcWJWJtStStStSLc
-LctStStStStStSWJWJWJWJPWWJtStStStStStSWJtStStStStSWJWJtStStStSWJWJWJtStStSWJtSWJtStStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJWJtStStSWJtSwawawawaWJoWWJWJVxWJtStSWJtStSWJWJWJWJVxVxWJLcLcWJWJVxWJLcLcLcWJWJLcLcWJWJtStStStSLc
-LctStStStStStSWJPWPWWJWJPWtStStStStStSWJtStStStStSWJtStStStStSWJWJWJtSWJWJWJLcWJtStStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJtStStStSWJVxVxwawawawaPWWJVxWJtStStStSWJtStStSWJVxWJWJLcLcLcLcVxWJLcLcLcWJWJLcWJWJWJWJtStStSLc
-LctStStStStStSWJPWPWPWPWpZtStStStStStSWJtStStStStSWJWJtStSWJWJWJWJWJtSWJWJtSLcWJWJtStStSWJPWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWoWtStStStStSVxVxwawawawaWJWJVxWJWJtStStSWJtStSWJWJVxWJLcLcWJWJLcVxWJLcWJWJWJWJLcWJWJWJtStStStSLc
-LctStStStStStSWJWJpZWJWJtStStStStSVLWJWJtStStSWJtSWJWJWJWJWJWJWJWJWJtSWJWJtSLcWJWJtStStStSPWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWoWtStStSWJtSWJVxVxwawazCWJWJtSVxWJtSWJtStStSWJWJVxWJWJLcWJWJWJLcWJLcLcWJWJWJLcLcWJWJWJWJWJtStSLc
-LctStStStStStSWJtStSWJWJtStStStStSWJWJWJWJtStStStSWJWJWJtStSWJWJWJtStSWJWJtSLcWJWJtStStStSWJUMVxVxVxVxVxVxVxVxVxVxMNVxVxVxVxVxVxVxVxVxVxVxsiPWPWoWtStStStSWJWJVxVxwawawawaWJtSVxWJtStStStSWJtStSVxWJLcLcWJWJWJWJtSWJWJWJWJWJLcWJWJWJWJWJWJtStSLc
-LctStStStSWJtSWJtStSWJoWtStStStStSWJLcLcWJtStStStSWJWJWJtStStSWJWJWJtSWJWJtSWJLcWJtStStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsioWtSoWtStStStStSWJtStSwawawawaWJtSWJVxtStStStSWJWJtSVxWJLcWJWJWJWJWJtSWJWJWJWJLcLcWJWJWJWJWJtStStSLc
-LctStStStSWJWJVxtStSWJoWtStStStStSWJLcLcWJtStStSWJWJWJWJWJtSWJWJWJWJWJWJWJLctSLcWJtStStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsioWtSWJtStStStSWJtStStSVxVxwawaWJWJtSqYtSWJtStStSWJtSVxWJWJWJWJWJWJtStSWJWJWJWJLcWJWJWJWJWJtStStStSLc
-LctStStSWJWJWJVxWJWJWJoWtStStStStSWJWJWJWJtSWJtSWJWJWJWJWJWJWJWJWJWJWJtSWJLctSWJWJtStStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsioWtSWJtStStStSWJtStStSVxVxwawaWJtStSqYtStStStStSWJtSVxWJWJWJWJWJWJtSWJWJWJLcLcLcWJWJWJWJWJtStStStSLc
-LctStStSWJWJWJVxWJWJWJWJtStStStStStSWJWJWJtStStSWJtSWJWJWJLcLcVxWJWJWJtSWJtStSWJWJtSWJWJtSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJtStStStStStStStSWJtSVxVxwawaWJtStSVxWJWJtStStSWJtSVxWJtSWJWJWJtSWJWJLcLcLcLcWJWJWJWJWJWJWJtStStSLc
-LctStStSWJWJWJWJPWWJoWWJtStStSWJWJWJWJWJtStStStStStSWJtSVxLcLcLcVxWJWJtSWJWJtSWJWJtSWJWJWJVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJWJtStStStStStSWJWJWJVxwazCwatStStSVxWJtStStStSWJWJVxtSWJWJtSWJWJLcLcWJWJWJWJWJWJWJWJWJWJtStStSLc
-LctStStStSWJVLWJPWWJWJWJtStStSWJWJWJWJWJtStStStSWJWJWJtSVxLcLcLcVxWJWJtSWJWJLcWJWJtStStSVxWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWtStStStStStStStStSWJWJVxwawawaWJtStSVxWJqYtSWJtSWJWJVxtSWJtSWJWJLcLcWJWJWJWJWJWJWJWJWJWJtStStStSLc
-LctStStStSWJWJWJWJWJPWWJWJtStStSWJWJPWWJtStStStStSWJtStSWJVxVxVxLcVxWJWJWJWJLcWJWJtSWJWJPWwaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStStStStStStSWJWJWJVxwawaVxWJtStSVxWJVxtStStSWJWJVxtSWJtSWJWJLcWJWJWJtStStStStStSWJtSWJtStStSLc
-LctStStSWJWJWJPWPWPWPWPWWJtStStSWJWJPWWJtStStStStSWJtStStStSWJWJVxVxWJWJWJWJLcLcWJtSWJWJWJzCUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStStStStStStSWJtSWJVxwawaVxWJtStSVxWJVxWJtStStSVxVxtSWJtSWJWJWJWJWJWJtStStStStStSWJtSWJtStStSLc
-LctStStSWJVxWJPWWJPWPWPWWJtStStSWJWJWJWJtStStStStStSWJWJtStSWJWJWJLcVxWJtSWJLcLcWJtSWJWJwawaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStStStStStStStSWJWJVxwawaVxtStStSVxVxqYtStSWJtSVxWJtSWJWJtSWJWJWJWJWJWJtStStStStSWJtStStStStSLc
-LctStStSWJLcVxWJWJPWWJVxWJWJtStSWJWJWJPWWJtStStStSWJtStSWJWJWJWJVxLcVxWJWJWJWJLcWJtSoWPWzCPWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStStStStStStSWJWJtSVxwawaVxtStStSVxVxtStSWJtStSVxWJtSWJWJtSWJWJtSWJWJtSWJtStStStStStStStStStSLc
-LctStStSWJLcVxWJPWWJWJVxWJtStStStStSWJWJWJtStStStSWJtStSWJWJWJWJWJVxWJVxVxWJWJtSWJtSoWwawawaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJWJtStStStStStStSWJVxwawaVxtStStSWJVxtStSWJtStSVxtStSWJWJtSWJWJtSWJWJtStStStStStStStStStStStSLc
-LctStStSWJWJWJPWPWPWVxLcWJWJWJtStSWJWJPWWJWJWJtStStStStSWJWJWJoWWJWJWJWJVxtStStSWJtStStStSwaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJWJtStStStStSWJtSWJVxwawaVxWJWJtSWJVxtStStStSWJVxtSWJWJWJtSWJWJtSWJWJWJWJtStStStStStStStStStSLc
-LctStStStSWJWJPWPWWJVxLcWJWJWJtStSWJWJPWWJWJWJtStStStStSWJWJoWoWtSWJWJWJWJWJWJWJWJWJtStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJWJtStStSWJWJWJWJVxVxVxVxVxVxVxVxVxVxWJWJWJWJVxVxWJWJWJWJtSWJWJWJWJWJtStStStStStSWJtStStStStSLc
-LctStStStSPWPWWJPWPWWJWJWJWJWJWJWJWJWJPWWJWJWJWJWJWJWJtStSWJoWWJWJWJWJWJWJWJWJWJWJWJtStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJWJtStStStSWJWJPWPWWJVxVxVxVxtSWJWJVxWJWJWJWJWJVxWJWJWJWJWJtSWJtSWJWJWJWJWJtSWJtStStSWJtStStStSLc
-LctStStStSWJWJWJPWWJWJWJtStStStStSPWPWPWtStSWJWJWJWJWJWJWJWJoWoWWJtSWJLcWJWJWJWJtSWJWJWJtSWJOORlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlONWJWJtStStStStSWJPWWJWJWJVxwawaVxtStSVxVxVxVxWJVxVxWJWJWJWJtStSWJtSWJWJWJWJtStStStStStStSWJtStStStSLc
-LctStStStSPWWJVxPWPWVLWJtStStStStSPWWJWJtStStStSWJWJWJWJWJLcWJWJtSWJWJLcWJWJtStSWJWJVxVxtStStSWJWJWJoWWJVxVxWJoWVxPWPWVxVxWJWJPWPWWJtStSWJWJWJWJtStStStStStSPWWJtStSVxwazCVxWJtSWJVxVxVxVxVxVxWJWJWJtStSWJWJtSWJWJtStStSWJtStSWJWJtStStStStStSLc
-LctStStStSWJPWVxWJWJPWWJtStStStStSPWWJWJtStStStStStSWJWJtStStStStStStSWJWJtStStStSWJWJVxtStStSWJoWWJWJtSWJWJPWWJVxWJWJWJVxWJWJPWPWWJWJWJWJtStStStStStStSWJPWPWWJtStSVxwawaVxWJtStSWJVxVxVxVxVxWJWJtStSWJWJtSWJWJWJWJWJtStStStStStStStStStStStSLc
-LctStStStSWJPWVxVxPWWJWJtStStStStSWJWJWJtStStStStStStStStStStStStStStSWJWJWJWJtStStStSVxVxtStStStStStStSWJWJoWPWWJWJWJVxVxPWPWPWWJtStStStStStStStStStStSWJPWWJWJtStSVxwawaVxtSWJtSWJWJWJWJWJWJtStSWJWJtStSWJWJWJtStStStStStStStStStStStStStStSLc
-LctStStStSWJWJPWVxWJPWPWtStStStStSWJPWPWWJWJWJtStStStStStStStStStStSWJWJWJWJWJWJtStStStSVxtStStStStStStSWJWJWJWJWJWJoWVxVxPWPWPWWJtStStStStStStStStSWJtSWJPWWJtStStSVxwawaVxVxWJVxqYVxVxVxVxVxqYVxqYWJWJWJWJWJWJtStStSWJtStStStStStStStStStStSLc
-LctStStStSWJWJWJWJVxWJWJWJtStStStSWJWJPWPWPWPWtStStStStStStStStStStSPWPWWJWJWJtStSWJtStSVxSuWJtStStStStStSWJWOWqyBVxVxVxtSWOWXuJWJtStStStStStStStStSWJWJWJPWWJtStStSVxwawawaVxWJWJVxVxLcLcLcLcVxVxVxWJWJWJWJWJWJtStStStStStStStSWJtStStStStStSLc
-LctStStStSWJWJWJPWWJWJWJWJtStStStSWJWJPWWJWJPWPWtStStStStStStStStStSWJWJPWPWWJWJWJWJtStSWJWJoWoWVxVxVxWJtSWJWOeuUiWJVxVxWJbbhGWKWJtStStStStStStSWJWJWJtSWJPWWJtStStSVxwawawaVxWJWJVxLcLcVxLcLcLcVxVxWJWJtStStStStStStStStStStStStStStStStStStSLc
-LctStStStStStSWJWJWJWJWJWJtStStStSWJWJWJPWWJoWPWPWWJWJWJWJtStStStStStSWJWJWJPWWJWJWJtStSWJWJoWwawaVxVxtStStStSWJWJWJoWVxWJGLdNrKWJtStStStStStStSWJWJWJtSWJPWWJtStStSVxwawawaVxVxVxLcLcVxVxVxVxLcVxVxWJtSWJtStStStStSWJtStStStStStStStStStStStSLc
-LctStStStStStSWJWJPWWJtStStStStStStStSWJWJPWWJoWWJWJPWWJWJtStStStStStStSWJWJPWPWWJWJtSWJtStSVxwawawaoWtStStSWJWJSuPWWJWJVxWJtStStStStStStStStStSWJWJWJPWWJWJWJtStStSVxVxwawaVxVxVxVxLcVxVxVxVxLcVxqYtStSWJWJtStStStStStStStStStStStStStStStStSLc
-LctStStStStStSVLWJPWWJtSoWWJtSWJtStStStStSWJPWWJoWoWWJPWWJtStStStStStStStStSWJWJPWWJtStStStSWJVxoWwaoWtStStStSWJWJWJPWWOCnLOtStStStStStStStSWJWJPWPWWJWJPWPWWJWJWJWJWJVxwawaVxVxVxVxLcLcVxVxLcLcVxVxtStStStStSWJWJtStStStStStStStStStStStStStSLc
-LctStStStStStSWJWJPWWJtSoWWJtSWJtStStStStSWJPWPWWJoWoWWJWJtStStStStStStStStStSWJPWPWtStStStSWJWJoWoWoWWJtStStSoWoWoWWJaHaHWWaHaHtStStStStStSWJWJPWWJWJWJWJWJPWWJWJWJWJVxzCwaVxVxVxVxLcLcVxVxLclTVxqYtStStSWJtStStStStSWJWJtSWJtSWJWJWJWJtStStSLc
-LctStStStStStSWJWJWJWJWJoWWJtStSWJtStStStStSWJWJPWWJWJWJWJtStStStStStStStStStSWJPWWJtStStStSWJtSWJWJtStStStStSWJoWWJoWBprqePhJaHtStStSWJWJWJWJWJPWtSWJWJWJtSPWWJWJWJWJVxwawaVxVxVxVxVxLcLcyZLcWJWJVxWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJLc
-LctStStStStStStSWJWJtSoWoWVxVxtStStStStStStStStSWJPWPWPWWJtStStStStStStStStStSWJWJWJWJtStStStStStStSWJWJtStSWJoWoWoWoWBpzsePePWWLOtStSWJWJWJWJPWWJtStStSWJtSWJPWPWWJWJVxwawawaVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxWJWJWJWJWJWJWJWJWJWJWJLc
-LctStStStStStStStStSoWoWVxWJWJVxtStStStStStStStSWJWJWJWJpZpZtStStStStStStStStStStStSSuWJWJWJWJtStStSWJWJVxVxWJoWoWoWoWBpBpBpaHaHqzVxPWWJWJWJWJWJWJWJtStStStSWJWJPWWJWJVxwawawawawawawawaVxVxVxVxVxVxVxwawawawawawawawaVxVxVxVxVxVxVxVxVxVxVxVxLc
-LctStStStStStStStStSPWPWVxVxtyVxVxWJWJWJtStStStStStStSWJWJWJtStStStStStStStStStStStSWJgpOEDQWJtSWJWJWJVxVxVxWJWJtStSWJWJoWoWoWoWPWVxtStSWJPWtSWJWJWJtStStStSWJWJWJWJWJVxwawawawawawawawawaVxVxwawawawawawazCwawawawawawawawawawawawawawawawawaLc
-LctStStStStStStStStSWJWJVxVxVxVxVxWJPWPWtStStStStStStSWJWJWJtStStStStStStStSWJWJxiWJDQVxVxVxWJWJtStStSWJWJWJWJtStStSWJWJtStStStSWJoWtStSWJPWtStStStStStStStStStSWJWJVxVxwawawawawazCwawawaVxVxVxwawawawawaVxVxVxVxVxwawawawazCwawawawawawawawaLc
-LctStStStStStStStStSWJWJVxVxVxVxtSWJtSPWPWtStStStStStSWJWJWJWJtStStStStStSWJWJWJKLWJWJvLVxqOOEWJtStStSWJWJtSWJtStStSWJPWtStStStStSWJtStSWJPWVxWJtStStStStStStStStStSVxwawawawawaVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxWJVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxLc
-LctStStStStStStStStStStSVxWJWJVxtSWJWJWJPWPWWJtStStStStStStStSWJtStStStStSWJPWWJPWPWWJtSWJWJWJWJtStStStStStStStStStSWJWJWJtStStStStStStSWJPWVxVxVxtSWJtStStStStSWJtSVxwawawaVxVxVxWJWJWJWJWJWJWJtStStStStStStSWJWJtStSWJtStStSWJWJWJWJWJWJtStSLc
-LctStStSWJtStStStStStStStStStStStStStSWJWJPWPWWJtStStStStSWJtSWJtStStStStSWJPWWJWJWJWJtSWJSutStStStStStStStStStStStStSWJWJPWtStStStSWJWJVxWJWJVxVxtStStStStSWJtStSWJVxwawawaVxVxWJWJWJWJWJtSWJtSWJWJWJtSWJtStSWJtStSWJtStStStStStStStStStStStSLc
-LctStStStStStStStStStStStStStStStStStStStSWJPWPWWJWJtStStStStStStStSWJWJWJPWPWWJWJWJWJtSWJWJtStStStStStStStStStStStStSWJWJPWWJVxVxVxWJWJVxtStStStStStStStStStStSWJtSVxwawawaVxWJWJWJtSWJWJWJtStSWJWJtStStSWJWJtStStStStStStStStStStStStStStStSLc
-LctStStStStSWJWJWJtStStStStStStStStStStStStSWJPWPWWJWJtStStSWJtStSWJWJWJPWPWWJtSWJWJWJtSWJWJtStStStStStStStStStStStStSWJWJWJPWVxPWPWPWWJWJtStStStStStStStStStSWJWJtSVxwawawaVxWJWJWJtStSWJWJtSWJtSWJtStStSWJtStStStStSWJWJWJWJWJtStStStStStStSLc
-LctStSWJPWtSWJPWWJtStStStStStStStStStStStStStStSWJPWPWWJWJWJWJtSWJPWPWPWPWWJWJtStStStStSPWPWtStStStStStStStStStStStStStSWJWJWJWJtSVxVxWJtSWJtStStStSWJtStStStStSWJWJVxwawaVxVxWJWJtStStStStStStSWJtStStStSWJtStSWJWJWJWJWJDJWJWJLcLcLcLcLcLcLcLc
-LctStSPWPWtSWJWJPWWJWJWJtStStStStStStStScEtStStStStSWJWJWJVxVxWJPWPWWJWJWJWJWJtStStStStSWJPWWJWJtStStStStStStStStStStStStStStStStSVxtStStStSWJtStStSWJtStStStStSWJWJVxwawaVxWJWJWJtStSWJWJtStStStStStSWJtSWJtStSWJkgWJgdWJWJLcLcLcLcWJtStStStSLc
-LctStSWJWJWJaHaHaHaHaHaHaHaHaHUUaHaHaHaHaHWJWJWJWJWJWJWJPWVxWJPWPWWJtSWJWJtStStStStStStSWJPWPWWJWJWJtStStStStStStStStStStSWJtStSWJpotStStStStStStStStSWJtStStSWJtSWJVxwawaVxWJWJWJtSWJtStStStStStStStStStSWJWJWJWJOZWJWJNeLcLcWJWJWJWJWJWJtStSLc
-LctStStSWJVxaHkPPvvSaHPvVxVxVxEJVxEJEJePaHWJPWPWPWWJWJWJPWPWVxVxVxWJtSWJtStStStStStStStSWJWJPWWJWJWJtStStStStStStStStStStStStStSWJVxWJWJtStStStStStStStSWJtSWJtSWJWJVxwawaVxWJtStStStStSWJtSWJtSWJtSWJtSWJtSWJgdWJWJDJNeDJWJWJWJDJDJDJDJDJDJWJLc
-LctStStSWJVxaHvSTXLCaHPvSxSxaHEJVxePePEJaHWJWJPWWJWJVxVxVxWJVxVxVxWJtStStStStStStStStStSWJWJPWPWWJWJtSWJWJVxVxWJWJVxVxVxtStStSWJLWVxVxLWtStStStStSWJtStSWJtStStSWJWJVxzCwaVxWJWJtStStStStStStStSWJtSWJtStStStSWJgdWJNeDJDJDJWJWJDJDJDJDJDJDJDJLc
-LctStStSPWVxaHEJMjknaHEJePePaHEJaHePzAEJLmPWWJWJVxVxVxVxtStStSWJtStStStStStStStSWJWJtStSVxVLWJPWPWPWtSWJWJWJWJPWPWWJVxWJtStStSWJVxpoVxVxWJtStStSWJtStSWJtSWJtStStSWJVxwawaVxWJtStStStStSWJtStStStStStStStSWJWJWJLcLcWJDJOZDJDJkgDJDJDJZDDJDJDJLc
+LctStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLcvXyZRqyZElLcLctStStStStStSWJlnHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrLcbWPTLcLctStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLc
+LctStStStStStStStStStStStStStStStStStStStStStSWJWJWJWJWJWJWJWJVxWJWJtStStStStStSLcSjyZRqyZElLcLcWJWJWJWJWJWJWJVxzNMLZbxQUbHrouuvTVououHrpiRaHrqFsNKKqFouFBZLZLRaHrsNsNlrHrLcyLVvLcHrsZsZHrtStStStStStStStStStStStStStStStStStStStStStStStStStSLc
+LctStStStStStStStStStStStStStStStStStSWJWJtSWJVxUUaHaHaHaHaHaHUUVxVxaHtStStStStSLcSjTjoOyZQALcWJWJtStSWJWJWJWJVxiFouRaKpZLZLkjHrHrHrkjFBouRaFBZLZLKpKpouHrsNsNRaotsNsNvEHrHrHrHrHrHrTUfLsZWJWJWJWJWJWJtStStStStStStStStStStStStStStStStStStStSLc
+LctStStStStStStStSWJWJtStStStStStStSWJWJWJWJWJVxNhePePljEJPHePVxVxePaHtSWJtStSWJWJSjTjoOTjQAWJWJtStSWJWJWJWJWJVxMLZbMLEAYLZbHrHrabHrHrHrHrotHrcfhZZbcfHrHrHrHrHrHrfqsNsNvpvpvpvpvpvpvpUesZtSWJtStStStSWJtStSWJWJWJWJWJWJWJWJWJWJWJtStStStStStSLc
+LctStStSWJtSWJWJWJWJtStStStStStStStSWJWJWJWJWJUUePePAkePePEJePePVxYVaHWJtStStStSWJSjTjoOTjQAWJtStStStSWJWJWJWJlnHrHrHrHrHrHrHrSHQVAsHrEUvEsNHrHrHruvHrHrUesNvEvElrBisNsNHrHrHrHrHrHrvpvpsZVxVxVxVxVxWJtStStStStSWJWJWJWJWJvTWJWJWJtStStStStStSLc
+LctStStSWJWJWJPWWJWJWJWJtSWJtSWJtStStSWJWJWJWJaHrqPHaHePEJePNhePChcwaHWJWJWJWJWJWJSjTjoOTjQAWJWJWJWJWJWJWJWJhtVxVxLcHrouHrOYHrtztztzHrsNhZsNNRHrUbouUbHrlrvpbLoIvpsNsNlrHrqYVxVxWJHrsZsZHrVxqYqYqYqYVxVxVxqYVxqYqYWJWJWJWJWJWJWJWJWJtStStStStSLc
+LctStStSWJWJWJWJPWWJWJWJWJWJWJtSWJtStStStSWJWJaHaHaHaHVxWUePePaHaHaHaHWJWJWJWJWJWJSjTjlvTjQAWJWJWJWJWJWJtSWJWJWJVxLcHrUbeHouxWsNhZsNiloIoIoIsNHrBORaiqHrHrHrHrsNsNsNHrHrHrqYVxqYqYqYqYqYqYqYVxVxqYqYqYVxVxVxVxqYVxVxVxVxqYtSWJWJWJWJtStStStStSLc
+LctSWJtSWJWJWJWJWJPWPWPWPWWJWJtSWJWJWJWJWJWJtSWJaHrqrqePNhVxePaHWJWJWJWJtSWJWJWJWJSjTjoOTjQAWJtSWJtSWJWJtSWJtSWJVxLcHrUbououxWhZsNgciloIoIoIhZHrZbRaMLHrVxWJHrsNSvsNHrVxVxVxVxVxVxVxVxVxVxVxVxqYVxVxVxqYVxGIVxVxVxVxqYqYqYWJtSWJWJWJtStStStStSLc
+LctSWJWJWJWJWJPWWJWJWJWJPWPWWJWJWJWJWJWJWJWJtSWJaHePGlePVxMmePaHWJWJWJtStStStStSWJSjTjoOTjQAWJtStStStSWJtSWJtStSVxdqHrHrHrHrHrSgFPjnHrMrsNlrIAHrMLiFLyHrVxvWHrvpsNvpHrHmvWqYVxVxstxsVxGIVxVxGIVxVxVxVxVxqYVxVxVxVxVxVxqYqYqYVxtSWJWJtStStStStSLc
+LctStSWJWJWJPWPWWJWJPWWJWJWJWJWJPWPWWJWJWJWJWJWJaHYVrqePePePVxaHWJWJWJtStStStStSWJSjTjlvTjQAWJtStStStSWJtSWJtStSVxVxOELcLcLcHrHrHrHrHrHrHrHrHrHrXDiFXDlGVxvWHrHrHrHrHrwawaHmvWqYqYqYVxVxqYqYVxVxxsVxVxVxVxVxVxVxVxGIVxVxqYVxVxtStSWJtStStStStSLc
+LctStStStSWJWJWJPWPWWJPWWJWJtSWJWJWJPWWJPWWJWJWJaHYVIXePePVxVxaHWJWJWJWJtStStStSWJSjTjoOTjQAWJtStStStSWJtSWJWJtSWJWJVxVxLcLcLcLcLcLcLcLcLcLcLcLcoeoemBoeWJtSqYHmwawawawawawawaHmHmqYeMVxqYqYqYqYVxVxVxVxVxVxVxqYqYVxVxVxqYVxVxWJtSWJtStStStStSLc
+LctStStStSWJWJWJWJWJWJWJPWWJWJWJWJWJWJWJWJPWWJWJaHaHaHVuaHaHaHaHWJWJWJWJtStStSqYWJSjTjoOTjQAWJtStStSWJWJWJWJtStStSVxWJVxVxVxVxVxVxVxVxVxVxwaLcLcLcWJmBWJWJWJqYVxgowawawazCwawawagoHmVxqYVxVxVxqYqYvWvWqYVxVxVxVxVxVxVxVxqYVxVxWJWJWJWJWJWJtStSLc
+LctStStSWJtStSWJWJWJtSWJWJWJtStSWJWJtStStStStSWJWJtmePePKkmuReWJWJWJWJtSqYtStStSWJSjTjoOTjQAWJtStSWJWJWJWJtStStStSWJgJWJWJWJhtWJWJWJWJWJVxwawaLcLcWJWJWJWJWJqYqYVxHmHmHmwawawawawaHmVxqYqYVxHmHmHmHmHmVxqYVxVxGIVxVxqYqYqYVxVxVxVxWJWJWJWJtStSLc
+LctStStStSWJtSWJtStSWJWJtSWJtStStStStStStStSWJWJWJVxetePetetByWJWJWJWJtStStStStSWJSjTjoOTjQAWJtStSWJWJWJWJWJtStStStStStStStStStStStSWJPWVxwawaLcLcWJWJmBWJWJtStSqYVxVxgowazCwawawaHmqYqYVxHmbTHmHmHmHmHmqYVxVxVxVxqYqYVxqYqYqYqYqYWJWJWJWJtStSLc
+LctStStStStStStSWJtSWJWJtSWJWJWJtStStStStStSWJgJWJWJWJVxWJWJWJWJWJVxWJWJWJWJWJWJWJSjTjoOTjQAWJtSWJWJWJWJtStSWJtStStStStStStStStStStSPWPWVxwawaWJLcLcWJWJmBWJWJWJVxqYVxVxHmHmwawaHmVxqYVxptHmHmwaHmHmRpHmVxqYVxVxGIqYVxVxqYqYVxVxqYWJWJWJWJtStSLc
+LctStStStStStSWJWJtStSWJWJtSWJWJWJtStStStStSWJWJWJWJVxVxWJWJWJWJShWJWJWJWJWJWJWJWJSjTjoOTjQAWJtSWJtSWJWJWJWJtStStStStStStStStStStSWJPWWJVxwawaWJLcLcWJWJmBmBWJWJWJqYqYqYVxHmHmHmgoVxqYVxHmHmwawawawaHmHmHmvWVxVxVxVxqYVxVxqYVxVxVxWJWJWJWJtStSLc
+LctStStStStStStStStSWJWJWJWJPWWJWJtStStStStStSWJWJWJVxShWJWJgJWJWJWJtStSWJWJWJVxVxSjTjoOTjQAWJtStSWJtStSWJWJtStStStStStStStStStStSWJPWWJVxwawaWJWJLcLcWJWJmBWJShHtWJVxVxVxqYVxVxVxVxqYVxbTwawawazCwaHmHmHmvWvWzdVxVxVxVxVxVxqYVxVxtSWJWJWJtStSLc
+LctStStStStStStStStSWJWJtStSPWWJWJtStStStStStStStSWJVxWJWJWJWJWJtStStSWJWJWJVxwaVxSjTjoOTjQAVxtStStSWJVxVxVxWJtStStStStStStStStStSWJPWWJWJwawaWJWJLcLcLcWJWJWJWJmBWJWJhtWJHmVxVxVxVxqYVxHmwawawawawaHmHmHmHmvWqYVxVxqYVxVxVxVxqYqYWJtSWJWJtStSLc
+LctStStStStStSWJtSWJWJWJWJWJWJPWWJtStStStStStStStStSVxtStStStStStSWJVxWJWJWJVxzCVxSjTjoOTjQAWJtSqYWJtSWJWJVxWJtStScEtStStStStStStSWJPWWJWJwawawaWJWJLcLcLcWJWJWJWJmBmBWJWJWJVxqYVxqYqYVxHmwazCwawaHmHmHmwaHmHmVxqYVxVxqYVxVxVxqYtSWJtSWJWJtStSLc
+LctStStStStStStStSWJWJWJtSWJWJPWWJtStSWJWJWJWJWJtStSVxtStStStStStStSWJWJWJWJVxVxwaSjTjoOTjQAWJtStStStSWJWJVxtStStStStStStStStStStStSPWWJWJWJwawaVxWJWJWJLcLcLcLcWJWJmBmBWJWJVxVxqYVxGIVxHmHmwawawawaHmzCwaHmHmVxqYVxVxVxVxVxVxqYtStStSWJWJtStSLc
+LctStStStStStStSWJWJWJtSWJtSWJPWWJWJtSPWPWPWPWWJWJWJVxVxWJtStStStStStSWJWJWJWJVxVxSjTjoOTjQAWJtStStStStSWJWJWJtStSqYtStStStStStStStSWJPWWJwawazCVxWJWJWJWJLcLcLcLcLcLcWJmBmBmBWJWJHtVxVxVxHmHmwawawawawaHmzdVxVxqYVxVxqYVxVxVxqYtStStSWJWJtStSLc
+LctStStStStSWJtStSWJtSWJtSWJWJPWPWWJWJPWPWWJPWPWPWWJWJVxWJWJtStStStStStSWJWJWJWJWJSjTjoOTjQAWJtStSWJtSWJtSWJWJtStStStStStSqYtStStStSWJPWWJwawawaVxWJWJWJWJWJWJWJLcLcLcLcWJWJWJWJmBWJWJqYqYqYHmHmHmHmHmHmVxVxVxVxqYVxVxqYVxqYVxWJtStStSWJWJtStSLc
+LctStStStStSWJWJWJWJtStStSWJWJWJPWWJPWWJWJWJWJWJWJWJWJVxWJtSWJtStStStStStSWJWJWJWJSjTjoOTjQAWJtStStStStSWJWJWJWJtStStStStStStStStSWJWJPWWJwawawaVxWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJmBmBWJVxqYvWHmvWHmHmvWVxVxGIVxqYVxqYVxVxqYqYtSWJWJtSWJWJtStSLc
+LctStStStSWJWJWJtSWJtStStSWJWJPWPWWJPWWJWJWJWJWJWJWJWJVxWJtSWJtStStStStStStStSWJWJSjTjlvTjQAWJtStStStSqYWJWJWJtStStStSWJtStStStStStSWJPWWJwawawaVxWJWJWJWJWJWJWJWJWJWJWJWJWJLcLcWJWJmBWJVxVxqYqYqYVxVxVxVxqYqYVxqYVxzdVxVxVxqYWJtSWJWJWJtStStSLc
+LctStStStStSWJWJtStStStStSWJWJPWPWPWPWWJWJoWoWLcWJLcLcVxWJtSWJtStStStSqYtStStStStSSjTjoOTjQAWJtStStStSWJtSWJWJtStStSqYWJWJVxWJtStStSWJPWWbwawawaVxWJWJWJWJWJWJWJWJWJWJWJWJWJWJLcLcWJWJtStSVxVxGIVxqYXdXdXdXdXdqYqYVxVxVxVxVxqYtSWJWJtStStStStSLc
+LctStStStSWJWJWJtStStStStSWJPWPWWJWJWJWJWJoWoWLcWJLcLcVxWJtSWJtStStStStStStStStStSSjTjoOTjQAWJtStStStSWJWJWJtStStStStStSVxwawaWJtStSVxPWWJwawawaWJtStStSWJoWWJoWWJLEWJWJPWtStStSLctSWJtStSVxVxVxqYqYVxVxVxqYqYVxqYqYVxqYVxqYVxWJtSWJtStStStStSLc
+LctStStStStSWJtStStSWJWJtSWJWJWJWJoWoWoWLcLcoWoWWJVxVxVxVxtSWJtStStStStStStStSqYtSSjTjoOTjQAWJtStStStSWJWJWJtStStSWJWJVxwazCwatStStSWJWJWJzCzCwaVxtStStStSoWPWoWWJWJtSWJPWWJWJtSLctStStStSVxVxVxqYqYVxzdVxqYqYVxVxVxqYqYVxqYVxtSWJtSWJWJtStStSLc
+LctStStStSWJWJtStStSWJWJtSWJWJWJoWWJWJLcLcLcLcLcVxVxLcLcVxVxtStStStStStStStStSWJWJSjVxoOTjQAWJtStStStStSWJWJWJWJtSWJWJVxwawazCtStStSWJPWWJwawawawatStStStSoWPWoWtStSWJWJPWWJtStSLctStStStSVxtSqYqYqYHmHmVxVxVxVxVxVxqYqYqYVxqYWJWJtSWJWJtStStSLc
+LctStStSWJtSWJtStStStStStSWJWJWJLcLcWJLcLcLcLcVxVxWJLcLcLcVxVxWJWJWJWJWJWJWJWJVxVxVxTjlvTjQAWJWJWJtStSWJWJtStStStStStStSVxwawawatStSWJPWWJwawawawatStStStSWJPWoWtStSWJWJPWWJtStSLctStStStSWJtSqYVxHmwaHmqYqYqYHmHmHmvWVxqYqYVxWJWJWJtSWJtStStSLc
+LctStStStSWJWJWJtStStStStSWJWJLcLcLcVxVxLcLcLcVxoWLcLcLcLcWJVxVxVxVxVxVxVxVxVxVxtSSjTjoOTjQAVxWJWJWJWJWJWJWJtStStStStStSWJVxVxWJtStSWJPWWJwawazCwatStStSWJoWPWoWWJLEtSPWWJtStStSLctStStStStStSWJqYHmwawaqYqYqYHmHmHmvWVxVxqYqYWJtSWJWJtStStStSLc
+LctStStStStSWJWJtStStStSWJPWWJLcLcLcVxVxLcVxVxVxoWLcLcLcLcWJWJWJWJWJWJWJtStStSqYtSSjTjoOTjQAWJWJWJWJWJPWWJWJWJWJtStSqYtSWJWJWJWJtSWJWbWJWJwawawawatStStStSoWPWoWWJtStSWJWJtStStSLctSWJtStStStSqYqYHmHmwaqYqYqYVxvWvWvWGIVxqYqYtStSWJWJtStStStSLc
+LctStStStSWJWJtStStStStSWJPWWJLcwaVxVxVxLcVxoWoWoWLcLcLcLcWJWJWJWJWJWJWJtSWJWJVxWJSjTjoOTjQAWJWJWJWJWJWJPWWJWJWJtStStStStStSWJWJtStSWJWJVxwawawaVxtStStStSWJPWWJoWLEtSPWWJtStStSLctSWJtStStSWJtSqYHmwawaHmVxVxVxqYVxzdVxVxqYVxVxVxVxtSWJtStStSLc
+LctStStStSWJWJWJtStStStSWJPWWJLcwazCVxVxVxVxVxVxVxSuWJWJLcWJtStStSWJWJWJtStStStSWJhQfPfPfPjaWJWJWJWJWJWJVxPWWJWJWJWJWJWJWJtStStStSWJWJWJPWwawawaVxtStStStSWJPWPWoWWJWJPWWJtStStSLcWJWJtStStStStSqYHmwawaHmzdVxqYVxVxVxVxVxVxVxVxqYVxWJWJtStStSLc
+LctStStStSWJWJtStStStStSWJWJPWLcLcwaVxVxVxudVxVxVxLcLcoWoWtSnKKRKRKRKRKRKRKRKRKRbsOUTjoOTjQAWJtStStStSWJWJWJWvPWPWPWPWPWWJWJWJWJPWPWWJPWPWwawawatStStStStSWJWJPWoWoWWJPWWJtSWJtSLctSWJWJtSWJtSWJqYVxHmHmHmVxVxVxqYqYqYqYqYVxVxVxqYVxWJWJtStStSLc
+LctStStStStSWJWJtStStStSWJWJPWWJLcLcLcLcLcVxVxVxVxLcWJoWoWWJSjTjTjTjTjTjTjTjTjTjtBTjTjoOTjQAWJtSWJWJWJVxWJWJWJWJWJWJVxWJWJPWPWWJPWWJWJWJVxwawawatStStStStSWJWJPWPWWJWJPWWJtStStSLctSWJWJtSWJtSWJVxVxHmHmHmVxVxVxqYqYqYqYqYVxxsVxVxVxqYWJtStStSLc
+LctStStStStSWJWJtStStStStSWJPWWJLcLcLcLcLcLcVxLcLcWJWJoWoWWJSjTjIJkakakaORkakakaCokakaqkTjVxWJtStStStStStStStStStStSqYtStStSWJWJPWPWPWWbPWwawawaVxVxtStStStStSWJPWWJWJPWWJtSWJtSLctStSWJtStStSWJqYqYVxVxHmGIVxVxqYqYqYqYqYVxVxVxVxVxqYWJtStStSLc
+LctStStStStSWJWJtStStSWJWJWJPWWJWJWJoWoWWJoWVxLcLcWJWJoWoWWJSjTjoOTjTjTjTjTjTjTjtBTjTjTjVxVxWJtStStStSWJtSWJtSVxtStStStStStSWJPWPWPWPWVxPWwawawaVxWJqYtStStStSWJoWPWPWPWWJWJWJWJWJWJWJWJtStSWJWJqYqYVxVxHmVxVxVxqYqYqYqYqYVxVxVxVxqYVxWJtStStSLc
+LctStStStStSWJWJtStStSWJWJPWWJWJWJSuWJPWWJVxVxLcLcWJWJoWWJWJSjTjoOTjbldIdIdIdIdIVAdIdIdIVxVxWJtStSWJtSqYtSWJtStStStSqYtStStSVxWJPWPWWJWJPWwawawaVxWJXjIaXjWJtSWJoWGZPWWJWJtStStSLctStSWJWJtStSVxqYqYVxVxVxVxVxVxqYqYqYqYqYVxVxVxVxqYVxWJtStStSLc
+LctStStStStSWJWJtStStStSpZWJWJWJLcWJPWWJVxPWPWPWPWWJWJWJWJWJSjTjoOTjQAtStStStSWJtSWJtSqYWJtStSWJtStStStSWJtStStSWJWJtStSqYqYtSqYqYqYtStSVxwawawaPWWJdlXjXjVxtStSWJoWWJWJWJtSWJLcLcWJtSWJWJtSVxVxVxVxVxVxVxVxVxVxqYqYqYqYqYVxVxVxVxqYVxWJtStStSLc
+LctStStStStSWJtStStSWJtSPWWJWJWJLcWJPWVxVxLcLcWJWJPWWJWJWJtSSjTjoOTjQAtSWJWJtSWJWJtSWJWJWJWJtSWJVxWJWJtSVxtSWJtStSWJWJWJtStSWJtStStStStSVxwazCwaVxPWWJWJWJWJtSqYWJoWWJWJWJtSWJLcLcLcWJWJtStSWJVxtStSWJVxVxqYqYqYVxVxVxVxVxGIVxVxVxqYVxWJtStStSLc
+LctStStStStSWJWJtStStStSPWWJWJWJLcPWPWVxLcLcLcLcWJPWPWWJWJtSSjTjoOTjQAtSWJtStStSWJWJtStSWJWJtSWJtStSWJWJWJWJVxtSWJWJWJWJWJWJtStStStStStSWJVxwawaVxWJWJPWWJWJWJoWlwoWWJWJWJtSWJtSLcLctSWJtSWJVxVxtStSWJxsVxqYqYqYVxVxVxVxVxVxVxVxVxqYVxWJtStStSLc
+LcWJWJWJWJWJWJtStStSWJWJPWWJWJWJLcPWVxVxLcLcLcLcLcWJPWPWWJtSSjTjoOTjQAtStStStSWJtStStStSWJtStStStStStStStSWJWJWJVxtStStSVxVxtStStStStStStSVxwawaVxWJWJXjXjXjoWWJqYqYtStStStStStSLcLctSWJWJWJWJVxtStSWJtSVxqYqYqYVxVxVxVxVxVxxsVxVxqYVxWJtStStSLc
+LcWJLcLcLcVxWJtStStSWJWJPWWJWJWJWJPWVxLcLcLcLcLcLcWJWJPWWJtSSjTjlvTjQAVxtStStStSWJWJtSWJtStSqYWJtStSWJWJtStSVxVxWJtStStStSWJtSWJtStStStStSVxwawaVxPWWJXjXjagoWWJWJVxVxtStStStStSLctStStSWJtSqYqYVxWJtStSVxVxqYVxVxVxVxqYqYVxVxVxVxqYVxWJtStStSLc
+LcLcLcwawaVxVxtStStStStSPWWJWJWJWJPWWJLcLcWJWJWJWJWJWJPWWJtSSjTjoOTjQAtStStStStSWJWJWJWJWJWJWJtStStStSWJWJWJtStSWJWJtSWJWJWJtStSWJtStStStStSwawawaPWWJXjXjXjPWPWWJWJVxtStStStStSLcLcWJtSWJtSVxqYVxWJtStSqYVxVxVxqYqYqYqYVxVxqYVxVxqYVxWJtStStSLc
+LcLcLczCwawawatStStStStSPWWJWJWJWJPWWJLcLcLcWJWJWJWJWJPWWJtSSjTjoOTjQAtStStSWJtStStStStStStSWJtStSWJtStSWJWJtSWJtSWJtStSWJtStStStStStStStStSVxwawaPWPWWbtSWJWJPWWJWJVxtStStStStSLcLcWJtStStSWJtSVxVxVxqYVxVxVxGIqYqYqYqYVxVxVxVxqYVxVxWJtStStSLc
+LcLcLcwawawawatStStStSWJWJPWWJWJPWPWPWWJWJWJWJWJWJPWPWWJWJtSSjTjoOTjQAtStStStStStStStStStStStStSqYtStStStStStStStSWJWJVxVxLcLctStStStStStStSVxwawazCwaVxtSWJWJPWWJWJVxtStStStStSLcLcWJtStStSWJtSVxVxVxqYqYVxVxVxqYqYqYqYVxVxVxqYqYVxVxWJtStStSLc
+LcLcLcwawawazCVxtStStSWJWJWJWJPWPWPWWJNMWJPWWJWJPWPWPWPWWJWJSjTjVxTjQAtStSqYtStStStStStSWJWJqYtSqYtStStStStStStStSWJVxVxtStSWJWJtStStStStStStStSwawawaVxtSWJPWPWPWPWVxtStStStStSLcLcWJtStStSWJtSVxVxVxVxVxVxqYqYqYqYqYqYVxVxVxVxVxVxVxWJtStStSLc
+LctSwawawazCVxWJtStStSWJWJWJWJPWWJWJWJWJWJPWNMPWWJPWWJWJWJWJSjTjoOTjQAtSWJtStStStStSVxoWoWoWoWoWtStSWJWJWJWJtSWJWJWJVxVxtStSWJWJWJWJWJWJtStStStSwawawawatSVxWJPWPWWJVxtStStStStSLcLcWJtStSWJWJWJWJqYVxVxqYVxVxqYqYVxqYqYVxVxVxVxVxVxVxWJtStStSLc
+LctSVxwawawaVxWJtStStSWJWJWJPWWJWJWJWJWJWJWJWJWJWJWJWJWJWbWJSjTjoOTjQAtSWJWJWJtStStSoWtSwatStSoWWJtStSPWPWWJtStStSVxVxWJtStSWJPWPWPWWJWJtStStStSVxVxwawawawaVxWJWJPWVxtStStStStSWJLcLcWJWJtSWJVxWJWJqYVxVxqYqYqYVxVxVxqYVxVxVxVxVxVxVxWJtStStSLc
+LctStStStSVxWJWJtStStSWJWJPWWJWJWJWJWJWJWJtStStStStStSWJWJtSSjTjoOTjVxtSWJWJWJtStStSoWwawawazCwaoWPWPWPWPWPWPWWJWJPWPWPWPWPWWJPWPWPWWJWJWJWJWJtSVxVxVxwawawaVxWJPWPWWJqYtStStStSWJLcLcLcWJWJWJVxVxWJVxqYqYVxVxqYVxVxVxVxqYVxVxVxVxVxVxWJtStStSLc
+LctStStStStSWJtStStStSWJWJWJPWWJtStStStStStStStStStSWJWJPWWJSjTjlvTjVxtSWJWJWJWJWJtStStSwazCwaPWPWPWPWPWPWPWPWPWWJoWWJoWWJoWoWoWWJWJWJWJPWPWWJwawaWJVxwawawaIaXjXjXjWJqYqYtStStSWJWJLcLcWJtSWJWJWJWJWJWJtSVxVxVxVxVxVxqYVxqYVxVxVxGIVxWJtStStSLc
+LctStStStStStStStStStStStStSWJPWtStStStStStStStStStStSWJWJWJSjTjoOTjVxtSWJWJtSWJLctStSoWtSwaIZGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNGNEewazCWJtSWJwazCwaIaXjXjXjWJWJqYtStStSWJWJWJLcLctStStSWJtStSWJtSVxVxqYVxVxqYVxVxVxVxVxVxWJVxWJtStStSLc
+LctStStStStStStStStStStStStSPWPWtStStStStStStStSWJWJtSkUWJWJSjTjoOTjQAtSWJWJtSLcLctStSoWtSwaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWtStStSWbwawawawaWJtStSWJWJVxWJtStSWJWJWJWJLcWJWJWJtStStSWJWJqYVxqYVxqYVxVxVxqYVxVxWJWJWJWJtStStSLc
+LctStStStStStStStStStStStStSPWWJtStStStStStStStSWJWJtStStSWJSjTjoOTjQAtStStStSLcLctStSWJtSWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStSiDVxVxwawaWJtSWJWJWJVxVxtStSWJWJWJWJLcLctStStStStSWJWJtSqYVxGIVxqYqYqYqYVxWJWJWJWJWJtStStSLc
+LctStStStStStStStStStStStStSPWPWtStStStStStStStSWJWJtStStStSSjTjoOVxQAtStStStSLcLctStSWJtSoWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStSWJVxVxwawaWJWJtSoWPWPWVxtStStStStSWJWJLctStSWJtStSWJLctSqYWJWJVxVxVxtSWJWJVxWJVxWJWJtStStSLc
+LctStStStStStStStStStStStSWJWJWJtStStSWJWJWJWJtStStStStStSWJSjTjoOTjQAtStStStSLcLctStSWJtSoWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStSXjIaIawawaWJiDWJWJWJPWVxWJWJtSWJWJWJWJWJWJWJtStSWJWJLcWJWJWJWJWJWJWJWJWJWJWJLcWJWJWJtStStSLc
+LctStStStStStStStStSWJWJWJWJWJWJtStStSPWPWWJWJtStStStSWJtStSSjTjVxTjQAtStStSWJLcLctStSWJoWoWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStSXjXjIawazCwawaWbWJWJWJVxWJWJtStStStStStStStSWJWJWJWJLcLcWJWJVxWJWJWJWJWJLcLcLcLcWJWJtStStSLc
+LctStStStStStStStSWJWJWJWJtStStStStSWJWJWJWJWJtStSWJWJtStSWJSjTjVxTjQAtStStStSLcWJtStStStSWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJWJtSXjXjIaVxwawawaWJWJoWPWVxWJWJtStStStStStStStSWJWJVxWJWJLcWJWJVxWJWJWJWJLcLcWJWJLcWJWJtStStSLc
+LctStStStStStSWJWJtStSWJPWtStStStStSWJWJtStStSWJtSWJtStStSWJSjTjoOTjQAtStStStSLcWJtStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJtSWJtSWJWbWJVxwawawawaWJoWWJVxWJWJtStStStStStStStSWJWJVxWJLcLcWJWJVxWJWJLcLcLcWJWJLcLcWJWJtStStSLc
+LctStStStStStSWJWJtStSPWWJtStStStStSWJWJtStStStStStStStSWJtSSjTjoOTjQAtStSWJtSLcWJtStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWtSWJtStSWJtSVxwawawawaWJoWWJVxVxWJWJtStStSWJtStStSWJWJVxWJLcLcWJWJVxWJWJLcLcWJWJLcLcWJWJtStStStSLc
+LctStStStStStSWJWJWJWJPWWJtStStStStStSWJtStStStStSWJWJtStSWJSjTjoOTjQAtStSWJtSWJtStStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJWJtStStSWJtSwawawawaWJoWWJWJVxWJtStSWJtStSWJWJWJWJVxVxWJLcLcWJWJVxWJLcLcLcWJWJLcLcWJWJtStStStSLc
+LctStStStStStSWJPWPWWJWJPWtStStStStStSWJtStStStStSWJtStStSWJSjTjoOVxwazCwaVxWJWJtStStStSWJWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJtStStStSWJVxVxwawawawaPWWJVxWJtStStStSWJtStStSWJVxWJWJLcLcLcLcVxWJLcLcLcWJWJLcWJWJWJWJtStStSLc
+LctStStStStStSWbPWPWPWPWpZtStStStStStSWJtStStStStSWJWJtStStSSjTjVxwazCwaPWtSWJWJWJtStStSWJPWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWoWtStStStStSVxVxwawawawaWJWJVxWJWJtStStSWJtStSWJWJVxWJLcLcWJWJLcVxWJLcWJWJWJWJLcWJWJWJtStStStSLc
+LctStStStStStSWJWJpZWJWJtStStStStSVLWJWJtStStSWJtSWJWJWJWJWJSjTjVxVxwaPWWJtSLcWJWJtStStStSPWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWoWtStStSWJtSWJVxVxwawazCWbWJtSVxWJtSWJtStStSWJWJVxWJWJLcWJWJWJLcWJLcLcWJWJWJLcLcWJWJWJWJWJtStSLc
+LctStStStStStSWJtStSWJWJtStStStStSWJWJWJWJtStStStSWJWJPWtSWJSjTjoOTjQAWJWJtSLcWJWJtStStStSWJUMVxVxVxVxVxVxVxVxVxVxMNVxVxVxVxVxVxVxVxVxVxVxsiPWPWoWtStStStSWJWJVxVxwawawawaWJtSVxWJtStStStSWJtStSVxWJLcLcWJWJWJWJtSWJWJWJWJWJLcWJWJWJWJWJWJtStSLc
+LctStStStSWJtSWJtStSWJoWtStStStStSWJLcLcWJtStStStSWbWJPWtSWJSjTjoOTjQAWJWJtSLcLcWJtStStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsioWtSoWtStStStStSWJtStSwawawawaiDtSWJVxtStStStSWJWJtSVxWJLcWJWJWJWJWJtSWJWJWJWJLcLcWJWJWJWJWJtStStSLc
+LctStStStSWJWJVxtStSWJoWtStStStStSWJLcLcWJtStStSWJWJWJPWWJWJSjTjoOTjQAWJWJLcLcLcWJtStStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsioWtSWJtStStStSWJtStStSVxVxwawaWJWJtSqYtSWJtStStSWJtSVxWJWJWJWJWJWJtStSWJWJWJWJLcWJWJWJWJWJtStStStSLc
+LctStStSWJWJWJVxWJWJWJoWtStStStStSWJWJWJWJtSWJtSWJWJWJWJWJWJSjTjVxVxQAtSWJLctSWJWJtStStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsioWtSWJtStStStSWJtStStSVxVxwawaWJtStSqYtStStStStSWJtSVxWJWJWJWJWJWJtSWJWJWJLcLcLcWJWJWJWJWJtStStStSLc
+LctStStSWJWJWJVxWJWJWJWJtStStStStStSWJWJWJtStStSWJtSWJWJWJtSSjTjVxVxQAtSWJtStSWJWJtSWJWJtSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJtStStStStStStStSWJtSVxVxwawaWJtStSVxWJWJtStStSWJtSVxWJtSWJWJWJtSWJWJLcLcLcLcWJWJWJWJWJWJWJtStStSLc
+LctStStSWJWJWJWJPWWJoWWJtStStSWJWJWJWJWJtStStStStStSWJtSVxtSSjTjVxTjQAtSWJWJtSWJWJtSWJWJWJVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJWJtStStStStStSWJWbWJVxwazCwatStStSVxWJtStStStSWJWJVxtSWJWJtSWJWJLcLcWJWJWJWJWJWJWJWJWJWJtStStSLc
+LctStStStSWJVLWJPWWJWJWJtStStSWJWJWJWJWJtStStStSWJWJWJtSVxtSSjTjoOTjQAtSWJWJLcWJWJtStStSVxWJUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWtStStStStStStStStSWJWJVxwawawaWJtStSVxWJqYtSWJtSWJWJVxtSWJtSWJWJLcLcWJWJWJWJWJWJWJWJWJWJtStStStSLc
+LctStStStSWJWJWJWJWJPWWJWJtStStSWJWJPWWJtStStStStSWJtStSWJtSSjTjoOTjQAPWWJWJLcWJWJtSWJWJPWwaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStStStStStStSWJiDWJVxwawaVxWbtStSVxWJVxtStStSWJWJVxtSWJtSWJWJLcWJWJWJtStStStStStSWJtSWJtStStSLc
+LctStStSWJWJWJPWPWPWPWPWWJtStStSWJWJPWWJtStStStStSWJtStStStSSjTjoOTjQAPWWJWJLcLcWJtSWJWJWJzCUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWWJtStStStStStStSWJtSWJVxwawaVxWJtStSVxWJVxWJtStStSVxVxtSWJtSWJWJWJWJWJWJtStStStStStSWJtSWJtStStSLc
+LctStStSWJVxWJPWWJPWPWPWWJtStStSWJWJWJWJtStStStStStSWJWJtSWJSjTjoOTjQAPWtSWJLcLcWJtSWJWJwawaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStStStStStStStSWJWJVxwawaVxtStStSVxVxqYtStSWJtSVxWJtSWJWJtSWJWJWJWJWJWJtStStStStSWJtStStStStSLc
+LctStStSWJLcVxWJWJPWWJVxWJWJtStSWJWJWJPWWJtStStStSWJtStSWJWJSjTjoOVxQAWJWJWJWJLcWJtSoWPWzCPWUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJtStStStStStStSWJWJtSVxwawaVxtStStSVxVxtStSWJtStSVxWJtSWJWJtSkUWJtSWJWJtSWJtStStStStStStStStStSLc
+LctStStSWJLcVxWJPWWJWJVxWJtStStStStSWJWJWJtStStStSWJtStSWJWJSjTjoOVxQAVxVxWJWJtSWJtSoWwawawaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJWJtStStStStStStSWJVxwawaVxtStStSWJVxtStSWJtStSVxtStSWJWJtSWJkUtSWJkUtStSWJWJWJWJtStStSWJtStSLc
+LctStStSWJWJWJPWPWPWVxLcWJWJWJtStSWJWJPWWJWJWJtStStStStSWJWJSjTjVxVxQAPWVxtStStSWJtStStStSwaUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJWJtStStStStSWJtSWbVxwawaVxWJWJtSWJVxtStStStSWJVxtSWJWJWJtSWJWJtSWJWJWJkUkUkUkURYkUkUWJWJtStSLc
+LctStStStSWJWJPWPWWJVxLcWJWJWJtStSWJWJPWWJWJWJtStStStStSWJWJSjTjoOTjQAPWWJWJWJWJWJWJtStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiPWPWWJWJtStStSWJWJWJWJVxVxVxVxVxVxVxVxVxVxWJWJWJWJVxVxWJWJWJWJtSWJWJWJkUkUkUpRpRpRkURYkUkUkUtStStSLc
+LctStStStSPWPWWJPWPWWJWJWJWJWJWJWJWJWJPWWJWJWJWJWJWJWJtStStSSjTjoOTjQAWJWJWJWJWJWJWJtStStSVxUMVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxsiWJWJWJtStStStSWJWJPWPWWJVxVxVxVxtSWJWJVxWJWJWJWJWJVxWJWJWJWJWJtSWJtSWJWJkUkUpRpRkUkURYkUkUkUtStStSLc
+LctStStStSWJWJWJPWWJWJWJtStStStStSPWPWPWtStSWJWJWbWJWJWJWJWJSjTjoOTjQALcWJWJWJWJtSWJWJWJtSWJOORlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlRlONWJWJtStStStStSWJPWWJiDWJVxwawaVxtStSVxVxVxVxWJVxVxWJWJWJWJtStSWJtSkUWJWJkUkUkUkUkUkUkUkUkUkUtStStSLc
+LctStStStSPWWJVxPWPWVLWJtStStStStSPWWJWJtStStStSWJWJWJWJWJWJSjTjoOTjQALcWJWJtStSWJWJVxVxtStStSWJWJWJoWWJVxVxWJoWVxPWPWVxVxWJWJPWPWWJtStSWJWJWJWJtStStStStStSPWWJtStSVxwazCVxWJtSWJVxVxVxVxVxVxWJWJWJtStSWJWJtSWJWJtSWJkURYRYRYkUpRpRkUkUWJtStSLc
+LctStStStSWJPWVxWJWJPWWJtStStStStSPWWJWJtStStStStStSWJWJtSWJSjTjoOTjQAWJWJtStStStSWJWJVxtStStSWJoWWJWJtSWJWJPWWJVxWJWJWJVxWJWJPWPWWJWJWJWJtStStStStStStSWJPWPWWJtStSVxwawaVxWJtStSWJVxVxVxVxVxWJWJtStSWJWJtSWJWJkUWJWJkUkUkUkUkUkUkUWJWJkUtStSLc
+LctStStStSWJPWVxVxPWWJWJtStStStStSWJWJWJtStStStStStStStStSWJSjTjoOTjQAWJWJWJWJtStStStSVxVxtStStStStStStSWJWJoWPWWJWJWJVxVxPWPWPWWJtStStStStStStStStStStSWJPWWJWJtStSVxwawaVxtSWJtSWJWJWJWJWJWJtStSWJWJtStSWJWJWJtStStStSWJtSWJWJtStStStStStStSLc
+LctStStStSWJWJPWVxWJPWPWtStStStStSWJPWPWWJWJWJtStStStStStStSSjTjoOTjQAWJWJWJWJWJtStStStSVxtStStStStStStSWJWJWJWJWJWJoWVxVxPWPWPWWJtStStStStStStStStSWJtSWJPWWJtStStSVxwawaVxVxWJVxqYVxLcLcLcLcqYVxqYWJWJWJWJWJWJtStStSWJtStStStStStStStStStStSLc
+LctStStStSWJWJWJWJVxWJWJWJtStStStSWJWJPWPWPWPWtStStStStStStSSjTjoOTjQAPWWJWJWJtStSWJtStSVxSuWJtStStStStStSWJWOWqyBVxVxVxtSWOWXuJWJtStStStStStStStStSWJWJWJPWWJtStStSVxwawawaVxWbWJVxLcLcLcLcLcLcVxVxWJWJWJWJWJWJtStStStStStStStSWJtStStStStStSLc
+LctStStStSWJWJWJPWWJWJWJWJtStStStSWJWJPWWJWJPWPWtStStStStSWJSjTjoOTjQAWJPWPWWJWJWJWJtStSWJWJoWoWVxVxVxWJtSWJWOeuKLWJVxVxWJbbhGWKWJtStStStStStStSWJWJWJtSWJPWWJtStStSVxwawawaVxiDWJLcLcLcDJLcLcLcLcVxWJWJtStStStStStStStStStStStStStStStStStStSLc
+LctStStStStStSWJWJWJWJWJWJtStStStSWJWJWJPWWJoWPWPWWJWJWJWJWJSjTjoOTjQAWJWJWJPWWJWJWJtStSWJWJoWwawaVxVxtStStStSWJWJWJoWVxWJGLdNrKWJtStStStStStStSWJWJWJtSWJPWWJtStStSVxwawawaVxVxVxLcLcpaDJDJpaLcLcVxWJtSWJtStStStStSWJtStStStStStStStStStStStSLc
+LctStStStStStSWJWJPWWJtStStStStStStStSWJWJPWWJoWWJWJPWWJWJWJSjTjoOTjQAtSWJWJPWPWWJWJtSWJtStSVxwawawaoWtStStSWJWJSuPWWJWJVxWJtStStStStStStStStStSWJWJWJPWWJWJWJtStStSVxVxwawaVxVxVxLcLcDJDJqqDJLcLcqYtStSWJWJtStStStStStStStStStStStStStStStStSLc
+LctStStStStStSVLWJPWWJtSoWWJtSWJtStStStStSWJPWWJoWoWWJPWWbWJSjTjoOTjQAtStStSWJWJPWWJtStStStSWJVxoWwaoWtStStStSWJWJWJPWWOCnLOtStStStStStStStSWJWJPWPWWJWJPWPWWJWJWJWJWbVxwawaVxVxVxLcLcLcDJDJLcLcLcVxtStStStStSWJWJtStStStStStStStStStStStStStSLc
+LctStStStStStSWJWJPWWJtSoWWJtSWJtStStStStSWJPWPWWJoWoWWJWJWJSjTjoOVxQAtStStStSWJPWPWtStStStSWJWJoWoWoWWJtStStSoWoWoWWJaHaHVuaHaHtStStStStStSWJWJPWWJWJWJWJWJPWWJWJWJWJVxzCwaVxVxVxLcLcLcpaDJLclTVxqYtStStSWJtStStStStSWJWJtSWJtSWJWJWJWJtStStSLc
+LctStStStStStSWJWJWJWJWJoWWJtStSWJtStStStStSWJWJPWWJWJWJWJtSSjTjoOVxQAtStStStSWJPWWJtStStStSWJtSWJWJtStStStStSWJoWWJoWBprqePhJaHtStStSWJWJWJWJWJPWtSWJWJWJtSPWWJWJWJWJVxwawaVxVxVxVxLcLcLcNeLcWJWJVxWJWJWbWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJWJLc
+LctStStStStStStSWJWJtSoWoWVxVxtStStStStStStStStSWJPWPWPWWJtSSjTjoOTjQAtStStStSWJWJWJWJtStStStStStStSWJWJtStSWJoWoWoWoWBpzsePePVuLOtStSWJWJWJWJPWWJtStStSWJtSWJPWPWWJWJVxwawawaVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxWJWJWbWJWJWJWJWbWJWJWJLc
+LctStStStStStStStStSoWoWVxWJWJVxtStStStStStStStSWJWJWJWJpZtSSjTjoOTjVxtStStStStStStSSuWJWJWJWJtStStSWJWJVxVxWJoWoWoWoWBpBpBpaHaHqzVxPWWJWJWJWJWJWJWJtStStStSWJWJPWWJWJVxwawawawawawaVxVxVxVxVxVxVxVxVxwawawawawaVxVxwaVxVxVxVxVxVxVxVxVxVxVxVxLc
+LctStStStStStStStStSPWPWVxVxtyVxVxWJWJWJtStStStStStStSWJWJtSSjTjoOVxVxtStStStStStStSWJgpOEDQWJtSWJWJWJVxVxVxWJWJtStSWJWJoWoWoWoWPWVxtStSWJPWtSWJWJWJtStStStSWJWJWJWJWJVxwawawawawawawawawaVxVxwawawawawawazCwawaVxVxwawawawawawawawawawawawawaLc
+LctStStStStStStStStSWJWJVxVxVxVxVxWJPWPWtStStStStStStSWJWJtSSjTjVxVxQAtStStSWJWJxiWJDQVxVxVxWJWJtStStSWJWJWJWJtStStSWJWJtStStStSWJoWtStSWJPWtStStStStStStStStStSWJWJVxVxwawawawawazCwawawaVxVxVxwawawawawaVxVxVxVxVxwawawawazCwawawawawawawawaLc
+LctStStStStStStStStSWJWJVxVxVxVxtSWJtSPWPWtStStStStStSWJWJWJVxVxVxVxWJtStSWJWJWJKLWJWJvLVxqOOEWJtStStSWJWJtSWJtStStSWJPWtStStStStSWJtStSWJPWVxWJtStStStStStStStStStSVxwawawawawaVxVxVxVxVxVxVxVxVxVxVxVxVxVxVxWbVxVxVxVxVxLcLcLcVxVxVxVxVxVxVxLc
+LctStStStStStStStStStStSVxWJWJVxtSWJWJWJPWPWWJtStStStStStStSWJVxWJWJtStStSWJPWWJPWPWWJtSWJWJWJWJtStStStStStStStStStSWJWJWJtStStStStStStSWJPWVxVxVxtSWJtStStStStSWJtSVxwawawaVxVxVxWJWbWJWJWJWJWbtStStStStStStSLcLctStSWJtStStSLcLcVxWbWJWJtStSLc
+LctStStSWJtStStStStStStStStStStStStStSWJWJPWPWWJtStStStStSWJtSWJWJWJtStStSWJPWWJWJWJWJtSWJSutStStStStStStStStStStStStSWJWJPWtStStStSWJWJVxWJWJVxVxtStStStStSWJtStSWbVxwawawaVxVxWJWJWJWJWJtSWJtSWJWJWJtSWJtSLcLctStSWJtStStStStSLcLctStStStStSLc
+LctStStStStStStStStStStStStStStStStStStStSWJPWPWWJWJtStStStStStSWJtSWJWJWJPWPWWJWJWJWJtSWJWJtStStStStStStStStStStStStSWJWJPWWJVxVxVxWJWJVxtStStStStStStStStStStSWJtSVxwawawaVxWJWJWJtSWJWJWJtStSWJWJtStStSLcLctStStStStStStStStStSLctStStStStSLc
+LctStStStStSWJWJWJtStStStStStStStStStStStStSWJPWPWWJWJtStStSWJtStSWJWJWJPWPWWJtSWJWJWJtSWJWJtStStStStStStStStStStStStSWJWJWJPWVxPWPWPWWJWJtStStStStStStStStStSWJWJtSVxwawawaVxWJWJWJtStSWJWJtSWJtSWJtStStSLctStStStStSWJWJWJWJWJtSLctStStStStSLc
+LctStSWJPWtSWJPWWJtStStStStStStStStStStStStStStSWJPWPWWJWJWJWJtSWJPWPWPWPWWJWJtStStStStSPWPWtStStStStStStStStStStStStStSWJWJWJWJtSVxVxWJtSWJtStStStSWJtStStStStSWJWJVxwawaVxVxWJWJtStStStStStStSWJtStStStSLctStSWJWJWJWJWJDJWJWJLcLcLcLcLcLcLcLc
+LctStSPWPWtSWJWJPWWJWJWJtStStStStStStStScEtStStStStSWJWJWJVxVxWJPWPWWJWJWJWJWJtStStStStSWJPWWJWJtStStStStStStStStStStStStStStStStSVxtStStStSWJtStStSWJtStStStStSWJWJVxwawaVxWJWJWJtStSWJWJtStStStStStSWJtSLctStSWJkgWJgdWJWJLcLcLcLcWJtStStStSLc
+LctStSWJWJWJaHaHaHaHaHaHaHaHaHUUaHaHaHaHaHWJWJWJWJWJWJWJPWVxWJPWPWWJtSWJWJtStStStStStStSWJPWPWWJWJWJtStStStStStStStStStStSWJtStSWJpotStStStStStStStStSWJtStStSWJtSWJVxwawaVxWJWJWJtSWJtStStStStStStStStStSLcLcWJWJOZWJWJNeLcLcWJWJWJWJWJWJtStSLc
+LctStStSWJVxaHkPPvvSaHPvVxVxVxEJVxEJEJePaHWJPWPWPWWJWJWJPWPWVxVxVxWJtSWJtStStStStStStStSWJWJPWWJWJWJtStStStStStStStStStStStStStSWJVxWJWJtStStStStStStStSWJtSWJtSWJWbVxwawaVxWbtStStStStSWJtSWJtSWJtSWJtSWJWJLcgdWJWJDJNeDJWJWJWJDJDJDJDJDJDJWJLc
+LctStStSWJVxaHvSTXLCaHPvSxSxaHEJVxePePEJaHWJWJPWWJWJVxVxVxWJVxVxVxWJtStStStStStStStStStSWJWJPWPWWJWJtSWJWJVxVxWJWJVxVxVxtStStSWJLWVxVxLWtStStStStSWJtStSWJtStStSWJWJVxzCwaVxWJWJtStStStStStStStSWJtSWJtStStSLcLcgdWJNeDJDJDJWJWJDJDJDJDJDJDJDJLc
+LctStStSPWVxaHEJMjknaHEJePePaHEJaHePzAEJLmPWWJWJVxVxVxVxtStStSWJtStStStStStStStSWJWJtStSVxVLWJPWPWPWtSWJWJWJWJPWPWWJVxWJtStStSWJVxpoVxVxWJtStStSWJtStSWJtSWJtStStSWJVxwawaVxWJtStStStStSWJtStStStStStStStSWJWJLcLcLcWJDJOZDJDJkgDJDJDJZDDJDJDJLc
 LctStSWJPWVxaHaHaHaHaHaHEJwGaHqzaHEJEJePaHWJVxVxVxVxWJWJtStSWJWJWJtStStStStStStSWJWJtStSWJVxVxPWPWPWtSWJWJPWPWPWWJWJVxVxtStStSWJpoLWVxVxtStStStStSWJWJtStSWJtStSWJWJVxwawaVxWJWJtStStStStStSWJWJtStStStStStStSWJLcDJWJDJWJQHDJWJDJDJDJDJDJDJDJLc
 LctStSWJVxVxVxVxVxVxVxUUaHaHaHVxaHLmXILmaHVxVxVxWJWJWJWJWJWJWJWJWJWJWJWJtStStStStStStStSWJWJVxWJWJWJtSWJPWWJPWWJWJWJPWWJtStStSWJWJVxVxVxpotStStStStStStStStStStStSWJVxwawaVxVxWJtStStStStStStStStStStSWJtSWJWJWJLcWJgdDJWJDJZDDJDJDJDJQHDJDJDJLc
 LctStSWJVxVxVxrUVxVxVxVxVxVxVxVxVxvLVxVxVxVxVxPWPWPWWJWJWJPWPWPWWJPWPWWJtStStStStStStStStStStStStStSWJWJPWWJWJWJVLPWWJWJWJtStStStSVxpoLWVxWJtStStStStSWJtStStStSWJWJVxwawawaVxWJtStStStSWJtStStStStStStStSWJWJDJLcWJDJDJWJWJDJDJDJDJDJZDDJDJDJLc
 LctStSWJVxVxVxaHaHaHUUaHVxVxVxVxVxVxPWFHPWVxWJPWPWPWWJWJtStSWJWJPWPWPWWJtStStStStStStStStStStStStStSWJWJPWPWPWWJWJPWWJWJtStStStStSWJVxVxVxtStStStStStStStStStStSWJtSVxwawawaVxWJtStStStStStStStStSWJtSWJWJWJWJWJLcWJDJQHDJWJDJDJQHDJZDDJDJDJDJLc
 LctStStSPWVxVxaHzAePePrUVxaHaHaHaHXILmLmaHVxWJPWPWPWWJWJtSWJWJWJWJPWPWWJtStSWJPWPWWJWJWJWJtStStStStStSWJPWPWWJVxWJWJWJWJtSWJWJtStSWJWJWJtStSWJtStStStStStStStStSWJWJVxwawawaVxWJtStStStStStStStStStSWJWJWJWJLcLcLcWJDJDJDJDJDJDJDJDJDJDJDJDJDJLc
-LctStStSPWVxaHaHBZePePaHVxaHePePePePePePaHVxPWPWPWPWWJWJtStStStStStStStStStSWJWJPWPWWJtStStStStStStStSPWPWWJWJVxWJWJWJWJtSWJWJtStStStStStStStStStStStSWJtStStStSWJWJVxVxwawaVxtStStStStStStStStStStSWJWJWJWJLcWJWJWJDJDJZDDJDJDJWJDJDJDJDJDJDJLc
-LctStSWJWJWJaHEJlyQHePaHVxaHBZzAdcePBZePaHVxPWWJWJWJWJWJWJWJWJWJWJWJWJWJtStStStSWJPWPWWJWJWJWJWJWJtSWJVLWJWJVxtStStStStStStStStStStSWJtStStStStStStStSWJtStStStStSWJWJVxwawaVxWJtStStStStStStStStStSWJWJWJWJLcWJDJWJDJDJDJDJDJDJDJDJDJDJDJDJZDLc
-LctStSWJgdPWUUVxDJDJEJaHVxaHePePePePePePaHVxWJWJWJWJWJWJWJWJWJWJWJWJtStStStStStStStSWJPWPWPWWJWJWJtSWJWJWJWJWJtStStStStStStStStStStStStStStStStSWJtStStStStStStStSWJWJVxwawaVxtStStStStStStStStStStSWJWJWJWJLcWJWJWJDJDJQHDJDJDJDJDJDJQHDJDJDJLc
-LctStStSWJPWWJVxQHePaHaHWJaHaHaHaHaHaHaHaHVxVxWJPWPWPWtStStStStStStStStStStStStStStSWJWJWJWJtStSWJWJWJWJWJWJtStSWJtStStStStStStStStStStStStStStStStStStStStStStSWJtSVxVxwawaVxtStSWJtStStSWJtStStStStStStSWJLcWJWJWJDJDJDJDJDJQHDJDJDJDJDJDJDJLc
-LctStStSWJWJgdUUaHaHaHaHWJWJWJWJWJWJWJWJWJWJWJWJtStStStStStStStStStStStStStStStStStStStStStStStSWJWJWJWJWJWJWJWJtStStStStStStStStStStStStStStStStStStStStStStStStSWJVxwawawaVxtStStStStStStStStStStStStStStSLcLcWJWJWJWJDJZDDJDJDJDJDJDJDJDJDJLc
-LctStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStSVxwawawaVxtStStStStStStStStStStStStStStStSLcWJWJWJWJDJDJDJDJDJDJQHDJDJDJDJLc
-LctStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStSVxVxVxVxVxtStStStStStStStStStStStStStStSWJLcWJWJWJWJWJDJDJDJDJDJDJDJDJDJDJLc
-LcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLc
+LctStStSPWVxaHaHBZePePaHVxaHePePePePePePaHVxPWPWPWPWWJWJtStStStStStStStStStSWJWJPWPWWJtStStStStStStStSPWPWWJWJVxWJWJWJWJtSWJWJtStStStStStStStStStStStSWJtStStStSWJWbVxVxwawaVxtStStStStStStStStStStSWJWJWJWJLcWJWJWJDJDJZDDJDJDJWJDJDJDJDJDJDJLc
+LctStSWJWJWJaHEJlyQHePaHVxaHBZzAdcePBZePaHVxPWWJWJWJWJWJWJWJWJWJWJVxWJWJtStStStSWJPWPWWJWJWJWJWJWJtSWJVLWJWJVxtStStStStStStStStStStSWJtStStStStStStStSWJtStStStStSWJWJVxwawaVxWJtStStStStStStStStStSWJWJDJDJLcWJDJWJDJDJDJDJDJDJDJDJDJDJDJDJZDLc
+LctStSWJgdPWUUVxDJDJEJaHVxaHePePePePePePaHVxWJWJWJWJWJWJWJWJVxVxWJWJtStStStStStStStSWJPWPWPWWJWJWJtSWJWJWJWJWJtStStStStStStStStStStStStStStStStSWJtStStStStStStStSWJWJVxwawaVxtStStStStStStStStStStSWJWJLcDJNeDJDJDJDJDJQHDJDJDJDJDJDJQHDJDJDJLc
+LctStStSWJPWWJVxQHePaHaHWJaHaHaHaHaHaHaHaHVxVxWJPWPWPWtStStStSWJWJVxVxWJtStStStStStSWJWJWJWJtStSWJWJWJWJWJWJtStSWJtStStStStStStStStStStStStStStStStStStStStStStSWJtSVxVxwawaVxtStSWJtStStSWJtStStStStStSLcLcNeWJDJWJDJDJDJDJDJQHDJDJDJDJDJDJDJLc
+LctStStSWJWJgdUUaHaHaHaHWJWJWJWJWJWJWJWJWJWJWJWJtStStStStStStSWJVxTjTjTjtStStStStStStStStStStStSWJWJWJWJWJWJWJWJtStStStStStStStStStStStStStStStStStStStStStStStStSWJVxwawawaVxtStStStStStStStStStStStStStSLcLcLcWJWJWJWJDJZDDJDJDJDJDJDJDJDJDJLc
+LctStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLcSjVxVxVxVxLctStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStSVxwawawaVxtStStStStStStStStStStStStStStStSLcWJWJWJWJDJDJDJDJDJDJQHDJDJDJDJLc
+LctStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLcvXyZRqyZElLctStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStSVxVxVxVxVxtStStStStStStStStStStStStStStSWJLcWJWJWJWJWJDJDJDJDJDJDJDJDJDJDJLc
+LcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcSjyZRqyZElLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLc
 "}
