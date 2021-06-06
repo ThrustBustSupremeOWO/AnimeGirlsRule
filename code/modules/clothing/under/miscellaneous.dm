@@ -23,6 +23,22 @@
 	icon_state = "blue_pyjamas"
 	worn_state = "blue_pyjamas"
 	item_state = "w_suit"
+//Tribes
+/obj/item/clothing/under/tribe
+	name = "rudimentary shorts"
+	desc = "Slightly old-fashioned, tattered rags disguised as shorts."
+	icon = 'icons/moons.dmi'
+	icon_state = "tribe"
+	item_state = "tribe"
+	worn_state = "tribe"
+	contained_sprite = TRUE
+
+/obj/item/clothing/under/tribe/feminine
+	name = "rudimentary dress"
+	desc = "Slightly old-fashioned, tattered rags disguised as a dress."
+	icon_state = "tribe_fem"
+	item_state = "tribe_fem"
+	worn_state = "tribe_fem"
 
 /obj/item/clothing/under/suit_jacket/white
 	name = "white suit"

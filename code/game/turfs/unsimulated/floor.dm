@@ -172,7 +172,7 @@
 	icon = 'icons/turf/moons.dmi'
 	icon_state = "adv1"
 
-/turf/unsimulated/floor/city/Initialize(mapload)
+/turf/unsimulated/floor/city/advanced/Initialize(mapload)
 	if(prob(20))
 		var/variant = rand(1,6)
 		icon_state = "adv[variant]"
@@ -184,7 +184,7 @@
 	icon = 'icons/turf/moons.dmi'
 	icon_state = "road1"
 
-/turf/unsimulated/floor/city/Initialize(mapload)
+/turf/unsimulated/floor/city/road/Initialize(mapload)
 	if(prob(20))
 		var/variant = rand(1,4)
 		icon_state = "road[variant]"

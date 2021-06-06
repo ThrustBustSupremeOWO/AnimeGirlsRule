@@ -1,9 +1,11 @@
 "ab" = (/obj/machinery/cryopod{dir = 2},/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "ag" = (/obj/structure/flora/grass/jungle/b,/mob/living/simple_animal/firefly,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "aH" = (/turf/simulated/wall/wood,/area/moon/jungle)
+"aP" = (/obj/structure/trash_pile,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "bb" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/plating,/area/moon/jungle)
 "bl" = (/obj/effect/floor_decal/curb/corner,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "bs" = (/obj/effect/floor_decal/road_crosswalk,/obj/effect/floor_decal/curb{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"bF" = (/obj/structure/table/wood,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/storage/box/fancy/matches,/obj/item/storage/box/fancy/matches,/obj/item/storage/box/fancy/matches,/obj/item/storage/box/fancy/matches,/obj/item/storage/box/fancy/matches,/obj/item/storage/box/fancy/matches,/obj/item/storage/box/fancy/matches,/obj/item/storage/box/fancy/matches,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/obj/item/device/flashlight/flare/torch,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "bL" = (/obj/effect/decal/cleanable/dirt,/obj/item/stock_parts/console_screen,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "bT" = (/obj/structure/flora/ausbushes/ppflowers,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
 "bW" = (/mob/living/carbon/human,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
@@ -20,6 +22,7 @@
 "eH" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/obj/machinery/button/remote/blast_door{id = "cryopod"; pixel_y = 30},/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "eM" = (/turf/simulated/floor/grass/alt{desc = "Compacted and thick dirt."; icon = 'icons/turf/floors.dmi'; icon_state = "redplanet"; name = "compacted dirt"},/area/moon/jungle)
 "eP" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
+"fi" = (/obj/structure/simple_door/wood,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "fq" = (/obj/effect/decal/cleanable/dirt,/obj/structure/dispenser/oxygen,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "fL" = (/obj/structure/bed/chair/office/bridge/pilot,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "fP" = (/obj/effect/floor_decal/road_crosswalk{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
@@ -28,6 +31,7 @@
 "go" = (/obj/structure/flora/ausbushes/stalkybush,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
 "gp" = (/obj/item/material/shard,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "gJ" = (/obj/structure/flora/rock,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"hp" = (/obj/item/clothing/under/tribe,/obj/item/clothing/under/tribe,/obj/item/clothing/under/tribe,/obj/item/clothing/under/tribe,/obj/item/clothing/under/tribe,/obj/item/clothing/under/tribe,/obj/item/clothing/under/tribe,/obj/structure/table/rack,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "ht" = (/obj/structure/signpost{desc = "A warning sign scribbled in old Solarian common. This seems to indicate there are automated defenses ahead."; name = "warning sign"},/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "hG" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "hJ" = (/obj/effect/decal/remains/rat,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
@@ -51,10 +55,13 @@
 "lv" = (/obj/effect/floor_decal/road_marker,/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "lw" = (/obj/structure/flora/grass/jungle/b,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "ly" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/wretch,/turf/simulated/floor/wood,/area/moon/jungle)
+"lz" = (/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/item/clothing/head/helmet/tribe,/obj/structure/table/rack,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "lG" = (/obj/structure/sign/securearea{pixel_y = 29},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "lT" = (/obj/machinery/floodlight/old,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "mu" = (/obj/item/stack/material/wood/full,/obj/structure/bed/chair/wood/wings,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "mB" = (/obj/structure/flora/ausbushes/fullgrass,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"mK" = (/obj/item/device/flashlight/flare/torch,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
+"nl" = (/obj/structure/sign/directions/evac,/turf/unsimulated/mineral,/area/moon/jungle/dark)
 "nK" = (/obj/effect/floor_decal/curb{dir = 9},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "oe" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "ot" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
@@ -70,6 +77,7 @@
 "pZ" = (/obj/structure/flora/moons/thickbrush,/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "qk" = (/obj/effect/floor_decal/road_marker/corner,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "qq" = (/obj/structure/flora/moons/bush/novabloom,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
+"qs" = (/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/material/twohanded/spear/steel,/obj/item/pipewrench,/obj/item/pipewrench,/obj/structure/table/rack,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/obj/item/material/kitchen/utensil/knife/boot,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "qz" = (/turf/simulated/floor/tiled/ramp,/area/moon/jungle)
 "qF" = (/obj/machinery/light/small/emergency{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "qO" = (/obj/item/material/shard,/turf/unsimulated/floor/dirt,/area/moon/jungle)
@@ -77,9 +85,11 @@
 "rq" = (/obj/structure/table/wood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "rK" = (/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4},/obj/effect/decal/cleanable/spiderling_remains,/turf/simulated/floor/plating,/area/moon/jungle)
 "rU" = (/obj/effect/decal/cleanable/blood/gibs,/turf/unsimulated/floor/dirt,/area/moon/jungle)
+"sh" = (/obj/structure/holohoop{pixel_y = 26},/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "si" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 4},/obj/effect/floor_decal/industrial/warning/dust{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "st" = (/obj/structure/signpost{desc = "A warning sign scribbled in old Solarian common. This seems to indicate there are automated defenses ahead."; name = "warning sign"},/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "sN" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"sQ" = (/obj/item/material/twohanded/baseballbat,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "sZ" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "tm" = (/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/wood,/area/moon/jungle)
 "ty" = (/mob/living/simple_animal/hostile/boar,/turf/unsimulated/floor/dirt,/area/moon/jungle)
@@ -89,6 +99,8 @@
 "ud" = (/mob/living/simple_animal/hostile/mantalisk,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "uv" = (/obj/machinery/door/airlock/vault/bolted{name = "Bunker Doors"},/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "uJ" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/plating,/area/moon/jungle)
+"uL" = (/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/item/clothing/accessory/storage/knifeharness,/obj/structure/table/rack,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
+"uZ" = (/obj/structure/bed/chair/wood,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "vp" = (/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "vE" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/constructable_frame/temp_deco,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "vL" = (/obj/item/stack/rods,/turf/unsimulated/floor/dirt,/area/moon/jungle)
@@ -97,12 +109,15 @@
 "vW" = (/obj/structure/flora/moons/thickbrush,/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
 "vX" = (/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/mining.dmi'; icon_state = "boulder1"; name = "rubble"; opacity = 1},/obj/effect/floor_decal/curb{dir = 8},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "wa" = (/turf/simulated/floor/beach/water/ocean{name = "water"},/area/moon/jungle)
+"wn" = (/obj/item/device/flashlight/flare/torch,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "wG" = (/obj/item/material/shard,/turf/simulated/floor/wood,/area/moon/jungle)
 "xi" = (/obj/item/stack/rods,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "xs" = (/mob/living/simple_animal/tindalos,/turf/unsimulated/floor/dirt,/area/moon/jungle)
+"xy" = (/turf/unsimulated/mineral,/area/moon/jungle/dark)
 "xQ" = (/obj/machinery/light/small/emergency{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "xW" = (/obj/machinery/door/blast/regular{id = "cryo_outer"},/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "yB" = (/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 4},/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/plating,/area/moon/jungle)
+"yF" = (/obj/item/clothing/under/tribe/feminine,/obj/item/clothing/under/tribe/feminine,/obj/item/clothing/under/tribe/feminine,/obj/item/clothing/under/tribe/feminine,/obj/item/clothing/under/tribe/feminine,/obj/item/clothing/under/tribe/feminine,/obj/item/clothing/under/tribe/feminine,/obj/structure/table/rack,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "yL" = (/obj/machinery/light/small/emergency,/obj/item/clothing/under/tactical,/obj/item/gun/projectile/contender,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/ammo_casing/a762,/obj/item/clothing/accessory/holster/armpit,/obj/item/clothing/suit/armor/carrier/military,/obj/item/clothing/head/helmet/military,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
 "yZ" = (/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/mining.dmi'; icon_state = "boulder1"; name = "rubble"; opacity = 1},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "zd" = (/mob/living/simple_animal/yithian,/turf/unsimulated/floor/dirt,/area/moon/jungle)
@@ -110,11 +125,13 @@
 "zA" = (/obj/effect/decal/cleanable/dirt,/obj/item/material/shard,/turf/simulated/floor/wood,/area/moon/jungle)
 "zC" = (/obj/structure/flora/ausbushes/reedbush,/turf/simulated/floor/beach/water/ocean{name = "water"},/area/moon/jungle)
 "zN" = (/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
+"Ad" = (/obj/effect/decal/cleanable/dirt,/obj/structure/simple_door/wood,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "Ak" = (/obj/structure/simple_door/wood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "As" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/cryofeed,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/effect/decal/warning_stripes,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Bi" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/stock_parts/console_screen,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Bp" = (/obj/effect/map_effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/moon/jungle)
 "By" = (/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/wood,/area/moon/jungle)
+"BA" = (/obj/structure/bed/chair/wood{dir = 8},/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "BO" = (/obj/machinery/light/small/emergency{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "BZ" = (/obj/effect/decal/cleanable/dirt,/obj/item/stack/rods,/turf/simulated/floor/wood,/area/moon/jungle)
 "Ch" = (/obj/item/stool/wood,/turf/simulated/floor/wood,/area/moon/jungle)
@@ -126,7 +143,9 @@
 "El" = (/obj/effect/decal/fake_object{density = 1; icon = 'icons/obj/mining.dmi'; icon_state = "boulder1"; name = "rubble"; opacity = 1},/obj/effect/floor_decal/curb{dir = 4},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "EA" = (/obj/machinery/light/small/emergency,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "EJ" = (/turf/simulated/floor/wood,/area/moon/jungle)
+"EO" = (/obj/item/reagent_containers/glass/bucket/wood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "EU" = (/obj/machinery/light/small/emergency{dir = 1},/obj/item/contraband/poster,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
+"Fw" = (/obj/effect/map_effect/perma_light/brighter/street_lamp,/obj/effect/debugging/marker{density = 1; desc = "A decrepit old street light, it looks solar powered."; icon = 'icons/moons.dmi'; icon_state = "street_lamp_on"; name = "street lamp"},/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "FB" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "FH" = (/obj/item/material/shard,/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "FP" = (/obj/machinery/cryopod/robot,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
@@ -134,6 +153,7 @@
 "GI" = (/obj/structure/flora/rock/pile,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "GL" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 8},/turf/simulated/floor/plating,/area/moon/jungle)
 "GN" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 1},/obj/effect/floor_decal/industrial/warning/dust,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
+"GR" = (/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel,/obj/structure/table/wood,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "GZ" = (/obj/structure/flora/grass/jungle,/obj/structure/flora/grass/jungle/b,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "Hm" = (/turf/unsimulated/floor/jungle_grass/marsh,/area/moon/jungle)
 "Hr" = (/turf/simulated/wall/r_wall,/area/moon/jungle/dark)
@@ -143,10 +163,12 @@
 "IJ" = (/obj/effect/floor_decal/road_marker/corner{dir = 8},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "IX" = (/obj/structure/table/wood,/obj/item/device/flashlight/flare/torch,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "IZ" = (/obj/effect/floor_decal/industrial/warning/dust{dir = 9},/obj/effect/floor_decal/industrial/warning/dust/corner,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
+"Ka" = (/turf/simulated/wall/wood,/area/moon/jungle/dark)
 "Kk" = (/obj/structure/bed/chair/wood/wings,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "Kp" = (/obj/structure/lattice/catwalk/indoor/grate/light/old,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "KK" = (/obj/effect/decal/cleanable/dirt,/obj/item/grenade/frag,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "KL" = (/turf/simulated/floor/plating,/area/moon/jungle)
+"KN" = (/obj/structure/toilet{dir = 8},/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "KR" = (/obj/effect/floor_decal/curb{dir = 1},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "Lc" = (/turf/unsimulated/mineral,/area/moon/jungle)
 "Lm" = (/obj/effect/map_effect/wingrille_spawn/reinforced,/turf/simulated/floor/wood,/area/moon/jungle)
@@ -160,6 +182,8 @@
 "Mr" = (/obj/machinery/light/small/emergency,/obj/effect/decal/cleanable/dirt,/obj/machinery/constructable_frame/temp_deco,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "ML" = (/obj/structure/flora/rock/pile,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "MN" = (/obj/effect/shuttle_landmark/barge/three,/turf/unsimulated/floor/dirt,/area/moon/jungle)
+"MY" = (/obj/structure/trash_pile,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
+"Nd" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "Ne" = (/obj/structure/barricade/steel,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "Nh" = (/obj/item/stack/tile/wood,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "NM" = (/obj/structure/flora/grass/jungle,/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
@@ -172,11 +196,15 @@
 "OY" = (/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/obj/machinery/turretid/stun{name = "Perimeter Defense Control"; pixel_y = 26; req_access = null},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "OZ" = (/obj/effect/decal/cleanable/blood/gibs,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
 "Pv" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/wood,/area/moon/jungle)
+"PB" = (/obj/structure/target_stake,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "PH" = (/obj/structure/table/wood,/obj/item/device/flashlight/flare/torch,/turf/simulated/floor/wood,/area/moon/jungle)
 "PT" = (/obj/machinery/acting/changer,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
 "PW" = (/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"Qi" = (/obj/item/wirecutters,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "QA" = (/obj/effect/floor_decal/curb{dir = 4},/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
 "QH" = (/obj/structure/gore/tendrils/node,/turf/unsimulated/floor/shimmer,/area/moon/jungle)
+"QR" = (/obj/structure/holohoop{dir = 1; pixel_y = -16},/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
+"QT" = (/obj/item/clothing/glasses/sunglasses/aviator,/obj/structure/table/rack,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "QV" = (/obj/machinery/door/window/brigdoor/southright,/obj/effect/decal/warning_stripes,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Ra" = (/obj/structure/lattice/catwalk/indoor/grate/light/old,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "Re" = (/obj/structure/railing/mapped{dir = 4},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
@@ -192,6 +220,7 @@
 "Sx" = (/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "SH" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/cryofeed{dir = 4},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/obj/effect/decal/warning_stripes,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "Tj" = (/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"TC" = (/obj/item/melee/whip/barbed_ham,/obj/structure/table/rack,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "TU" = (/obj/item/clothing/head/helmet/pilot,/turf/simulated/floor/tiled/dark,/area/moon/jungle/dark)
 "TV" = (/obj/machinery/light/small/emergency{dir = 1},/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "TX" = (/obj/effect/rune,/turf/simulated/floor/wood,/area/moon/jungle)
@@ -203,7 +232,9 @@
 "Vv" = (/obj/item/clothing/gloves/swat/tactical,/obj/item/storage/belt/security/tactical,/obj/item/clothing/shoes/jackboots,/turf/simulated/floor/tiled/dark,/area/moon/jungle)
 "Vx" = (/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "VA" = (/obj/effect/floor_decal/road_crosswalk,/obj/effect/floor_decal/curb,/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor/jungle_grass/road,/area/moon/jungle)
+"VI" = (/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/item/clothing/suit/armor/tribe,/obj/structure/table/rack,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "VL" = (/mob/living/simple_animal/hostile/boar,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
+"VV" = (/obj/item/clothing/head/bandana/red,/obj/item/clothing/head/bandana/red,/obj/item/clothing/head/bandana/red,/obj/item/clothing/head/bandana/red,/obj/item/clothing/head/bandana/red,/obj/item/clothing/head/bandana/red,/obj/structure/table/rack,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "Wb" = (/obj/structure/flora/moons/bush/cosmolily,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "Wq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle)
 "Wv" = (/obj/structure/flora/grass/jungle,/turf/unsimulated/floor/dirt,/area/moon/jungle)
@@ -211,11 +242,14 @@
 "WK" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/railing/mapped{dir = 4},/turf/simulated/floor/plating,/area/moon/jungle)
 "WO" = (/turf/simulated/floor/tiled/ramp{dir = 8},/area/moon/jungle)
 "WU" = (/obj/item/gun/custom_ka/frameD/prebuilt,/turf/unsimulated/floor/dirt,/area/moon/jungle)
+"WV" = (/obj/item/beach_ball/holoball,/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "WX" = (/obj/structure/railing/mapped{dir = 1},/turf/simulated/floor/plating,/area/moon/jungle)
 "Xd" = (/obj/structure/flora/moons/thickbrush,/obj/structure/flora/moons/thickbrush,/turf/unsimulated/floor/dirt,/area/moon/jungle)
 "Xj" = (/mob/living/simple_animal/firefly,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle)
 "XD" = (/obj/structure/flora/ausbushes/fullgrass,/turf/unsimulated/floor/jungle_grass,/area/moon/jungle/dark)
+"XG" = (/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/item/clothing/shoes/sandal,/obj/structure/table/rack,/turf/unsimulated/floor/dirt,/area/moon/jungle/dark)
 "XI" = (/obj/structure/grille/broken,/obj/item/stack/rods,/turf/simulated/floor/wood,/area/moon/jungle)
+"Yz" = (/turf/simulated/floor/building/wood/alt,/area/moon/jungle/dark)
 "YL" = (/obj/machinery/porta_turret/stationary,/obj/effect/decal/warning_stripes,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 "YV" = (/obj/item/stool/wood,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/moon/jungle)
 "Zb" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
@@ -223,22 +257,22 @@
 "ZL" = (/obj/structure/lattice/catwalk/indoor/grate/light/damaged,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/moon/jungle/dark)
 
 (1,1,1) = {"
-LcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLc
-LctStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLcvXyZRqyZElLcLctStStStStStSWJlnHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrLcbWPTLcLctStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLc
-LctStStStStStStStStStStStStStStStStStStStStStSWJWJWJWJWJWJWJWJVxWJWJtStStStStStSLcSjyZRqyZElLcLcWJWJWJWJWJWJWJVxzNMLZbxQUbHrouuvTVououHrpiRaHrqFsNKKqFouFBZLZLRaHrsNsNlrHrLcyLVvLcHrsZsZHrtStStStStStStStStStStStStStStStStStStStStStStStStStSLc
-LctStStStStStStStStStStStStStStStStStSWJWJtSWJVxUUaHaHaHaHaHaHUUVxVxaHtStStStStSLcSjTjoOyZQALcWJWJtStSWJWJWJWJVxiFouRaKpZLZLkjHrHrHrkjFBouRaFBZLZLKpKpouHrsNsNRaotsNsNvEHrHrHrHrHrHrTUfLsZWJWJWJWJWJWJtStStStStStStStStStStStStStStStStStStStSLc
-LctStStStStStStStSWJWJtStStStStStStSWJWJWJWJWJVxNhePePljEJPHePVxVxePaHtSWJtStSWJWJSjTjoOTjQAWJWJtStSWJWJWJWJWJVxMLZbMLEAYLZbHrHrabHrHrHrHrotHrcfhZZbcfHrHrHrHrHrHrfqsNsNvpvpvpvpvpvpvpUesZtSWJtStStStSWJtStSWJWJWJWJWJWJWJWJWJWJWJtStStStStStSLc
-LctStStSWJtSWJWJWJWJtStStStStStStStSWJWJWJWJWJUUePePAkePePEJePePVxYVaHWJtStStStSWJSjTjoOTjQAWJtStStStSWJWJWJWJlnHrHrHrHrHrHrHrSHQVAsHrEUvEsNHrHrHruvHrHrUesNvEvElrBisNsNHrHrHrHrHrHrvpvpsZVxVxVxVxVxWJtStStStStSWJWJWJWJWJvTWJWJWJtStStStStStSLc
-LctStStSWJWJWJPWWJWJWJWJtSWJtSWJtStStSWJWJWJWJaHrqPHaHePEJePNhePChcwaHWJWJWJWJWJWJSjTjoOTjQAWJWJWJWJWJWJWJWJhtVxVxLcHrouHrOYHrtztztzHrsNhZsNNRHrUbouUbHrlrvpbLoIvpsNsNlrHrqYVxVxWJHrsZsZHrVxqYqYqYqYVxVxVxqYVxqYqYWJWJWJWJWJWJWJWJWJtStStStStSLc
-LctStStSWJWJWJWJPWWJWJWJWJWJWJtSWJtStStStSWJWJaHaHaHaHVxWUePePaHaHaHaHWJWJWJWJWJWJSjTjlvTjQAWJWJWJWJWJWJtSWJWJWJVxLcHrUbeHouxWsNhZsNiloIoIoIsNHrBORaiqHrHrHrHrsNsNsNHrHrHrqYVxqYqYqYqYqYqYqYVxVxqYqYqYVxVxVxVxqYVxVxVxVxqYtSWJWJWJWJtStStStStSLc
-LctSWJtSWJWJWJWJWJPWPWPWPWWJWJtSWJWJWJWJWJWJtSWJaHrqrqePNhVxePaHWJWJWJWJtSWJWJWJWJSjTjoOTjQAWJtSWJtSWJWJtSWJtSWJVxLcHrUbououxWhZsNgciloIoIoIhZHrZbRaMLHrVxWJHrsNSvsNHrVxVxVxVxVxVxVxVxVxVxVxVxqYVxVxVxqYVxGIVxVxVxVxqYqYqYWJtSWJWJWJtStStStStSLc
-LctSWJWJWJWJWJPWWJWJWJWJPWPWWJWJWJWJWJWJWJWJtSWJaHePGlePVxMmePaHWJWJWJtStStStStSWJSjTjoOTjQAWJtStStStSWJtSWJtStSVxdqHrHrHrHrHrSgFPjnHrMrsNlrIAHrMLiFLyHrVxvWHrvpsNvpHrHmvWqYVxVxstxsVxGIVxVxGIVxVxVxVxVxqYVxVxVxVxVxVxqYqYqYVxtSWJWJtStStStStSLc
-LctStSWJWJWJPWPWWJWJPWWJWJWJWJWJPWPWWJWJWJWJWJWJaHYVrqePePePVxaHWJWJWJtStStStStSWJSjTjlvTjQAWJtStStStSWJtSWJtStSVxVxOELcLcLcHrHrHrHrHrHrHrHrHrHrXDiFXDlGVxvWHrHrHrHrHrwawaHmvWqYqYqYVxVxqYqYVxVxxsVxVxVxVxVxVxVxVxGIVxVxqYVxVxtStSWJtStStStStSLc
-LctStStStSWJWJWJPWPWWJPWWJWJtSWJWJWJPWWJPWWJWJWJaHYVIXePePVxVxaHWJWJWJWJtStStStSWJSjTjoOTjQAWJtStStStSWJtSWJWJtSWJWJVxVxLcLcLcLcLcLcLcLcLcLcLcLcoeoemBoeWJtSqYHmwawawawawawawaHmHmqYeMVxqYqYqYqYVxVxVxVxVxVxVxqYqYVxVxVxqYVxVxWJtSWJtStStStStSLc
-LctStStStSWJWJWJWJWJWJWJPWWJWJWJWJWJWJWJWJPWWJWJaHaHaHVuaHaHaHaHWJWJWJWJtStStSqYWJSjTjoOTjQAWJtStStSWJWJWJWJtStStSVxWJVxVxVxVxVxVxVxVxVxVxwaLcLcLcWJmBWJWJWJqYVxgowawawazCwawawagoHmVxqYVxVxVxqYqYvWvWqYVxVxVxVxVxVxVxVxqYVxVxWJWJWJWJWJWJtStSLc
-LctStStSWJtStSWJWJWJtSWJWJWJtStSWJWJtStStStStSWJWJtmePePKkmuReWJWJWJWJtSqYtStStSWJSjTjoOTjQAWJtStSWJWJWJWJtStStStSWJgJWJWJWJhtWJWJWJWJWJVxwawaLcLcWJWJWJWJWJqYqYVxHmHmHmwawawawawaHmVxqYqYVxHmHmHmHmHmVxqYVxVxGIVxVxqYqYqYVxVxVxVxWJWJWJWJtStSLc
-LctStStStSWJtSWJtStSWJWJtSWJtStStStStStStStSWJWJWJVxetePetetByWJWJWJWJtStStStStSWJSjTjoOTjQAWJtStSWJWJWJWJWJtStStStStStStStStStStStSWJPWVxwawaLcLcWJWJmBWJWJtStSqYVxVxgowazCwawawaHmqYqYVxHmbTHmHmHmHmHmqYVxVxVxVxqYqYVxqYqYqYqYqYWJWJWJWJtStSLc
-LctStStStStStStSWJtSWJWJtSWJWJWJtStStStStStSWJgJWJWJWJVxWJWJWJWJWJVxWJWJWJWJWJWJWJSjTjoOTjQAWJtSWJWJWJWJtStSWJtStStStStStStStStStStSPWPWVxwawaWJLcLcWJWJmBWJWJWJVxqYVxVxHmHmwawaHmVxqYVxptHmHmwaHmHmRpHmVxqYVxVxGIqYVxVxqYqYVxVxqYWJWJWJWJtStSLc
+KaKaxyKaxyKaxyxyKaKaKaxyxyKaKaKaLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLcLc
+KayFhpVIlzTCxyFwuZbFBAshPBNdGRKaLctStStStStStStStStStStStStStStStStStStStStStStSLcvXyZRqyZElLcLctStStStStStSWJlnHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrHrLcbWPTLcLctStStStStStStStStStStStStStStStStStStStStStStStStStStStStSLc
+xyuLYzNdNdYzfizNsQzNNdaPwnEOKNKaLctStStStStStSWJWJWJWJWJWJWJWJVxWJWJtStStStStStSLcSjyZRqyZElLcLcWJWJWJWJWJWJWJVxzNMLZbxQUbHrouuvTVououHrpiRaHrqFsNKKqFouFBZLZLRaHrsNsNlrHrLcyLVvLcHrsZsZHrtStStStStStStStStStStStStStStStStStStStStStStStStStSLc
+xyFwqsQTVVXGxyQiNdNdWVzNYzzNmKKaLctStSWJWJtSWJVxUUaHaHaHaHaHaHUUVxVxaHtStStStStSLcSjTjoOyZQALcWJWJtStSWJWJWJWJVxiFouRaKpZLZLkjHrHrHrkjFBouRaFBZLZLKpKpouHrsNsNRaotsNsNvEHrHrHrHrHrHrTUfLsZWJWJWJWJWJWJtStStStStStStStStStStStStStStStStStStStSLc
+xyKaKaKaxyxynlmKMYNdzNQRYzFwNdKaLctSWJWJWJWJWJVxNhePePljEJPHePVxVxePaHtSWJtStSWJWJSjTjoOTjQAWJWJtStSWJWJWJWJWJVxMLZbMLEAYLZbHrHrabHrHrHrHrotHrcfhZZbcfHrHrHrHrHrHrfqsNsNvpvpvpvpvpvpvpUesZtSWJtStStStSWJtStSWJWJWJWJWJWJWJWJWJWJWJtStStStStStSLc
+xyYzNdNdYzYzYzYzxyxyKaKaKaKaKaKaLctSWJWJWJWJWJUUePePAkePePEJePePVxYVaHWJtStStStSWJSjTjoOTjQAWJtStStStSWJWJWJWJlnHrHrHrHrHrHrHrSHQVAsHrEUvEsNHrHrHruvHrHrUesNvEvElrBisNsNHrHrHrHrHrHrvpvpsZVxVxVxVxVxWJtStStStStSWJWJWJWJWJvTWJWJWJtStStStStStSLc
+KaKaAdKaKaKaKaKaKaLcLcLcLcLcLcLcLctStSWJWJWJWJaHrqPHaHePEJePNhePChcwaHWJWJWJWJWJWJSjTjoOTjQAWJWJWJWJWJWJWJWJhtVxVxLcHrouHrOYHrtztztzHrsNhZsNNRHrUbouUbHrlrvpbLoIvpsNsNlrHrqYVxVxWJHrsZsZHrVxqYqYqYqYVxVxVxqYVxqYqYWJWJWJWJWJWJWJWJWJtStStStStSLc
+LcLcLcLcLcLcLcLcLcLcLcWJWJWJWJtSWJtStStStSWJWJaHaHaHaHVxWUePePaHaHaHaHWJWJWJWJWJWJSjTjlvTjQAWJWJWJWJWJWJtSWJWJWJVxLcHrUbeHouxWsNhZsNiloIoIoIsNHrBORaiqHrHrHrHrsNsNsNHrHrHrqYVxqYqYqYqYqYqYqYVxVxqYqYqYVxVxVxVxqYVxVxVxVxqYtSWJWJWJWJtStStStStSLc
+LctSWJtSLcLcLcWJWJPWPWPWPWWJWJtSWJWJWJWJWJWJtSWJaHrqrqePNhVxePaHWJWJWJWJtSWJWJWJWJSjTjoOTjQAWJtSWJtSWJWJtSWJtSWJVxLcHrUbououxWhZsNgciloIoIoIhZHrZbRaMLHrVxWJHrsNSvsNHrVxVxVxVxVxVxVxVxVxVxVxVxqYVxVxVxqYVxGIVxVxVxVxqYqYqYWJtSWJWJWJtStStStStSLc
+LctSWJtSLcLcLcPWWJWJWJWJPWPWWJWJWJWJWJWJWJWJtSWJaHePGlePVxMmePaHWJWJWJtStStStStSWJSjTjoOTjQAWJtStStStSWJtSWJtStSVxdqHrHrHrHrHrSgFPjnHrMrsNlrIAHrMLiFLyHrVxvWHrvpsNvpHrHmvWqYVxVxstxsVxGIVxVxGIVxVxVxVxVxqYVxVxVxVxVxVxqYqYqYVxtSWJWJtStStStStSLc
+LctSWJtSLcLcPWPWWJWJPWWJWJWJWJWJPWPWWJWJWJWJWJWJaHYVrqePePePVxaHWJWJWJtStStStStSWJSjTjlvTjQAWJtStStStSWJtSWJtStSVxVxOELcLcLcHrHrHrHrHrHrHrHrHrHrXDiFXDlGVxvWHrHrHrHrHrwawaHmvWqYqYqYVxVxqYqYVxVxxsVxVxVxVxVxVxVxVxGIVxVxqYVxVxtStSWJtStStStStSLc
+LctSWJtStSLcWJWJPWPWWJPWWJWJtSWJWJWJPWWJPWWJWJWJaHYVIXePePVxVxaHWJWJWJWJtStStStSWJSjTjoOTjQAWJtStStStSWJtSWJWJtSWJWJVxVxLcLcLcLcLcLcLcLcLcLcLcLcoeoemBoeWJtSqYHmwawawawawawawaHmHmqYeMVxqYqYqYqYVxVxVxVxVxVxVxqYqYVxVxVxqYVxVxWJtSWJtStStStStSLc
+LctSWJtStSLcWJWJWJWJWJWJPWWJWJWJWJWJWJWJWJPWWJWJaHaHaHVuaHaHaHaHWJWJWJWJtStStSqYWJSjTjoOTjQAWJtStStSWJWJWJWJtStStSVxWJVxVxVxVxVxVxVxVxVxVxwaLcLcLcWJmBWJWJWJqYVxgowawawazCwawawagoHmVxqYVxVxVxqYqYvWvWqYVxVxVxVxVxVxVxVxqYVxVxWJWJWJWJWJWJtStSLc
+LctSWJWJWJtStSWJWJWJtSWJWJWJtStSWJWJtStStStStSWJWJtmePePKkmuReWJWJWJWJtSqYtStStSWJSjTjoOTjQAWJtStSWJWJWJWJtStStStSWJgJWJWJWJhtWJWJWJWJWJVxwawaLcLcWJWJWJWJWJqYqYVxHmHmHmwawawawawaHmVxqYqYVxHmHmHmHmHmVxqYVxVxGIVxVxqYqYqYVxVxVxVxWJWJWJWJtStSLc
+LctStStSWJWJtSWJtStSWJWJtSWJtStStStStStStStSWJWJWJVxetePetetByWJWJWJWJtStStStStSWJSjTjoOTjQAWJtStSWJWJWJWJWJtStStStStStStStStStStStSWJPWVxwawaLcLcWJWJmBWJWJtStSqYVxVxgowazCwawawaHmqYqYVxHmbTHmHmHmHmHmqYVxVxVxVxqYqYVxqYqYqYqYqYWJWJWJWJtStSLc
+LctStStStSWJWJWJWJtSWJWJtSWJWJWJtStStStStStSWJgJWJWJWJVxWJWJWJWJWJVxWJWJWJWJWJWJWJSjTjoOTjQAWJtSWJWJWJWJtStSWJtStStStStStStStStStStSPWPWVxwawaWJLcLcWJWJmBWJWJWJVxqYVxVxHmHmwawaHmVxqYVxptHmHmwaHmHmRpHmVxqYVxVxGIqYVxVxqYqYVxVxqYWJWJWJWJtStSLc
 LctStStStStStSWJWJtStSWJWJtSWJWJWJtStStStStSWJWJWJWJVxVxWJWJWJWJShWJWJWJWJWJWJWJWJSjTjoOTjQAWJtSWJtSWJWJWJWJtStStStStStStStStStStSWJPWWJVxwawaWJLcLcWJWJmBmBWJWJWJqYqYqYVxHmHmHmgoVxqYVxHmHmwawawawaHmHmHmvWVxVxVxVxqYVxVxqYVxVxVxWJWJWJWJtStSLc
 LctStStStStStStStStSWJWJWJWJPWWJWJtStStStStStSWJWJWJVxShWJWJgJWJWJWJtStSWJWJWJVxVxSjTjoOTjQAWJtStSWJtStSWJWJtStStStStStStStStStStSWJPWWJVxwawaWJWJLcLcWJWJmBWJShHtWJVxVxVxqYVxVxVxVxqYVxbTwawawazCwaHmHmHmvWvWzdVxVxVxVxVxVxqYVxVxtSWJWJWJtStSLc
 LctStStStStStStStStSWJWJtStSPWWJWJtStStStStStStStSWJVxWJWJWJWJWJtStStSWJWJWJVxwaVxSjTjoOTjQAVxtStStSWJVxVxVxWJtStStStStStStStStStSWJPWWJWJwawaWJWJLcLcLcWJWJWJWJmBWJWJhtWJHmVxVxVxVxqYVxHmwawawawawaHmHmHmHmvWqYVxVxqYVxVxVxVxqYqYWJtSWJWJtStSLc

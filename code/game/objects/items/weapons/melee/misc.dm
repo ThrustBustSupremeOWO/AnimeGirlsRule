@@ -162,6 +162,18 @@
 			user.visible_message("<span class='danger'>\The [user] disarms \the [target] with \the [src]!</span>")
 		return
 
+/obj/item/melee/whip/barbed_ham
+	name = "barbed ham"
+	desc = "A fine, leathery ham. This one seems particularly scrumptious and is also covered in barbed wire."
+	icon = 'icons/moons.dmi'
+	icon_state = "barbed_ham"
+	item_state = "barbed_ham"
+	contained_sprite = 1
+	slot_flags = SLOT_BELT
+	force = 15
+	reach = 1
+	attack_verb = list("literally just slaps", "actually violently batters", "completely disregards the comfort of, and thwacks", "wallops the shit out of")
+
 /obj/item/melee/ceremonial_sword
 	name = "sol officer ceremonial sword"
 	desc = "A ceremonial sword issued to Sol navy officers as part of their dress uniform."

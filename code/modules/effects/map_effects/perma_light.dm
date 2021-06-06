@@ -26,3 +26,12 @@
 	name = "permanent light (concentrated halogen)"
 
 	light_color = LIGHT_COLOR_HALOGEN
+
+
+/obj/effect/map_effect/perma_light/brighter/street_lamp
+	name = "permanent street lamp light"
+	icon_state = "permalight"
+
+	light_range = 5
+	light_power = 3
+	light_color = "#ffaa08"

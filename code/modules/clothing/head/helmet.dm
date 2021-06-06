@@ -70,6 +70,14 @@
 	icon_state = "helm_sec_commander"
 	item_state = "helm_sec_commander"
 
+/obj/item/clothing/head/helmet/tribe
+	name = "tribal bone helmet"
+	desc = "A fierce looking helmet fashioned from a rather large, Humanoid skull. Scary!"
+	icon = 'icons/moons.dmi'
+	contained_sprite = TRUE
+	icon_state = "tribe_helm"
+	item_state = "tribe_helm"
+
 /obj/item/clothing/head/helmet/hos/dermal
 	name = "dermal armor patch"
 	desc = "You're not quite sure how you manage to take it on and off, but it implants nicely in your head."

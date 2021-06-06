@@ -607,3 +607,11 @@
 	icon_state = "tdgreen"
 	item_state = "tdgreen"
 	siemens_coefficient = 1
+//tribe armor
+/obj/item/clothing/suit/armor/tribe
+	name = "tribal hide cape"
+	desc = "A long, man-sized cape fashioned from very tough leather."
+	icon = 'icons/moons.dmi'
+	icon_state = "tribe_cape"
+	item_state = "tribe_cape"
+	contained_sprite = TRUE
